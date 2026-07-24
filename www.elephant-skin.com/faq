@@ -323,7 +323,7 @@ var CATS=[
 ];
 var FAQ=[
   {cat:'about',slug:'what-is-basecamp',q:'What is BaseCamp Studio?',
-   a:'BaseCamp Studio is an in-house production house, not an agency reselling freelancers. Production, post-production, 2D/3D animation, and AI-driven pipelines all live under one roof, so there are no handoff gaps between production and post. <a href="approach">See how THE KIT works →</a>',
+   a:'BaseCamp Studio is an in house production house, not an agency reselling freelancers. Production, post-production, 2D/3D animation, and AI-driven pipelines all live under one roof, so there are no handoff gaps between production and post. <a href="approach">See how THE KIT works →</a>',
    kw:['about','who','company','production house','in-house'],rel:['what-makes-different','what-is-the-kit','what-services']},
   {cat:'about',slug:'what-makes-different',q:'What makes BaseCamp Studio different?',
    a:'Most production companies hand your project to a separate post house, then a separate animation studio. We don\'t. Every project runs through <a href="approach">THE KIT®</a>, our six-step in-house framework, so nothing gets lost between departments or vendors.',

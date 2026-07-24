@@ -272,7 +272,7 @@ h2.big{font-family:var(--font-display);font-size:clamp(34px,6vw,88px);text-trans
   </nav>
   <div class="menu-foot">
     <div class="slogan">Everything in THE KIT, nothing outsourced.</div>
-    <p>An in-house production house for brands that don't have room for error. Explore. Hover. Scroll. Click.</p>
+    <p>An in house production house for brands that don't have room for error. Explore. Hover. Scroll. Click.</p>
     <div class="menu-social">
       <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
       <a href="https://wa.me/924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
