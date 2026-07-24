@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<!-- Mirrored from www.basecampstudio.pk/legal/privacy-policy by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy &mdash; Legal &amp; Trust Center &middot; BaseCamp Studio</title>
+<meta name="description" content="How we collect, use and protect personal data.">
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="legal.css">
+</head>
+<body>
+<div class="bar" id="bar">
+  <a class="lg" href="../index.html"><img src="../basecamp-icon.png" alt="BaseCamp Studio"></a>
+  <div class="bar-right">
+    <div class="themetog" id="themeTog"><button data-theme="light" title="Light">&#9728;</button><button data-theme="dark" class="on" title="Dark">&#127769;</button></div>
+    <button class="menu-btn" id="menuBtn">Menu</button>
+  </div>
+</div>
+<div class="menu-overlay" id="menu">
+  <button class="menu-close" id="menuClose" aria-label="Close">&times;</button>
+  <a href="../index.html"><img class="menu-logo" src="../basecamp-icon.png" alt="BaseCamp Studio"></a>
+  <nav class="menu-nav">
+    <div><a href="../index.html#top">Home</a></div>
+    <div><a href="../approach">THE KIT<sup style="font-size:.34em;vertical-align:top;position:relative;top:.12em">&reg;</sup></a></div>
+    <div><a href="../whatwedo">What We Do</a></div>
+    <div><a href="../index.html#featured">Work</a></div>
+    <div><a href="../faq">FAQ</a></div>
+    <div><a href="../index.html#contact">Contact</a></div>
+  </nav>
+  <div class="menu-foot">
+    <div class="slogan">Everything in THE KIT, nothing outsourced.</div>
+    <p>An in-house production house for brands that don't have room for error. Explore. Hover. Scroll. Click.</p>
+    <div class="menu-social">
+      <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
+      <a href="https://wa.me/924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+    </div>
+  </div>
+</div>
+<main class="legal-doc">
+  <nav class="breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="../legal">Legal &amp; Trust Center</a><span>/</span><b>Privacy Policy</b></nav>
+  <header class="ld-head">
+    <span class="eyebrow">Legal &amp; Trust Center</span>
+    <h1>Privacy Policy</h1>
+    <p class="ld-sub">How BaseCamp Studio&reg; collects, uses, stores and protects personal information &mdash; and the rights you have over your data.</p>
+    <div class="ld-meta">Last updated: June 2026</div>
+  </header>
+  <article class="ld-body">
+<section><h2><span class="n">01</span>Data collection</h2><p>We collect only the information we need to communicate with you and deliver our work. This may include your name, email, company, the contents of messages or briefs you send us, and basic technical data such as browser type and pages visited.</p></section>
+<section><h2><span class="n">02</span>Cookies</h2><p>We use cookies and local storage for essential and functional purposes, and &mdash; with your consent &mdash; for analytics and embedded third-party content. Full detail is on our <a class="inl" href="cookie-policy">Cookie Policy</a> page.</p></section>
+<section><h2><span class="n">03</span>Contact forms</h2><p>When you submit a project brief or contact form, we use the information solely to respond to and evaluate your request. We do not sell this information or share it for unrelated purposes.</p></section>
+<section><h2><span class="n">04</span>Analytics</h2><p>We may use privacy-conscious analytics to understand how the site is used and improve it. Analytics are only enabled where consent is given, and we avoid collecting more than necessary.</p></section>
+<section><h2><span class="n">05</span>Newsletter</h2><p>If you opt in to updates, we use your email only to send relevant communications. Every message includes a way to unsubscribe, and you can opt out at any time.</p></section>
+<section><h2><span class="n">06</span>Your rights (GDPR, CCPA, LGPD)</h2><p>Depending on where you live, you may have rights under the <strong>GDPR</strong> (EU/UK), <strong>CCPA</strong> (California) and <strong>LGPD</strong> (Brazil), including the right to access, correct, delete, restrict or port your data, and to object to certain processing. We honor these rights regardless of location wherever practical.</p><ul><li>Right to access and obtain a copy of your data</li><li>Right to rectification and erasure</li><li>Right to restrict or object to processing</li><li>Right to data portability</li><li>Right to withdraw consent at any time</li></ul></section>
+<section><h2><span class="n">07</span>Data retention</h2><p>We retain personal data only for as long as needed to fulfill the purpose it was collected for, or as required by law, after which it is deleted or anonymized.</p></section>
+<section><h2><span class="n">08</span>Exercising your rights</h2><p>To make a data request, contact <a class="inl" href="mailto:hello@basecampstudio.pk">hello@basecampstudio.pk</a>. We will respond within the timeframe required by applicable law.</p></section>
+  </article>
+  <a class="ld-back" href="../legal">&larr; Back to the Legal &amp; Trust Center</a>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="sf-eyebrow">Get In Touch</div>
+    <h2 class="sf-hi">Don't be shy. Say <span class="pink">Hi.</span></h2>
+    <div class="sf-actions">
+      <a class="btn-foot primary" href="../brief">Send a project brief &rarr;</a>
+      <a class="btn-foot ghost" href="mailto:hello@basecampstudio.pk">hello@basecampstudio.pk &rarr;</a>
+      <div class="sf-social">
+        <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
+        <a href="https://wa.me/924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+      </div>
+    </div>
+    <nav class="sf-legal">
+      <span class="sf-legal-h">Legal</span>
+      <a href="terms-of-use">Terms of Use</a>
+      <a href="privacy-policy">Privacy Policy</a>
+      <a href="cookie-policy">Cookie Policy</a>
+      <a href="intellectual-property">Intellectual Property</a>
+      <a href="client-confidentiality">Client Confidentiality</a>
+      <a href="ai-policy">AI Policy</a>
+      <a href="accessibility">Accessibility</a>
+      <a href="security">Security</a>
+      <a href="contact">Contact</a>
+      <a href="../legal">Legal &amp; Trust Center</a>
+    </nav>
+    <div class="sf-bottom">
+      <span>&copy; BaseCamp Studio 2026</span>
+      <span class="sf-off">Miami &middot; West Palm Beach &middot; Chicago &middot; New York &middot; Vancouver &middot; Lisbon &middot; S&atilde;o Paulo &middot; Curitiba &middot; Dubai &middot; Ho Chi Minh</span>
+      <span>Use without moderation.</span>
+    </div>
+  </div>
+</footer>
+<script src="legal.js"></script>
+</body>
+<!-- Mirrored from www.basecampstudio.pk/legal/privacy-policy by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:56 GMT -->
+</html>

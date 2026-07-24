@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<!-- Mirrored from www.basecampstudio.pk/whatwedo by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What We Do, BaseCamp Studio</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="description" content="Production, post-production, AI productions, 3D and 2D animation, motion graphics, and VFX — the complete in-house crew BaseCamp Studio builds every project with.">
+<link rel="canonical" href="whatwedo">
+<meta name="theme-color" content="#070707">
+<link rel="manifest" href="manifest.json">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BaseCamp Studio">
+<meta property="og:title" content="What We Do, BaseCamp Studio">
+<meta property="og:description" content="Production, post-production, AI productions, 3D and 2D animation, motion graphics, and VFX — the complete in-house crew BaseCamp Studio builds every project with.">
+<meta property="og:url" content="whatwedo">
+<meta property="og:image" content="og-tempo.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What We Do, BaseCamp Studio">
+<meta name="twitter:description" content="Production, post-production, AI productions, 3D and 2D animation, motion graphics, and VFX — the complete in-house crew BaseCamp Studio builds every project with.">
+<meta name="twitter:image" content="og-tempo.jpg">
+<script src="analytics.js" defer></script>
+
+
+<link rel="preload" href="Etna.otf" as="font" type="font/otf" crossorigin>
+<link rel="preload" href="AauxProLight.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<style>
+:root{
+  --pink:#FF5A2E;--pad:clamp(24px,3.5vw,56px);
+  --bg:#070707;--text:#f3f1ea;--muted:#8a867d;--soft:#cfcbc0;--line:rgba(255,255,255,.10);--surf:rgba(255,255,255,.03);
+  --font-display:'Etna','Helvetica Neue',Arial,sans-serif;
+  --font-body:'Aaux Pro Light','Helvetica Neue',Arial,sans-serif;
+  --font-med:'Aaux Pro Medium','Helvetica Neue',Arial,sans-serif;
+}
+html[data-theme="light"]{--bg:#f3f1ea;--text:#16130f;--muted:#6a665d;--soft:#46423a;--line:rgba(0,0,0,.13);--surf:rgba(0,0,0,.025)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden;transition:background .4s,color .4s}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--pink);color:#fff}
+.wrap{max-width:none;margin:0;padding:0 var(--pad)}
+.pink{color:var(--pink)}
+section{position:relative}
+.bar{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:20px var(--pad);transition:background .3s}
+.bar.scrolled{background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(12px)}
+.bar .lg img{height:25px;display:block}
+.bar-right{display:flex;align-items:center;gap:14px}
+.themetog{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.themetog button{border:none;background:none;color:var(--muted);padding:7px 11px;cursor:pointer;font-size:13px;line-height:1;transition:.2s}
+.themetog button.on{background:var(--text);color:var(--bg)}
+.menu-btn{background:none;border:none;color:var(--text);cursor:pointer;font-family:var(--font-display);font-size:20px;letter-spacing:.04em;text-transform:uppercase;transition:color .25s}
+.menu-btn:hover{color:var(--pink)}
+.menu-overlay{position:fixed;inset:0;z-index:100;background:var(--pink);color:#0a0a0a;padding:54px 56px;display:flex;flex-direction:column;justify-content:space-between;transform:translateY(-102%);opacity:0;visibility:hidden;transition:transform .6s cubic-bezier(.76,0,.24,1),opacity .4s,visibility .6s}
+.menu-overlay.open{transform:none;opacity:1;visibility:visible}
+.menu-close{position:absolute;top:46px;right:52px;width:46px;height:46px;font-size:38px;cursor:pointer;background:none;border:none;color:#0a0a0a;line-height:1}
+.menu-logo{height:26px;align-self:flex-start;margin-bottom:10px}
+.menu-nav a{display:inline-block;font-family:var(--font-display);font-size:clamp(28px,4.6vw,54px);color:#fff;text-transform:uppercase;line-height:1.14;transition:padding-left .28s,color .2s}
+.menu-nav a:hover{padding-left:18px;color:#0a0a0a}
+.menu-foot{max-width:680px}
+.menu-foot .slogan{font-family:var(--font-display);font-size:clamp(18px,2.4vw,26px);text-transform:uppercase}
+.menu-foot p{margin-top:16px;font-size:13px;color:rgba(10,10,10,.72);max-width:540px;line-height:1.6}
+.menu-social{margin-top:20px;display:flex;gap:14px}
+.menu-social a{width:36px;height:36px;border:1.5px solid rgba(10,10,10,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-med);font-size:12px;color:#0a0a0a;transition:.2s}
+.menu-social a:hover{background:#0a0a0a;color:var(--pink)}
+@media(max-width:600px){.menu-overlay{padding:36px 26px}.menu-close{top:30px;right:26px}.menu-logo{height:20px}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 1s ease,transform 1s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+.snum{font-family:var(--font-med);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--pink);margin-bottom:18px;display:block}
+.sec{padding-top:clamp(80px,12vh,150px);padding-bottom:clamp(80px,12vh,150px);border-top:1px solid var(--line)}
+h2.big{font-family:var(--font-display);font-size:clamp(34px,6vw,88px);text-transform:uppercase;line-height:.93;letter-spacing:-.02em}
+.lead{font-size:clamp(16px,1.8vw,24px);line-height:1.5;max-width:820px;margin-top:24px;color:var(--soft)}
+/* hero */
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding-top:120px;padding-bottom:50px}
+.hero h1{font-family:var(--font-display);font-size:clamp(48px,11vw,170px);text-transform:uppercase;line-height:.84;letter-spacing:-.02em}
+.hero .lead{max-width:740px}
+/* capabilities word wall */
+.cap-wall{position:relative;margin-top:46px;text-align:justify;text-justify:inter-word}
+.cap-wall span{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(18px,2.4vw,40px);line-height:1.4;color:var(--text);transition:color .25s,transform .25s;cursor:default;display:inline-block}
+.cap-wall span.it{font-family:Georgia,'Times New Roman',serif;font-style:italic;text-transform:none}
+.cap-wall span:hover{color:var(--pink);transform:scale(1.08)}
+.ww-thumb{position:absolute;z-index:6;width:224px;height:149px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.32);pointer-events:none;opacity:0;transform:translateY(8px) scale(.96);transition:opacity .22s ease,transform .22s ease}
+.ww-thumb.show{opacity:1;transform:none}
+.ww-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:760px){.ww-thumb{display:none}}
+/* growth engine accordion */
+.pillars{margin-top:50px}
+.pill{border:1px solid var(--line);margin-bottom:12px;overflow:hidden;background:var(--surf);transition:border-color .3s}
+.pill.open{border-color:var(--pink)}
+.pill-head{display:flex;align-items:center;gap:20px;padding:24px 26px;cursor:pointer}
+.pill .px{font-family:var(--font-display);font-size:26px;color:var(--pink);line-height:1;flex:0 0 auto}
+.pill .ph{font-family:var(--font-display);font-size:clamp(18px,1.9vw,26px);text-transform:uppercase;line-height:1.05;flex:1}
+.pill .parr{flex:0 0 auto;color:var(--muted);transition:transform .3s}
+.pill.open .parr{transform:rotate(90deg);color:var(--pink)}
+.pill-body{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.4,0,.2,1)}
+.pill-in{padding:0 26px 26px;display:grid;grid-template-columns:1.2fr 1fr;gap:26px}
+@media(max-width:760px){.pill-in{grid-template-columns:1fr}}
+.pill-in .pd{color:var(--soft);font-size:15px;line-height:1.6}
+.pill-in ul{list-style:none}
+.pill-in li{font-family:var(--font-med);font-size:13.5px;color:var(--muted);padding:7px 0;border-bottom:1px dashed var(--line)}
+.pill-in li::before{content:"› ";color:var(--pink)}
+/* the elephant skin machine, orbital universe */
+.machine{position:relative;width:100vw;margin-left:calc(50% - 50vw);margin-top:48px;height:clamp(720px,94vh,1080px);overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.machine canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.uni-labels{position:absolute;inset:0;z-index:2;pointer-events:none}
+.uni-node{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;font-family:var(--font-med);transition:color .25s,opacity .25s}
+.uni-node.input{font-size:11.5px;letter-spacing:.07em;color:var(--text);text-transform:uppercase;pointer-events:auto;cursor:default;opacity:.82}
+.uni-node.input:hover{opacity:1}
+.uni-node.output{font-size:13px;letter-spacing:.02em;color:var(--text);pointer-events:auto;cursor:default;font-family:var(--font-display);text-transform:uppercase}
+.uni-node.output.off{opacity:.2}
+/* services = pink buttons that expand to reveal the name on hover / when on */
+.uni-node.svc{pointer-events:auto;cursor:pointer;display:flex;align-items:center;background:var(--pink);color:#fff;border-radius:999px;height:32px;max-width:32px;overflow:hidden;white-space:nowrap;user-select:none;transition:max-width .42s cubic-bezier(.5,0,.1,1),background .3s,box-shadow .3s,opacity .25s;box-shadow:0 0 0 rgba(255,90,46,0)}
+.uni-node.svc .sd{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-med);font-size:12px;flex:0 0 auto;background:transparent;box-shadow:none}
+.uni-node.svc .nm{font-family:var(--font-display);text-transform:uppercase;font-size:12.5px;letter-spacing:.02em;padding-right:18px;opacity:0;transition:opacity .3s}
+.uni-node.svc.on{max-width:300px;box-shadow:0 0 22px rgba(255,90,46,.6)}
+.uni-node.svc.on .nm{opacity:1}
+.uni-node.svc:not(.on):hover{box-shadow:0 0 16px rgba(255,90,46,.45);background:rgba(255,90,46,.3)}
+.uni-node.svc.off{background:rgba(255,90,46,.16);border:1.5px solid var(--pink);color:var(--pink)}
+.uni-node.hidden{opacity:0!important;pointer-events:none!important}
+.uni-core{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);text-align:center;z-index:2;pointer-events:none;transition:opacity .4s}
+.uni-core .cf,.uni-core .poweron{pointer-events:auto;cursor:pointer}
+.uni-core::before{content:'';position:absolute;left:50%;top:50%;width:150px;height:150px;border:1.5px solid var(--pink);border-radius:50%;transform:translate(-50%,-50%);opacity:0}
+#universe:not(.powered) .uni-core::before{animation:ringpulse 2s ease-out infinite}
+@keyframes ringpulse{0%{transform:translate(-50%,-50%) scale(.55);opacity:.55}100%{transform:translate(-50%,-50%) scale(1.5);opacity:0}}
+.uni-core .cf{transition:color .4s}
+#universe:not(.powered) .uni-core .cf{color:var(--muted)}
+#universe:not(.powered) .uni-core .cf sup{color:var(--muted)}
+.uni-core .poweron{font-family:var(--font-med);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);margin-top:12px;opacity:0;transition:opacity .4s}
+#universe:not(.powered) .uni-core .poweron{opacity:1;animation:mcblink 1.5s infinite}
+@keyframes mcblink{0%,100%{opacity:.45}50%{opacity:1}}
+.uni-core .cf{font-family:var(--font-display);font-size:clamp(26px,3vw,44px);color:var(--text);line-height:1}
+.uni-core .cf sup{color:var(--pink);font-size:.36em;vertical-align:super}
+.uni-core .cs{font-family:var(--font-med);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.uni-play{position:absolute;top:22px;right:var(--pad);z-index:6;display:inline-flex;align-items:center;gap:9px;padding:12px 24px;border:1.5px solid var(--pink);background:transparent;color:var(--pink);border-radius:999px;font-family:var(--font-med);text-transform:uppercase;font-size:11px;letter-spacing:.12em;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.uni-play:hover{background:var(--pink);color:#fff;transform:translateY(-2px)}
+.uni-hint{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:5;font-family:var(--font-med);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;pointer-events:none}
+.uni-final{position:absolute;right:clamp(20px,4vw,64px);top:50%;transform:translateY(-50%) translateX(24px);max-width:320px;z-index:4;text-align:right;opacity:0;pointer-events:none;transition:opacity .6s ease,transform .6s ease}
+.uni-final.show{opacity:1;transform:translateY(-50%) translateX(0);pointer-events:auto}
+.uni-final .q{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(22px,2.5vw,38px);line-height:1.02;letter-spacing:-.01em;color:var(--text);text-shadow:0 2px 30px rgba(0,0,0,.55)}
+[data-theme="light"] .uni-final .q{text-shadow:0 2px 24px rgba(243,241,234,.7)}
+.uni-final .q em{color:var(--pink);font-style:normal}
+.uni-final .cta{display:inline-flex;margin-top:18px;padding:13px 26px;background:var(--pink);color:#fff;font-family:var(--font-med);text-transform:uppercase;font-size:11px;letter-spacing:.12em;border-radius:999px;transition:transform .2s}
+.uni-final .cta:hover{transform:translateY(-2px)}
+.mc-tip{position:fixed;z-index:95;pointer-events:none;opacity:0;transition:opacity .14s;background:rgba(10,10,12,.94);border:1px solid rgba(255,90,46,.5);border-radius:8px;padding:8px 12px;font-family:var(--font-med);font-size:12px;color:#fff;max-width:240px}
+.mc-tip.show{opacity:1}
+.uni-mobile{display:none}
+.uni-cap{display:none}
+.uni-legend{display:none}
+.uni-stage{position:absolute;inset:0;z-index:0}
+/* mobile: keep the orbital graphic but clean it up — hide the 20 text labels (the clutter),
+   services become fixed numbered dots, a legend keys the dots, and the closing line sits below */
+@media(max-width:820px){
+  .machine{height:auto;aspect-ratio:auto;min-height:0;max-height:none;margin-top:30px;overflow:visible;display:flex;flex-direction:column}
+  .uni-stage{position:relative;width:100%;height:116vw;min-height:440px;max-height:560px;overflow:hidden;flex:0 0 auto}
+  .uni-mobile{display:none!important}
+  .mc-tip{display:none!important}
+  .uni-node.input,.uni-node.output{display:none}
+  .uni-node.svc{height:30px;max-width:30px!important;padding:0}
+  .uni-node.svc .sd{width:30px;height:30px;font-size:12px}
+  .uni-node.svc .nm{display:none}
+  .uni-node.svc.on{max-width:30px!important;box-shadow:0 0 18px rgba(255,90,46,.78)}
+  .uni-core .cf{font-size:30px}
+  .uni-core .cs{font-size:8px}
+  .uni-play{top:12px;right:var(--pad);padding:10px 16px;font-size:9.5px;letter-spacing:.1em}
+  .uni-hint{display:none}
+  .uni-legend{display:flex;gap:13px;position:absolute;left:var(--pad);top:14px;z-index:5;
+    font-family:var(--font-med);font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .uni-legend span{display:flex;align-items:center;gap:5px}
+  .uni-legend i{width:8px;height:8px;border-radius:50%;flex:0 0 auto}
+  .uni-legend .lg-in{background:#9b9b9b}
+  .uni-legend .lg-sv{background:var(--pink)}
+  .uni-legend .lg-ou{background:#ea6ba2}
+  .uni-cap{display:block;position:absolute;left:0;right:0;bottom:18px;z-index:5;text-align:center;
+    padding:0 28px;font-family:var(--font-med);font-size:11.5px;letter-spacing:.04em;color:var(--text);line-height:1.5}
+  .uni-cap b{color:var(--pink)}
+  .uni-final{position:relative;inset:auto;transform:none;max-width:none;text-align:center;
+    padding:0;margin:0 auto;max-height:0;overflow:hidden;opacity:0;transition:opacity .5s,max-height .5s,padding .5s}
+  .uni-final.show{transform:none;opacity:1;max-height:320px;padding:30px 26px 8px}
+  .uni-final .q{font-size:20px}
+  .uni-final .cta{margin-top:14px}
+}
+/* footer */
+.site-foot{background:#070707;color:#f3f1ea;border-top:1px solid rgba(255,255,255,.1);padding:clamp(54px,7vw,84px) 0 34px}
+.sf-eyebrow{font-family:var(--font-med);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--pink)}
+.sf-hi{font-family:var(--font-display);font-size:clamp(26px,4vw,52px);text-transform:uppercase;line-height:.98;letter-spacing:-.02em;margin-top:10px}
+.sf-hi #footHi{display:inline-block;transition:opacity .22s ease,transform .22s ease}
+.sf-hi #footHi.swap{opacity:0;transform:translateY(8px)}
+.sf-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn-foot{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-family:var(--font-med);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;transition:transform .2s,background .2s,color .2s,border-color .2s;border:1.5px solid transparent}
+.btn-foot.primary{background:var(--pink);color:#fff;border-color:var(--pink)}
+.btn-foot.primary:hover{transform:translateY(-2px)}
+.btn-foot.ghost{border-color:rgba(255,255,255,.25);color:#f3f1ea}
+.btn-foot.ghost:hover{border-color:var(--pink);color:var(--pink)}
+.sf-social{display:flex;gap:9px;margin-left:auto}
+.sf-social a{width:36px;height:36px;border:1.5px solid rgba(255,255,255,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-med);font-size:11px;color:#f3f1ea;transition:.2s}
+.sf-social a:hover{background:var(--pink);border-color:var(--pink);color:#fff}
+.sf-bottom{margin-top:38px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;font-size:11px;color:#6a665d;letter-spacing:.05em}
+.sf-bottom .sf-off{color:#8a867d}
+@media(max-width:720px){.sf-social{margin-left:0}.sf-bottom{flex-direction:column;align-items:flex-start;gap:8px}.sf-bottom .sf-off{order:-1}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.basecampstudio.pk/"}, {"@type": "ListItem", "position": 2, "name": "What We Do", "item": "https://www.basecampstudio.pk/whatwedo"}]}</script>
+</head>
+<body>
+
+<div class="bar" id="bar">
+  <a class="lg" href="index.html"><img src="basecamp-icon.png" alt="BaseCamp Studio"></a>
+  <div class="bar-right">
+    <div class="themetog" id="themeTog"><button data-theme="light" title="Light">☀</button><button data-theme="dark" class="on" title="Dark">🌙</button></div>
+    <button class="menu-btn" id="menuBtn">Menu</button>
+  </div>
+</div>
+
+<div class="menu-overlay" id="menu">
+  <button class="menu-close" id="menuClose" aria-label="Close">&times;</button>
+  <a href="index.html"><img class="menu-logo" src="basecamp-icon.png" alt="BaseCamp Studio"></a>
+  <nav class="menu-nav">
+    <div><a href="index.html#top">Home</a></div>
+    <div><a href="approach">THE KIT<sup style="font-size:.34em;vertical-align:top;position:relative;top:.12em">&reg;</sup></a></div>
+    <div><a href="whatwedo">What We Do</a></div>
+    <div><a href="index.html#featured">Work</a></div>
+    <div><a href="faq">FAQ</a></div>
+    <div><a href="index.html#contact">Contact</a></div>
+  </nav>
+  <div class="menu-foot">
+    <div class="slogan">Everything in THE KIT, nothing outsourced.</div>
+    <p>An in-house production house for brands that don't have room for error. Explore. Hover. Scroll. Click.</p>
+    <div class="menu-social">
+      <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
+      <a href="https://wa.me/924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero wrap" id="top">
+  <span class="snum reveal">What we do</span>
+  <h1 class="reveal">One crew.<br>Every <span class="pink">discipline</span>.</h1>
+  <p class="lead reveal">Production, post-production, AI productions, 3D and 2D animation, motion graphics, and VFX — never separate vendors, always one in-house crew, from brief to delivery.</p>
+</section>
+
+<!-- 01 CAPABILITIES -->
+<section class="sec wrap" id="capabilities">
+  <span class="snum reveal">01 — What we do, in a breath</span>
+  <div class="cap-wall reveal" id="capWall"></div>
+</section>
+
+<!-- 02 THE SEVEN SERVICES -->
+<section class="sec wrap" id="engine">
+  <span class="snum reveal">02 — Everything In THE KIT</span>
+  <h2 class="big reveal">From brief<br>to delivery.</h2>
+  <p class="lead reveal">Seven disciplines, one in-house crew, connecting production, post, animation, and AI into a single system built to take a brief to a launch-ready piece.</p>
+  <div class="pillars" id="pillars"></div>
+</section>
+
+<!-- 03 THE BASECAMP MACHINE -->
+<section class="sec wrap" id="machine-sec" style="border-bottom:none;padding-bottom:0">
+  <span class="snum reveal">03 — The BaseCamp Studio Machine</span>
+  <h2 class="big reveal">We don't sell services.<br>We build <span class="pink">finished films</span>.</h2>
+  <p class="lead reveal">Every project starts with a brief. It enters the machine, and THE KIT<sup style="font-size:.6em;vertical-align:super;color:var(--pink)">&reg;</sup> transforms it into production, post, animation and delivery. <span class="pink">Input → THE KIT® → Output.</span></p>
+</section>
+<div class="machine reveal" id="universe">
+  <div class="uni-stage" id="uniStage">
+    <canvas id="uniCv"></canvas>
+    <div class="uni-labels" id="uniLabels"></div>
+    <div class="uni-core" id="uniCore"><div class="cf">KIT<sup>&reg;</sup></div><div class="cs">In-House<br>Production System</div><div class="poweron">Tap to power on</div></div>
+    <button class="uni-play" id="uniPlay">▶ Play the process</button>
+    <div class="uni-hint" id="uniHint">Click THE KIT® to power the system</div>
+    <div class="uni-legend"><span><i class="lg-in"></i>Inputs</span><span><i class="lg-sv"></i>Services</span><span><i class="lg-ou"></i>Outputs</span></div>
+    <div class="uni-cap" id="uniCap"></div>
+  </div>
+  <div class="uni-final" id="uniFinal"><div class="q">Every story needs a basecamp.<br><em>For the journey ahead.</em></div><a class="cta" href="brief">Start your brief →</a></div>
+  <div class="uni-mobile" id="uniMobile"></div>
+</div>
+<div class="mc-tip" id="mcTip"></div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="sf-eyebrow">Get In Touch</div>
+    <h2 class="sf-hi">Don't be shy. Say <span class="pink" id="footHi">Hi.</span></h2>
+    <div class="sf-actions">
+      <a class="btn-foot primary" href="brief">Send a project brief →</a>
+      <a class="btn-foot ghost" href="mailto:hello@basecampstudio.pk">hello@basecampstudio.pk →</a>
+      <div class="sf-social">
+        <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
+        <a href="https://wa.me/924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+      </div>
+    </div>
+    <style>.sf-legal{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;gap:11px 26px;align-items:baseline}.sf-legal .sf-legal-h{font-family:var(--font-med);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--pink);width:100%;margin-bottom:4px}.sf-legal a{font-size:13px;color:#9a968d;letter-spacing:.02em;transition:color .2s}.sf-legal a:hover{color:var(--pink)}</style>
+    <nav class="sf-legal">
+      <span class="sf-legal-h">Legal</span>
+      <a href="legal/terms-of-use">Terms of Use</a>
+      <a href="legal/privacy-policy">Privacy Policy</a>
+      <a href="legal/cookie-policy">Cookie Policy</a>
+      <a href="legal/intellectual-property">Intellectual Property</a>
+      <a href="legal/client-confidentiality">Client Confidentiality</a>
+      <a href="legal/ai-policy">AI Policy</a>
+      <a href="legal/accessibility">Accessibility</a>
+      <a href="legal/security">Security</a>
+      <a href="legal/contact">Contact</a>
+      <a href="legal">Legal &amp; Trust Center</a>
+    </nav>
+    <div class="sf-bottom">
+      <span>© BaseCamp Studio 2026</span>
+      <span class="sf-off">Gulberg III, Lahore, Pakistan</span>
+      <span>Everything in THE KIT, nothing outsourced.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const menu=document.getElementById('menu');
+document.getElementById('menuBtn').addEventListener('click',()=>menu.classList.add('open'));
+document.getElementById('menuClose').addEventListener('click',()=>menu.classList.remove('open'));
+addEventListener('keydown',e=>{if(e.key==='Escape')menu.classList.remove('open');});
+addEventListener('scroll',()=>document.getElementById('bar').classList.toggle('scrolled',scrollY>30),{passive:true});
+(function(){function apply(t){document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#themeTog button').forEach(b=>b.classList.toggle('on',b.dataset.theme===t));}
+  var h=new Date().getHours();var theme=localStorage.getItem('es_theme')||((h>=8&&h<17)?'light':'dark');apply(theme);
+  document.querySelectorAll('#themeTog button').forEach(b=>b.addEventListener('click',()=>{theme=b.dataset.theme;localStorage.setItem('es_theme',theme);apply(theme);}));})();
+const revIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revIO.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>revIO.observe(el));
+
+/* capabilities word wall */
+const CAPS=['Production','Post-Production','Editing','Color Grading','Sound Design','Cinematography','Direction','Script','Storyboarding','Concept','3D Animation','Modeling','Rendering','Rigging','2D Animation','Character Design','Motion Graphics','Compositing','VFX','Clean-up','AI Productions','AI Pipelines','Pre-viz','Generative Assets','Upscaling','Crew','In-House','Craft','Precision','Delivery','Brand Film','Documentary','Commercials','Social-First','Cutdowns','Campaigns','Launch','Titles','Data Viz','Brand Systems','Call Sheet','On-Set','Location Scouting','Casting','Lighting','Sound Mix','Scoring','Multi-Format','QA','Reels','Explainers','Infographics','Photography','Animation','Environments','Simulation','Effects','Style Frames','No Handoffs','One Crew','Full Screen','Everything In THE KIT'];
+document.getElementById('capWall').innerHTML=CAPS.map((w,i)=>`<span class="${i%2?'it':''}">${w}</span>`).join(' ');
+/* hover thumbnails (like the home word wall) */
+(function(){
+  const wall=document.getElementById('capWall');
+  const thumb=document.createElement('div');thumb.className='ww-thumb';thumb.innerHTML='<img loading="lazy" decoding="async" alt="">';wall.appendChild(thumb);
+  const img=thumb.querySelector('img');
+  const imgs=['basecamp-icon.png'];
+  [...wall.querySelectorAll('span:not(.it)')].forEach((s,i)=>{
+    s.addEventListener('mouseenter',()=>{img.src=imgs[i%imgs.length];const wr=wall.getBoundingClientRect(),r=s.getBoundingClientRect();let left=(r.left-wr.left)+r.width/2-112,top=(r.top-wr.top)-160;if(top<8)top=(r.bottom-wr.top)+14;left=Math.max(8,Math.min(left,wall.clientWidth-232));thumb.style.left=left+'px';thumb.style.top=top+'px';thumb.classList.add('show');});
+    s.addEventListener('mouseleave',()=>thumb.classList.remove('show'));
+  });
+})();
+
+/* growth engine pillars */
+const PILLARS=[
+  ['Production','On-set execution with an in-house crew — directors, DOPs, and production management working off a single call sheet, so nothing gets lost between departments.',['Pre-Production & Scheduling','Location Scouting & Casting','Full Crew, One Roof','Multi-Format Capture','On-Set Problem Solving']],
+  ['Post-Production','Edit, color, and sound — the craft that turns raw footage into a piece that\'s ready to run, on any platform.',['Offline & Online Edit','Color Grading','Sound Design & Mix','Multi-Format Delivery']],
+  ['AI Productions','AI-assisted pipelines layered into production and post — built to move faster without cutting corners on craft.',['AI-Assisted Pre-Viz','Generative Asset Support','AI-Accelerated Post','Human-in-the-Loop QA']],
+  ['3D Animation','Full CGI, product visualization, and 3D motion — built for brand films, explainers, and product launches.',['Modeling & Texturing','Lighting & Rendering','Rigging & Character Motion','Integration With Live-Action']],
+  ['2D Animation','Character, explainer, and brand animation with a distinct, hand-built feel.',['Character Design & Animation','Explainer & Infographic Animation','Brand-Driven Style Frames','Storyboarding']],
+  ['Motion Graphics','Titles, data visualization, and kinetic brand systems built to move with intent.',['Title & Credit Sequences','Data & Information Design','Brand Motion Systems','Social-First Cutdowns']],
+  ['VFX','Compositing, clean-up, and visual effects work that holds up at full screen and full scrutiny.',['Compositing','Clean-Up & Rig Removal','Environment Extension','Effects Simulation']]
+];
+const pc=document.getElementById('pillars');
+pc.innerHTML=PILLARS.map((p,i)=>`<div class="pill ${i===0?'open':''}" data-i="${i}">
+  <div class="pill-head"><div class="px">0${i+1}</div><div class="ph">${p[0]}</div><div class="parr">→</div></div>
+  <div class="pill-body"><div class="pill-in"><div class="pd">${p[1]}</div><ul>${p[2].map(o=>`<li>${o}</li>`).join('')}</ul></div></div>
+</div>`).join('');
+function syncPill(el){const b=el.querySelector('.pill-body');b.style.maxHeight=el.classList.contains('open')?b.scrollHeight+'px':'0px';}
+document.querySelectorAll('#pillars .pill').forEach(el=>{
+  el.querySelector('.pill-head').addEventListener('click',()=>{const open=el.classList.contains('open');document.querySelectorAll('#pillars .pill').forEach(o=>{o.classList.remove('open');syncPill(o);});if(!open){el.classList.add('open');syncPill(el);}});
+});
+requestAnimationFrame(()=>document.querySelectorAll('#pillars .pill').forEach(syncPill));
+addEventListener('resize',()=>document.querySelectorAll('#pillars .pill.open').forEach(syncPill));
+
+/* ===== The BaseCamp Studio Machine, orbital universe ===== */
+(function(){
+  const stage=document.getElementById('universe');if(!stage)return;
+  const cv=document.getElementById('uniCv'),ctx=cv.getContext('2d'),labels=document.getElementById('uniLabels'),tip=document.getElementById('mcTip'),um=document.getElementById('uniMobile');
+  const INPUTS=[['Brief','Where it all begins.'],['Script','Defines the story.'],['Budget','What we have to work with.'],['References','Creates the visual language.'],['Brand Guidelines','Reveals the constraints.'],['Deadline','Sets the corridor.'],['Location','Defines the setting.'],['Talent','Sequences the shoot.'],['Footage','Anchors the edit.'],['Ambition','Sets the ceiling.']];
+  const OUTPUTS=[['A Finished Film','Ready to run, anywhere.'],['On-Time Delivery','No surprise delays.'],['Brand Consistency','Impossible to confuse.'],['Social Cutdowns','Built for every placement.'],['Launch-Ready Assets','Nothing left unfinished.'],['Full-Screen Confidence','Holds up at any size.'],['Faster Turnarounds','AI-accelerated pipelines.'],['Fewer Handoffs','One crew, start to finish.'],['Repeat Business','95% client retention.'],['Craft Quality','The number that matters.']];
+  const SERVICES=[
+    {n:'01',name:'Production',role:'Capture',outs:[0,6,7],on:false},
+    {n:'02',name:'Post-Production',role:'Finish',outs:[0,2,9],on:false},
+    {n:'03',name:'AI Productions',role:'Accelerate',outs:[6,7,4],on:false},
+    {n:'04',name:'2D / 3D Animation',role:'Visualize',outs:[0,3,5],on:false},
+    {n:'05',name:'Motion Graphics & VFX',role:'Polish',outs:[2,5,8],on:false}
+  ];
+  let chefOn=false;
+  const core=document.getElementById('uniCore'),hint=document.getElementById('uniHint'),finalEl=document.getElementById('uniFinal'),cap=document.getElementById('uniCap');
+  const allOn=()=>chefOn&&SERVICES.every(s=>s.on);
+  const activeCount=()=>SERVICES.reduce((a,s)=>a+(s.on?1:0),0);
+  const strength=o=>{let tot=0,act=0;SERVICES.forEach(s=>{if(s.outs.includes(o)){tot++;if(s.on)act++;}});return tot?act/tot:0;};
+  function wireTip(el,txt){el.addEventListener('mousemove',e=>{tip.textContent=txt;tip.style.left=Math.min(innerWidth-250,e.clientX+14)+'px';tip.style.top=(e.clientY-44)+'px';tip.classList.add('show');});el.addEventListener('mouseleave',()=>tip.classList.remove('show'));}
+  /* desktop labels */
+  const inEl=INPUTS.map(d=>{const e=document.createElement('div');e.className='uni-node input';e.textContent=d[0];wireTip(e,d[1]);labels.appendChild(e);return e;});
+  const outEl=OUTPUTS.map(d=>{const e=document.createElement('div');e.className='uni-node output';e.textContent=d[0];wireTip(e,d[1]);labels.appendChild(e);return e;});
+  const svcEl=SERVICES.map((s,i)=>{const e=document.createElement('div');e.className='uni-node svc';e.innerHTML='<span class="sd">'+s.n+'</span><span class="nm">'+s.name+'</span>';e.addEventListener('click',()=>toggle(i));wireTip(e,s.role+', click to switch on/off');labels.appendChild(e);return e;});
+  /* mobile fallback */
+  um.innerHTML=`<div class="um-row"><button class="um-chef" id="umPlay" style="border-style:dashed">▶ Play the process</button></div>
+    <div class="um-row"><div class="um-h">Inputs</div><div class="um-chips">${INPUTS.map(d=>`<span class="um-chip">${d[0]}</span>`).join('')}</div></div>
+    <div class="um-arrow">↓ INTO THE KIT® ↓</div>
+    <div class="um-row"><button class="um-chef" id="umChef">Power on THE KIT®</button></div>
+    <div class="um-row"><div class="um-h">Services, tap to switch on/off</div><div id="umSvc">${SERVICES.map((s,i)=>`<button class="um-svc" data-i="${i}"><span class="sd"></span>${s.n} · ${s.name}</button>`).join('')}</div></div>
+    <div class="um-arrow">↓ OUTPUTS ↓</div>
+    <div class="um-row"><div class="um-chips" id="umOut">${OUTPUTS.map(d=>`<span class="um-chip">${d[0]}</span>`).join('')}</div></div>
+    <div class="um-final" id="umFinal"><div class="q">Every story needs a basecamp.<br><em>For the journey ahead.</em></div><a class="cta" href="brief">Start your brief →</a></div>`;
+  um.querySelectorAll('.um-svc').forEach(b=>b.addEventListener('click',()=>toggle(+b.dataset.i)));
+  um.querySelector('#umChef').addEventListener('click',toggleChef);
+  function toggleChef(){stopPlay();chefOn=!chefOn;applyState();}
+  core.addEventListener('click',toggleChef);
+  function toggle(i){stopPlay();if(!chefOn)return;SERVICES[i].on=!SERVICES[i].on;applyState();}
+  /* guided play: power on CHEF, then bring services online one by one */
+  let timers=[];const playBtn=document.getElementById('uniPlay'),umPlay=um.querySelector('#umPlay');
+  function stopPlay(){timers.forEach(clearTimeout);timers=[];if(playBtn)playBtn.textContent='▶ Play the process';if(umPlay)umPlay.textContent='▶ Play the process';}
+  function play(){
+    stopPlay();chefOn=false;SERVICES.forEach(s=>s.on=false);applyState();
+    if(playBtn)playBtn.textContent='● Running…';if(umPlay)umPlay.textContent='● Running…';
+    let d=700;
+    timers.push(setTimeout(()=>{chefOn=true;applyState();},d));d+=1500;
+    SERVICES.forEach(s=>{timers.push(setTimeout(()=>{s.on=true;applyState();},d));d+=1050;});
+    timers.push(setTimeout(stopPlay,d+200));
+  }
+  if(playBtn)playBtn.addEventListener('click',play);
+  if(umPlay)umPlay.addEventListener('click',play);
+  function applyState(){
+    stage.classList.toggle('powered',chefOn);
+    hint.innerHTML=chefOn?'Switch services on, each one organizes the outputs it powers':'Click CHEF® to power the system';
+    svcEl.forEach((e,i)=>{e.classList.toggle('on',SERVICES[i].on);e.classList.toggle('off',!SERVICES[i].on);e.classList.toggle('hidden',!chefOn);});
+    outEl.forEach((e,i)=>e.classList.toggle('off',!chefOn||strength(i)<=0.001));
+    const umChef=um.querySelector('#umChef');if(umChef){umChef.classList.toggle('on',chefOn);umChef.textContent=chefOn?'THE KIT® powered, tap to power off':'Power on THE KIT®';}
+    um.querySelectorAll('.um-svc').forEach((e,i)=>{e.classList.toggle('off',!SERVICES[i].on);e.disabled=!chefOn;});
+    [...um.querySelectorAll('#umOut .um-chip')].forEach((e,i)=>e.classList.toggle('off',!chefOn||strength(i)<=0.001));
+    finalEl.classList.toggle('show',allOn());
+    const umf=um.querySelector('#umFinal');if(umf)umf.classList.toggle('show',allOn());
+    if(cap){
+      const on=SERVICES.filter(s=>s.on);
+      if(!chefOn)cap.innerHTML='Tap <b>CHEF®</b> to power the system';
+      else if(allOn())cap.innerHTML='All systems online — <b>demand engine fully powered</b>';
+      else if(!on.length)cap.innerHTML='Tap the numbered dots to switch <b>services</b> on';
+      else cap.innerHTML='On: '+on.map(s=>s.n+' '+s.name.split(/[ &]/)[0]).join(' · ');
+    }
+  }
+  applyState();
+  /* canvas universe */
+  const PINK=[255,90,46],CYAN=[45,205,224];
+  const mix=k=>[Math.round(PINK[0]+(CYAN[0]-PINK[0])*k),Math.round(PINK[1]+(CYAN[1]-PINK[1])*k),Math.round(PINK[2]+(CYAN[2]-PINK[2])*k)];
+  const rgba=(c,a)=>'rgba('+c[0]+','+c[1]+','+c[2]+','+a+')';
+  const ease=p=>p*p*(3-2*p);
+  const SPH=(function(){const n=120,pts=[],ga=Math.PI*(3-Math.sqrt(5));for(let i=0;i<n;i++){const y=1-(i/(n-1))*2,r=Math.sqrt(Math.max(0,1-y*y)),th=ga*i;pts.push([Math.cos(th)*r,y,Math.sin(th)*r]);}
+    const seen=new Set(),E=[];pts.forEach((p,i)=>{const d=pts.map((q,j)=>[j,(p[0]-q[0])**2+(p[1]-q[1])**2+(p[2]-q[2])**2]).filter(a=>a[0]!==i).sort((a,b)=>a[1]-b[1]);for(let k=0;k<3;k++){const j=d[k][0],key=Math.min(i,j)+'-'+Math.max(i,j);if(!seen.has(key)){seen.add(key);E.push([Math.min(i,j),Math.max(i,j)]);}}});return{pts,E};})();
+  /* scattered "lost" home for each input (fractions of canvas) */
+  const SCAT=INPUTS.map(()=>({fx:0.08+Math.random()*0.84,fy:0.10+Math.random()*0.80,wx:Math.random()*6.3,wy:Math.random()*6.3,ws:0.4+Math.random()*0.7}));
+  let W,H,dpr,cx,cy,raf,running=false,t=0,rot=0,sphR,R0,R1,R2,power=0,bright=0;
+  function size(){const r=cv.getBoundingClientRect();if(!r.width)return;dpr=Math.min(devicePixelRatio||1,2);W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);const mob=W<=820;cx=W/2;cy=H*(mob?0.47:0.46);const m=Math.min(W,H);sphR=m*(mob?0.085:0.066);R0=m*(mob?0.36:0.40);R1=m*(mob?0.19:0.22);R2=m*(mob?0.28:0.33);}
+  function pos(R,ang){return{x:cx+Math.cos(ang)*R,y:cy+Math.sin(ang)*R};}
+  function sphere(br){rot+=0.0038;const cR=Math.cos(rot),sR=Math.sin(rot),tl=0.45,ct=Math.cos(tl),st=Math.sin(tl);
+    const P=SPH.pts.map(p=>{let x=p[0]*cR+p[2]*sR,z=-p[0]*sR+p[2]*cR,y=p[1];const y2=y*ct-z*st,z2=y*st+z*ct;const pe=1.7/(1.7-z2);return{x:cx+x*sphR*pe,y:cy-y2*sphR*pe,z:z2};});
+    SPH.E.forEach(([i,j])=>{const a=P[i],b=P[j],k=((a.z+b.z)/2+1)/2;const col=br>0.5?mix(1-k):[150,150,150];ctx.strokeStyle=rgba(col,(0.04+0.16*k)*(0.35+0.65*br));ctx.lineWidth=0.6;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();});
+    P.forEach(p=>{const k=(p.z+1)/2;const col=br>0.5?mix(1-k):[150,150,150];ctx.globalAlpha=(0.18+0.6*k)*(0.4+0.6*br);ctx.fillStyle=rgba(col,1);ctx.beginPath();ctx.arc(p.x,p.y,0.7+1.3*k,0,6.3);ctx.fill();});ctx.globalAlpha=1;}
+  function frame(){if(!running)return;t++;power+=((chefOn?1:0)-power)*0.06;const P=ease(power);
+    const bt=chefOn?(0.35+0.65*activeCount()/SERVICES.length):0;bright+=(bt-bright)*0.06;ctx.clearRect(0,0,W,H);
+    const g1=-t*0.00045, g2=t*0.0007, g3=t*0.0003;
+    const dark=document.documentElement.getAttribute('data-theme')!=='light';
+    const gcol=dark?[155,155,155]:[110,103,92];
+    /* orbit rings fade in with power */
+    if(P>0.02)[R0,R1,R2].forEach(R=>{ctx.strokeStyle=rgba(gcol,0.10*P);ctx.lineWidth=1;ctx.beginPath();ctx.arc(cx,cy,R,0,6.3);ctx.stroke();});
+    /* input positions: scattered (lost) → orbit, lerped by power */
+    const inP=INPUTS.map((d,i)=>{const o=pos(R0,g3+i/INPUTS.length*6.283);const s=SCAT[i];const sx=s.fx*W+Math.sin(t*0.01*s.ws+s.wx)*22,sy=s.fy*H+Math.cos(t*0.012*s.ws+s.wy)*22;return{x:sx+(o.x-sx)*P,y:sy+(o.y-sy)*P};});
+    const svP=SERVICES.map((s,i)=>pos(R1,g1+i/SERVICES.length*6.283-1.57));
+    const ouP=OUTPUTS.map((d,i)=>pos(R2,g2+i/OUTPUTS.length*6.283+0.2));
+    /* inputs → core (only once powered) */
+    if(P>0.05)inP.forEach(p=>{ctx.strokeStyle=rgba(CYAN,0.06*P);ctx.lineWidth=0.7;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(cx,cy);ctx.stroke();
+      const u=(t*0.004+(p.x+p.y))%1,fx=p.x+(cx-p.x)*u,fy=p.y+(cy-p.y)*u;ctx.fillStyle=rgba(CYAN,0.5*P);ctx.beginPath();ctx.arc(fx,fy,1.1,0,6.3);ctx.fill();});
+    /* services → outputs + core spokes (powered) */
+    if(P>0.1)svP.forEach((p,si)=>{const s=SERVICES[si];
+      ctx.globalAlpha=P;
+      ctx.strokeStyle=s.on?rgba(PINK,0.28):rgba([140,140,140],0.07);ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(p.x,p.y);ctx.stroke();
+      if(s.on)s.outs.forEach(oi=>{const o=ouP[oi];const grd=ctx.createLinearGradient(p.x,p.y,o.x,o.y);grd.addColorStop(0,rgba(PINK,0.26));grd.addColorStop(1,rgba(CYAN,0.14));ctx.strokeStyle=grd;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(o.x,o.y);ctx.stroke();
+        const u=(t*0.006+oi*0.13+si*0.07)%1,fx=p.x+(o.x-p.x)*u,fy=p.y+(o.y-p.y)*u;ctx.fillStyle=rgba(mix(u),0.85);ctx.beginPath();ctx.arc(fx,fy,1.4,0,6.3);ctx.fill();});
+      ctx.globalAlpha=1;});
+    /* input nodes */
+    inP.forEach(p=>{ctx.fillStyle=rgba(gcol,0.7+0.25*P);ctx.beginPath();ctx.arc(p.x,p.y,2.4,0,6.3);ctx.fill();});
+    /* output nodes (powered) */
+    if(P>0.05)ouP.forEach((p,oi)=>{const st=strength(oi);const c=st>0.001?mix(0.35):gcol;ctx.globalAlpha=(0.45+0.55*st)*P;ctx.fillStyle=rgba(c,1);ctx.beginPath();ctx.arc(p.x,p.y,2.6+3*st,0,6.3);ctx.fill();ctx.globalAlpha=1;});
+    /* core glow scales with power + active services */
+    const gr=sphR*(1.7+1.0*bright),ga=(0.08+0.24*bright+0.03*Math.sin(t*0.05));
+    const gl=ctx.createRadialGradient(cx,cy,0,cx,cy,gr);gl.addColorStop(0,'rgba(255,90,46,'+ga+')');gl.addColorStop(0.5,'rgba(255,90,46,'+(ga*0.4)+')');gl.addColorStop(1,'rgba(255,90,46,0)');ctx.fillStyle=gl;ctx.beginPath();ctx.arc(cx,cy,gr,0,6.3);ctx.fill();
+    sphere(P*0.55+bright*0.45);
+    /* place DOM labels */
+    const setp=(el,p,off)=>{el.style.left=p.x+'px';el.style.top=(p.y+(off||0))+'px';};
+    inEl.forEach((e,i)=>setp(e,inP[i],-12));
+    svcEl.forEach((e,i)=>setp(e,svP[i]));
+    outEl.forEach((e,i)=>setp(e,ouP[i],-13));
+    raf=requestAnimationFrame(frame);}
+  function start(){if(running)return;running=true;size();raf=requestAnimationFrame(frame);}
+  function stop(){running=false;cancelAnimationFrame(raf);}
+  new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?start():stop()),{threshold:.04}).observe(cv);
+  addEventListener('resize',size);size();
+})();
+
+(function(){const el=document.getElementById('footHi');if(!el)return;const w=['Hi.','Olá.','Hola.','Ciao.','Bonjour.','Hallo.','你好','안녕','مرحبا','Xin chào.'];let i=0;setInterval(()=>{el.classList.add('swap');setTimeout(()=>{i=(i+1)%w.length;el.textContent=w[i];el.classList.remove('swap');},200);},1700);})();
+</script>
+<script src="tour.js" defer></script>
+</body>
+
+<!-- Mirrored from www.basecampstudio.pk/whatwedo by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:35 GMT -->
+</html>

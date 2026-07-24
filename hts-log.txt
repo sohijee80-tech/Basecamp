@@ -1,0 +1,71 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 23 Jul 2026 17:50:49 at https://www.elephant-skin.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.elephant-skin.com/ -O1 "C:\My Web Sites\Dummy" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:50:50	Warning: 	Note: due to https://www.elephant-skin.com remote robots.txt rules, links beginning with these path will be forbidden: /dashboard, /elephant-cards-pitch (see in the options to disable this)
+17:52:36	Error: 	Unable to save file C:/My Web Sites/Dummy/www.elephant-skin.com/projects: Permission denied
+17:52:56	Error: 	Unable to save file C:/My Web Sites/Dummy/www.elephant-skin.com/legal: Permission denied
+17:53:53	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/ElephantSkin-Brief.pdf (from https://www.elephant-skin.com/brief)
+17:53:53	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/
+17:53:53	Warning: 	File has moved from https://www.elephant-skin.com/projects/ to /projects
+17:53:53	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/cruise/
+17:53:53	Warning: 	File has moved from https://www.elephant-skin.com/projects/cruise/ to /projects/cruise
+17:53:53	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/seara/
+17:53:53	Warning: 	File has moved from https://www.elephant-skin.com/projects/seara/ to /projects/seara
+17:53:54	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/allard/
+17:53:54	Warning: 	File has moved from https://www.elephant-skin.com/projects/allard/ to /projects/allard
+17:53:54	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/colette/
+17:53:54	Warning: 	File has moved from https://www.elephant-skin.com/projects/colette/ to /projects/colette
+17:53:55	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/mock-02.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:55	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/mock-03.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:55	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/mock-04.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:55	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/mock-05.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:55	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/mock-06.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:55	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/dora/
+17:53:55	Warning: 	File has moved from https://www.elephant-skin.com/projects/dora/ to /projects/dora
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/mos-2.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/mos-3.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/brinde-01.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/brinde-02.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/brinde-03.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/am-pool-int.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/movala/
+17:53:56	Warning: 	File has moved from https://www.elephant-skin.com/projects/movala/ to /projects/movala
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/season-summer.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/season-spring.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/season-winter.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/season-fall.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:56	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/quinta/
+17:53:56	Warning: 	File has moved from https://www.elephant-skin.com/projects/quinta/ to /projects/quinta
+17:53:57	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/biltmore/
+17:53:57	Warning: 	File has moved from https://www.elephant-skin.com/projects/biltmore/ to /projects/biltmore
+17:53:57	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/parc/
+17:53:57	Warning: 	File has moved from https://www.elephant-skin.com/projects/parc/ to /projects/parc
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/escola.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/aerial.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/pista-aerial.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/location-map.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/reuso-agua.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/jardim-tempo.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/rambla-noite.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/calcada-estares.jpg (from https://www.elephant-skin.com/project?id=)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/a.href (from https://www.elephant-skin.com/project?id=)
+17:53:58	Warning: 	Permanent Redirect for https://www.elephant-skin.com/projects/parc/capi-pack/
+17:53:58	Warning: 	File has moved from https://www.elephant-skin.com/projects/parc/capi-pack/ to /projects/parc/capi-pack
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/cruise (from https://www.elephant-skin.com/projects/cruise/)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/seara (from https://www.elephant-skin.com/projects/seara/)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/allard (from https://www.elephant-skin.com/projects/allard/)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/colette (from https://www.elephant-skin.com/projects/colette/)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/dora (from https://www.elephant-skin.com/projects/dora/)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/movala (from https://www.elephant-skin.com/projects/movala/)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/quinta (from https://www.elephant-skin.com/projects/quinta/)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/biltmore (from https://www.elephant-skin.com/projects/biltmore/)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/parc (from https://www.elephant-skin.com/projects/parc/)
+17:53:58	Error: 	"Not Found" (404) at link https://www.elephant-skin.com/projects/parc/capi-pack (from https://www.elephant-skin.com/projects/parc/capi-pack/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 9 seconds : 317 links scanned, 270 files written (35041727 bytes overall) [31610471 bytes received at 167251 bytes/sec], 5317803 bytes transferred using HTTP compression in 77 files, ratio 29%
+(37 errors, 23 warnings, 0 messages)

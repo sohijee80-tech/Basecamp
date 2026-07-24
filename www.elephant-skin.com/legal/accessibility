@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<!-- Mirrored from www.basecampstudio.pk/legal/accessibility by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibility &mdash; Legal &amp; Trust Center &middot; BaseCamp Studio</title>
+<meta name="description" content="Our commitment to an inclusive experience.">
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="legal.css">
+</head>
+<body>
+<div class="bar" id="bar">
+  <a class="lg" href="../index.html"><img src="../basecamp-icon.png" alt="BaseCamp Studio"></a>
+  <div class="bar-right">
+    <div class="themetog" id="themeTog"><button data-theme="light" title="Light">&#9728;</button><button data-theme="dark" class="on" title="Dark">&#127769;</button></div>
+    <button class="menu-btn" id="menuBtn">Menu</button>
+  </div>
+</div>
+<div class="menu-overlay" id="menu">
+  <button class="menu-close" id="menuClose" aria-label="Close">&times;</button>
+  <a href="../index.html"><img class="menu-logo" src="../basecamp-icon.png" alt="BaseCamp Studio"></a>
+  <nav class="menu-nav">
+    <div><a href="../index.html#top">Home</a></div>
+    <div><a href="../approach">THE KIT<sup style="font-size:.34em;vertical-align:top;position:relative;top:.12em">&reg;</sup></a></div>
+    <div><a href="../whatwedo">What We Do</a></div>
+    <div><a href="../index.html#featured">Work</a></div>
+    <div><a href="../faq">FAQ</a></div>
+    <div><a href="../index.html#contact">Contact</a></div>
+  </nav>
+  <div class="menu-foot">
+    <div class="slogan">Everything in THE KIT, nothing outsourced.</div>
+    <p>An in-house production house for brands that don't have room for error. Explore. Hover. Scroll. Click.</p>
+    <div class="menu-social">
+      <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
+      <a href="https://wa.me/924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+    </div>
+  </div>
+</div>
+<main class="legal-doc">
+  <nav class="breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="../legal">Legal &amp; Trust Center</a><span>/</span><b>Accessibility</b></nav>
+  <header class="ld-head">
+    <span class="eyebrow">Legal &amp; Trust Center</span>
+    <h1>Accessibility</h1>
+    <p class="ld-sub">We want everyone to experience our work. Accessibility is an ongoing commitment, not a checkbox.</p>
+    <div class="ld-meta">Last updated: June 2026</div>
+  </header>
+  <article class="ld-body">
+<section><h2><span class="n">01</span>Our commitment</h2><p>BaseCamp Studio&reg; is committed to continuously improving the accessibility of our website and making the experience usable by as many people as possible.</p></section>
+<section><h2><span class="n">02</span>What we work toward</h2><ul><li>Continuous accessibility improvements</li><li>Keyboard navigation across interactive elements</li><li>Readable type, contrast and structure</li><li>A responsive experience across devices</li><li>Inclusive design as a default mindset</li></ul></section>
+<section><h2><span class="n">03</span>Tell us</h2><p>If you encounter a barrier or have a suggestion, we want to hear it. Contact <a class="inl" href="mailto:hello@basecampstudio.pk">hello@basecampstudio.pk</a> and we will do our best to help and to improve.</p></section>
+  </article>
+  <a class="ld-back" href="../legal">&larr; Back to the Legal &amp; Trust Center</a>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="sf-eyebrow">Get In Touch</div>
+    <h2 class="sf-hi">Don't be shy. Say <span class="pink">Hi.</span></h2>
+    <div class="sf-actions">
+      <a class="btn-foot primary" href="../brief">Send a project brief &rarr;</a>
+      <a class="btn-foot ghost" href="mailto:hello@basecampstudio.pk">hello@basecampstudio.pk &rarr;</a>
+      <div class="sf-social">
+        <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
+        <a href="https://wa.me/924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+      </div>
+    </div>
+    <nav class="sf-legal">
+      <span class="sf-legal-h">Legal</span>
+      <a href="terms-of-use">Terms of Use</a>
+      <a href="privacy-policy">Privacy Policy</a>
+      <a href="cookie-policy">Cookie Policy</a>
+      <a href="intellectual-property">Intellectual Property</a>
+      <a href="client-confidentiality">Client Confidentiality</a>
+      <a href="ai-policy">AI Policy</a>
+      <a href="accessibility">Accessibility</a>
+      <a href="security">Security</a>
+      <a href="contact">Contact</a>
+      <a href="../legal">Legal &amp; Trust Center</a>
+    </nav>
+    <div class="sf-bottom">
+      <span>&copy; BaseCamp Studio 2026</span>
+      <span class="sf-off">Miami &middot; West Palm Beach &middot; Chicago &middot; New York &middot; Vancouver &middot; Lisbon &middot; S&atilde;o Paulo &middot; Curitiba &middot; Dubai &middot; Ho Chi Minh</span>
+      <span>Use without moderation.</span>
+    </div>
+  </div>
+</footer>
+<script src="legal.js"></script>
+</body>
+<!-- Mirrored from www.basecampstudio.pk/legal/accessibility by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:56 GMT -->
+</html>

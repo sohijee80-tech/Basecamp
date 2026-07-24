@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<!-- Mirrored from www.basecampstudio.pk/legal/terms-of-use by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use &mdash; Legal &amp; Trust Center &middot; BaseCamp Studio</title>
+<meta name="description" content="The terms that govern use of our website and content.">
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="legal.css">
+</head>
+<body>
+<div class="bar" id="bar">
+  <a class="lg" href="../index.html"><img src="../basecamp-icon.png" alt="BaseCamp Studio"></a>
+  <div class="bar-right">
+    <div class="themetog" id="themeTog"><button data-theme="light" title="Light">&#9728;</button><button data-theme="dark" class="on" title="Dark">&#127769;</button></div>
+    <button class="menu-btn" id="menuBtn">Menu</button>
+  </div>
+</div>
+<div class="menu-overlay" id="menu">
+  <button class="menu-close" id="menuClose" aria-label="Close">&times;</button>
+  <a href="../index.html"><img class="menu-logo" src="../basecamp-icon.png" alt="BaseCamp Studio"></a>
+  <nav class="menu-nav">
+    <div><a href="../index.html#top">Home</a></div>
+    <div><a href="../approach">THE KIT<sup style="font-size:.34em;vertical-align:top;position:relative;top:.12em">&reg;</sup></a></div>
+    <div><a href="../whatwedo">What We Do</a></div>
+    <div><a href="../index.html#featured">Work</a></div>
+    <div><a href="../faq">FAQ</a></div>
+    <div><a href="../index.html#contact">Contact</a></div>
+  </nav>
+  <div class="menu-foot">
+    <div class="slogan">Everything in THE KIT, nothing outsourced.</div>
+    <p>An in-house production house for brands that don't have room for error. Explore. Hover. Scroll. Click.</p>
+    <div class="menu-social">
+      <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
+      <a href="https://wa.me/924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+    </div>
+  </div>
+</div>
+<main class="legal-doc">
+  <nav class="breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="../legal">Legal &amp; Trust Center</a><span>/</span><b>Terms of Use</b></nav>
+  <header class="ld-head">
+    <span class="eyebrow">Legal &amp; Trust Center</span>
+    <h1>Terms of Use</h1>
+    <p class="ld-sub">The terms governing your use of the BaseCamp Studio&reg; website, its content and the relationship between you and us.</p>
+    <div class="ld-meta">Last updated: June 2026</div>
+  </header>
+  <article class="ld-body">
+<section><h2><span class="n">01</span>Website usage</h2><p>By accessing this website you agree to use it lawfully and in good faith. The site and its content are provided for information about BaseCamp Studio&reg;, our work and our services. You may not use it in any way that could damage, disable or impair the site, or interfere with another party's use of it.</p></section>
+<section><h2><span class="n">02</span>Intellectual property ownership</h2><p>All content on this website &mdash; including text, imagery, renderings, films, motion graphics, design systems, methodologies and code &mdash; is owned by BaseCamp Studio&reg; or its licensors and is protected by intellectual property laws. Nothing on this site grants you any license or right to use our intellectual property without prior written authorization. See our <a class="inl" href="intellectual-property">Intellectual Property</a> page for detail.</p></section>
+<section><h2><span class="n">03</span>Disclaimer</h2><p>This website and its content are provided &ldquo;as is.&rdquo; While we work to keep information accurate and current, we make no warranties as to its completeness, accuracy or fitness for a particular purpose. Project figures, timelines and outcomes referenced are illustrative and do not constitute a commitment.</p></section>
+<section><h2><span class="n">04</span>External links</h2><p>Our site may link to third-party websites or embed third-party content. We do not control and are not responsible for the content, policies or practices of those third parties. Following external links is at your own discretion.</p></section>
+<section><h2><span class="n">05</span>Limitation of liability</h2><p>To the fullest extent permitted by law, BaseCamp Studio&reg; shall not be liable for any indirect, incidental or consequential damages arising from your use of, or inability to use, this website.</p></section>
+<section><h2><span class="n">06</span>Governing law</h2><p>These Terms are governed by the laws applicable at BaseCamp Studio&rsquo;s principal place of business, without regard to conflict-of-law principles. Any dispute shall be subject to the competent courts of that jurisdiction.</p></section>
+<section><h2><span class="n">07</span>Contact information</h2><p>Questions about these Terms can be directed to <a class="inl" href="mailto:hello@basecampstudio.pk">hello@basecampstudio.pk</a> or through our <a class="inl" href="contact">contact page</a>.</p></section>
+  </article>
+  <a class="ld-back" href="../legal">&larr; Back to the Legal &amp; Trust Center</a>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="sf-eyebrow">Get In Touch</div>
+    <h2 class="sf-hi">Don't be shy. Say <span class="pink">Hi.</span></h2>
+    <div class="sf-actions">
+      <a class="btn-foot primary" href="../brief">Send a project brief &rarr;</a>
+      <a class="btn-foot ghost" href="mailto:hello@basecampstudio.pk">hello@basecampstudio.pk &rarr;</a>
+      <div class="sf-social">
+        <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
+        <a href="https://wa.me/924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+      </div>
+    </div>
+    <nav class="sf-legal">
+      <span class="sf-legal-h">Legal</span>
+      <a href="terms-of-use">Terms of Use</a>
+      <a href="privacy-policy">Privacy Policy</a>
+      <a href="cookie-policy">Cookie Policy</a>
+      <a href="intellectual-property">Intellectual Property</a>
+      <a href="client-confidentiality">Client Confidentiality</a>
+      <a href="ai-policy">AI Policy</a>
+      <a href="accessibility">Accessibility</a>
+      <a href="security">Security</a>
+      <a href="contact">Contact</a>
+      <a href="../legal">Legal &amp; Trust Center</a>
+    </nav>
+    <div class="sf-bottom">
+      <span>&copy; BaseCamp Studio 2026</span>
+      <span class="sf-off">Miami &middot; West Palm Beach &middot; Chicago &middot; New York &middot; Vancouver &middot; Lisbon &middot; S&atilde;o Paulo &middot; Curitiba &middot; Dubai &middot; Ho Chi Minh</span>
+      <span>Use without moderation.</span>
+    </div>
+  </div>
+</footer>
+<script src="legal.js"></script>
+</body>
+<!-- Mirrored from www.basecampstudio.pk/legal/terms-of-use by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:56 GMT -->
+</html>

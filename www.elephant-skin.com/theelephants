@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<!-- Mirrored from www.basecampstudio.pk/theelephants by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Herd, BaseCamp Studio</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="description" content="The Herd — the 100+ specialists behind BaseCamp Studio across strategy, creative, CGI, film, production and technology. One global team.">
+<link rel="canonical" href="theelephants">
+<meta name="theme-color" content="#070707">
+<link rel="manifest" href="manifest.json">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BaseCamp Studio">
+<meta property="og:title" content="The Herd, BaseCamp Studio">
+<meta property="og:description" content="The Herd — the 100+ specialists behind BaseCamp Studio across strategy, creative, CGI, film, production and technology. One global team.">
+<meta property="og:url" content="theelephants">
+<meta property="og:image" content="og-chef3.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Herd, BaseCamp Studio">
+<meta name="twitter:description" content="The Herd — the 100+ specialists behind BaseCamp Studio across strategy, creative, CGI, film, production and technology. One global team.">
+<meta name="twitter:image" content="og-chef3.jpg">
+<script src="analytics.js" defer></script>
+
+
+<link rel="preload" href="Etna.otf" as="font" type="font/otf" crossorigin>
+<link rel="preload" href="AauxProLight.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<style>
+:root{
+  --pink:#FF5A2E;--pad:clamp(24px,3.5vw,56px);
+  --bg:#070707;--text:#f3f1ea;--muted:#8a867d;--soft:#cfcbc0;--line:rgba(255,255,255,.10);--surf:rgba(255,255,255,.03);
+  --font-display:'Etna','Helvetica Neue',Arial,sans-serif;
+  --font-body:'Aaux Pro Light','Helvetica Neue',Arial,sans-serif;
+  --font-med:'Aaux Pro Medium','Helvetica Neue',Arial,sans-serif;
+}
+html[data-theme="light"]{--bg:#f3f1ea;--text:#16130f;--muted:#6a665d;--soft:#46423a;--line:rgba(0,0,0,.13);--surf:rgba(0,0,0,.025)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden;transition:background .4s,color .4s}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--pink);color:#fff}
+.wrap{max-width:none;margin:0;padding:0 var(--pad)}
+.pink{color:var(--pink)}
+section{position:relative}
+.bar{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:20px var(--pad);transition:background .3s}
+.bar.scrolled{background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(12px)}
+.bar .lg img{height:25px;display:block}
+.bar-right{display:flex;align-items:center;gap:14px}
+.themetog{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.themetog button{border:none;background:none;color:var(--muted);padding:7px 11px;cursor:pointer;font-size:13px;line-height:1;transition:.2s}
+.themetog button.on{background:var(--text);color:var(--bg)}
+.menu-btn{background:none;border:none;color:var(--text);cursor:pointer;font-family:var(--font-display);font-size:20px;letter-spacing:.04em;text-transform:uppercase;transition:color .25s}
+.menu-btn:hover{color:var(--pink)}
+.menu-overlay{position:fixed;inset:0;z-index:100;background:var(--pink);color:#0a0a0a;padding:54px 56px;display:flex;flex-direction:column;justify-content:space-between;transform:translateY(-102%);opacity:0;visibility:hidden;transition:transform .6s cubic-bezier(.76,0,.24,1),opacity .4s,visibility .6s}
+.menu-overlay.open{transform:none;opacity:1;visibility:visible}
+.menu-close{position:absolute;top:46px;right:52px;width:46px;height:46px;font-size:38px;cursor:pointer;background:none;border:none;color:#0a0a0a;line-height:1}
+.menu-logo{height:26px;align-self:flex-start;margin-bottom:10px}
+.menu-nav a{display:inline-block;font-family:var(--font-display);font-size:clamp(28px,4.6vw,54px);color:#fff;text-transform:uppercase;line-height:1.14;transition:padding-left .28s,color .2s}
+.menu-nav a:hover{padding-left:18px;color:#0a0a0a}
+.menu-foot{max-width:680px}
+.menu-foot .slogan{font-family:var(--font-display);font-size:clamp(18px,2.4vw,26px);text-transform:uppercase}
+.menu-foot p{margin-top:16px;font-size:13px;color:rgba(10,10,10,.72);max-width:540px;line-height:1.6}
+.menu-social{margin-top:20px;display:flex;gap:14px}
+.menu-social a{width:36px;height:36px;border:1.5px solid rgba(10,10,10,.55);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-med);font-size:12px;color:#0a0a0a;transition:.2s}
+.menu-social a:hover{background:#0a0a0a;color:var(--pink)}
+@media(max-width:600px){.menu-overlay{padding:36px 26px}.menu-close{top:30px;right:26px}.menu-logo{height:20px}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 1s ease,transform 1s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+.snum{font-family:var(--font-med);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--pink);margin-bottom:18px;display:block}
+.sec{padding-top:clamp(80px,12vh,140px);padding-bottom:clamp(80px,12vh,140px);border-top:1px solid var(--line)}
+h2.big{font-family:var(--font-display);font-size:clamp(34px,6vw,84px);text-transform:uppercase;line-height:.93;letter-spacing:-.02em}
+.lead{font-size:clamp(16px,1.8vw,23px);line-height:1.5;max-width:820px;margin-top:24px;color:var(--soft)}
+
+/* ===== 01 HERO, THE HERD constellation ===== */
+.herd{position:relative;width:100vw;margin-left:calc(50% - 50vw);height:100vh;overflow:hidden;background:radial-gradient(120% 90% at 50% 30%,rgba(255,90,46,.06),transparent 60%)}
+.herd canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.herd-names{position:absolute;inset:0;z-index:3}
+.hdot{position:absolute;width:46px;height:46px;border-radius:50%;overflow:hidden;cursor:pointer;transform:translate(-50%,-50%);background:#140a10;border:1.5px solid var(--pink);display:flex;align-items:center;justify-content:center;will-change:left,top;animation:dotpulse 2.8s ease-in-out infinite}
+.hdot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transform-origin:top center;transform:scale(1.22);filter:grayscale(.15)}
+.hdot .ini{font-family:var(--font-med);font-size:13px;color:var(--soft)}
+.hdot:has(img) .ini,.hcard .hc-av:has(img) .ini,.dr-ph:has(img) .ini{opacity:0}
+[data-theme="light"] .hdot{background:var(--bg)}
+[data-theme="light"] .dr-ph{background:var(--bg)}
+[data-theme="light"] .hcard .hc-av{background:var(--bg)}
+.hdot.ld{width:66px;height:66px;border-width:2px}
+.hdot:hover{box-shadow:0 0 22px 4px rgba(255,90,46,.55);z-index:20;border-color:#fff}
+.hdot:hover img{filter:none}
+@keyframes dotpulse{0%,100%{box-shadow:0 0 0 0 rgba(255,90,46,0)}50%{box-shadow:0 0 0 5px rgba(255,90,46,.12)}}
+.herd-core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:5;cursor:pointer;width:clamp(220px,24vw,340px);height:clamp(220px,24vw,340px);display:flex;align-items:center;justify-content:center;text-align:center}
+.herd-core .hc-title{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(20px,2.4vw,34px);line-height:.92;letter-spacing:.01em;color:var(--text);transition:color .4s}
+.herd:not(.on) .herd-core .hc-title{color:var(--muted)}
+.herd-core .hc-power{position:absolute;left:50%;bottom:16%;transform:translateX(-50%);white-space:nowrap;font-family:var(--font-med);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--pink);transition:opacity .4s}
+.herd.on .herd-core .hc-power{opacity:0;pointer-events:none}
+.herd:not(.on) .herd-core .hc-power{animation:hpulse 1.6s infinite}
+@keyframes hpulse{0%,100%{opacity:.4}50%{opacity:1}}
+.herd-core::before{content:"";position:absolute;left:50%;top:50%;width:160px;height:160px;border:1.5px solid var(--pink);border-radius:50%;transform:translate(-50%,-50%);opacity:0}
+.herd:not(.on) .herd-core::before{animation:ringpulse 2s ease-out infinite}
+@keyframes ringpulse{0%{transform:translate(-50%,-50%) scale(.5);opacity:.5}100%{transform:translate(-50%,-50%) scale(1.5);opacity:0}}
+.herd-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:5;font-family:var(--font-med);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);pointer-events:none;animation:hfade 2.6s ease-in-out infinite;text-align:center;width:90%}
+.herd-cta{position:absolute;right:clamp(24px,4vw,70px);top:50%;transform:translateY(-50%) translateX(22px);z-index:6;max-width:300px;text-align:right;opacity:0;pointer-events:none;transition:opacity .6s ease,transform .6s ease}
+.herd.on .herd-cta{opacity:1;transform:translateY(-50%);pointer-events:auto}
+.hcta-q{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(22px,2.4vw,36px);line-height:1.02;letter-spacing:-.01em;color:var(--text);text-shadow:0 2px 26px rgba(0,0,0,.7)}
+[data-theme="light"] .hcta-q{text-shadow:0 2px 22px rgba(243,241,234,.8)}
+.hcta-q em{color:var(--pink);font-style:normal}
+.hcta-btn{display:inline-flex;margin-top:18px;padding:14px 28px;background:var(--pink);color:#fff;font-family:var(--font-med);text-transform:uppercase;font-size:11px;letter-spacing:.12em;border-radius:999px;transition:transform .2s}
+.hcta-btn:hover{transform:translateY(-2px)}
+@media(max-width:680px){.herd-cta{right:50%;transform:translate(50%,0);bottom:104px;top:auto;text-align:center;max-width:80vw}.herd.on .herd-cta{transform:translate(50%,0)}.hcta-btn{margin-top:24px}}
+@keyframes hfade{0%,100%{opacity:.35}50%{opacity:.9}}
+/* hover card */
+.hcard{position:fixed;z-index:80;display:flex;align-items:center;gap:14px;background:color-mix(in srgb,var(--bg) 84%,transparent);border:1px solid var(--line);backdrop-filter:blur(14px);border-radius:999px;padding:8px 28px 8px 8px;opacity:0;transform:translateY(8px) scale(.97);transition:opacity .18s,transform .2s;pointer-events:none;white-space:nowrap;box-shadow:0 14px 44px rgba(0,0,0,.42)}
+.hcard.show{opacity:1;transform:none}
+.hcard .hc-av{width:60px;height:60px;border-radius:50%;overflow:hidden;position:relative;background:linear-gradient(135deg,var(--pink),#7a0d3a);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.hcard .hc-av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transform-origin:top center;transform:scale(1.22)}
+.hcard .hc-av .ini{font-family:var(--font-display);font-size:22px;color:#fff}
+.hcard .hc-n{font-family:var(--font-med);font-size:18px;line-height:1.1;color:var(--text)}
+.hcard .hc-p{font-size:13px;color:var(--muted);margin-top:3px}
+
+/* ===== PROFILE DRAWER ===== */
+.scrim{position:fixed;inset:0;z-index:110;background:rgba(0,0,0,.55);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.scrim.open{opacity:1;visibility:visible}
+/* ===== Herd Pass card (centered collectible modal) ===== */
+.drawer{position:fixed;inset:0;z-index:111;display:flex;align-items:center;justify-content:center;padding:18px;pointer-events:none;opacity:0;transition:opacity .35s}
+.drawer.open{pointer-events:auto;opacity:1}
+#drawerIn{width:min(430px,100%);max-height:94vh;overflow-y:auto;overflow-x:hidden;background:var(--bg);border:1px solid var(--line);border-radius:22px;box-shadow:0 50px 120px rgba(0,0,0,.5);position:relative;transform:translateY(26px) scale(.955);transition:transform .42s cubic-bezier(.2,.75,.2,1)}
+.drawer.open #drawerIn{transform:none}
+[data-theme="light"] #drawerIn{background:#f3f1ea}
+.dr-x{position:absolute;top:13px;right:13px;z-index:6;background:rgba(0,0,0,.32);border:none;color:#fff;width:28px;height:28px;border-radius:50%;font-size:17px;line-height:28px;text-align:center;cursor:pointer;transition:.2s;padding:0}
+.dr-x:hover{background:var(--pink)}
+/* hero */
+.ec2-hero{position:relative;height:300px;overflow:hidden;background:linear-gradient(150deg,#7a1540 0%,#3a1122 42%,#120a0f 100%)}
+.ec2-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:0}
+.ec2-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,6,9,.5) 0%,rgba(10,6,9,0) 24%,rgba(10,6,9,0) 46%,rgba(10,6,9,.9) 100%)}
+.ec2-ghost{position:absolute;right:0;top:50%;transform:translateY(-56%);font-family:var(--font-display);font-size:280px;line-height:.7;color:rgba(255,255,255,.06);z-index:0;pointer-events:none}
+.ec2-top{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:16px 50px 0 17px}
+.ec2-brand{display:flex;align-items:center;gap:9px;font-family:var(--font-med);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.93)}
+.ec2-brand img{height:16px;width:auto;filter:brightness(0) invert(1);opacity:.95}
+.ec2-cardno{font-family:'Aaux Pro Medium',monospace;font-size:12px;letter-spacing:.13em;color:#fff;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);padding:7px 13px;border-radius:999px;white-space:nowrap}
+.ec2-id{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:0 20px 20px}
+.ec2-name{font-family:var(--font-display);text-transform:uppercase;color:#fff;font-size:clamp(28px,7vw,40px);line-height:.92;letter-spacing:.01em}
+.ec2-role{font-family:var(--font-med);font-size:14px;color:rgba(255,255,255,.86);margin-top:9px}
+/* body */
+.ec2-body{padding:30px 24px 30px;display:flex;flex-direction:column;min-height:308px}
+.ec2-content{flex:1;display:flex;flex-direction:column;justify-content:center;padding:6px 0 4px}
+.ec2-content>:first-child{margin-top:0}
+.ec2-k{font-family:var(--font-med);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--pink)}
+.ec2-quote{border-left:2px solid var(--pink);padding-left:15px;margin-top:13px}
+.ec2-quote blockquote{margin:0;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:clamp(19px,5vw,23px);line-height:1.36;color:var(--text)}
+.ec2-about{margin-top:14px;font-size:14.5px;line-height:1.66;color:var(--soft)}
+.ec2-sec{margin-top:26px}
+.ec2-marks{margin-top:15px;display:flex;flex-direction:column;gap:13px}
+.ec2-mark{display:flex;align-items:center;gap:13px}
+.ec2-dot{flex:0 0 auto;width:22px;height:22px;border-radius:50%;border:2px solid var(--pink);position:relative}
+.ec2-dot::after{content:"";position:absolute;inset:5px;border-radius:50%;background:var(--pink)}
+.ec2-mt{font-family:var(--font-med);font-size:15.5px;color:var(--text)}
+.ec2-cat{margin-left:auto;font-family:var(--font-med);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.ec2-div{height:1px;background:var(--line);margin:14px 0 0}
+.ec2-stats{margin-top:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.ec2-stat .n{font-family:var(--font-display);font-size:clamp(24px,7vw,32px);line-height:1;color:var(--text)}
+.ec2-stat .l{font-family:var(--font-med);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.ec2-btns{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ec2-btn{padding:15px 10px;border-radius:12px;font-family:var(--font-med);font-size:12px;letter-spacing:.13em;text-transform:uppercase;cursor:pointer;transition:.2s;border:1.5px solid var(--line);background:none;color:var(--text);text-align:center}
+.ec2-btn.pri{background:var(--pink);border-color:var(--pink);color:#fff}
+.ec2-btn.pri:hover{filter:brightness(1.08)}
+#ecShare{width:100%;margin-top:48px}
+.ec2-btn.gho:hover{border-color:var(--text)}
+.ec2-btn.gho.on{border-color:var(--pink);color:var(--pink)}
+.ec2-ln{display:block;text-align:center;margin-top:15px;font-family:var(--font-med);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:.2s}
+.ec2-ln:hover{color:var(--pink)}
+@keyframes ecUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.ec2-anim{animation:ecUp .5s both}
+
+/* ===== DIRECTORY ===== */
+.dir-tools{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:34px}
+.dir-search{flex:1;min-width:220px;display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--surf);padding:12px 16px}
+.dir-search input{flex:1;background:none;border:none;outline:none;color:var(--text);font-family:var(--font-body);font-size:15px}
+.dir-search input::placeholder{color:var(--muted)}
+.dir-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.dchip{font-family:var(--font-med);font-size:12px;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;color:var(--soft);background:transparent;transition:.2s;text-transform:capitalize}
+.dchip:hover{border-color:var(--pink);color:var(--text)}
+.dchip.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+.dir-table{margin-top:26px;border-top:1px solid var(--line)}
+.dir-row{display:grid;grid-template-columns:1.4fr 1fr;align-items:center;gap:14px;padding:16px 6px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .2s,padding-left .2s}
+.dir-row:hover{background:var(--surf);padding-left:14px}
+.dir-row .ravatar{width:34px;height:34px;border-radius:50%;overflow:hidden;background:#0a0a0a;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.dir-row .ravatar img{width:100%;height:100%;object-fit:cover;object-position:top;filter:grayscale(.3)}
+.dir-row .ravatar .ini{font-family:var(--font-med);font-size:11px;color:var(--muted)}
+.dir-row .rn{font-family:var(--font-med);font-size:15.5px;color:var(--text)}
+.dir-row .rp{font-size:13.5px;color:var(--muted)}
+.dir-row .rld{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--pink);margin-left:8px;vertical-align:middle}
+.dir-empty{padding:26px 6px;color:var(--muted);font-size:14px}
+.dir-more-wrap{margin-top:24px;text-align:center}
+.dir-more{background:none;border:1.5px solid var(--line);color:var(--text);font-family:var(--font-med);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:13px 30px;border-radius:999px;cursor:pointer;transition:border-color .2s,color .2s}
+.dir-more:hover{border-color:var(--pink);color:var(--pink)}
+@media(max-width:600px){.dir-row{grid-template-columns:1fr;gap:3px;padding:14px 6px}.dir-row .rp{grid-column:1;color:var(--muted)}}
+
+/* ===== LIFE gallery ===== */
+.life-head{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(24px,5vw,72px);align-items:end}
+@media(max-width:860px){.life-head{grid-template-columns:1fr;gap:22px;align-items:start}}
+.life-sub{font-size:15px;line-height:1.72;color:var(--soft);max-width:480px}
+.life-wrap{position:relative;margin-top:40px}
+.life-wrap.collapsed .life-grid{max-height:clamp(360px,42vw,600px);overflow:hidden}
+.life-more-wrap{text-align:center;margin-top:22px}
+.life-more{background:none;border:1.5px solid var(--line);color:var(--text);font-family:var(--font-med);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:13px 30px;border-radius:999px;cursor:pointer;transition:border-color .2s,color .2s}
+.life-more:hover{border-color:var(--pink);color:var(--pink)}
+.life-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(80px,11vw,150px);gap:10px}
+.life-grid figure{margin:0;position:relative;overflow:hidden;background:#0d0d0d}
+.life-grid img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1);transition:opacity .55s ease,transform .6s ease,filter .45s ease}
+.life-grid figure:hover img{filter:grayscale(0);transform:scale(1.05)}
+.life-grid figure.swapping img{opacity:0}
+@media(max-width:980px){.life-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:auto;gap:9px}.life-grid figure{grid-column:auto!important;grid-row:auto!important;aspect-ratio:1}}
+@media(max-width:560px){.life-grid{grid-template-columns:repeat(2,1fr);gap:8px}}
+
+/* ===== HUBS ===== */
+.hubs{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:40px}
+@media(max-width:760px){.hubs{grid-template-columns:1fr}}
+.hub{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0d0d0d;display:flex;align-items:flex-end}
+.hub img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.3) brightness(.7);transition:transform .6s,filter .4s}
+.hub:hover img{transform:scale(1.05);filter:grayscale(0) brightness(.8)}
+.hub-c{position:relative;z-index:2;padding:26px 28px}
+.hub-c .city{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(24px,3vw,40px);line-height:1}
+.hub-c .role{font-family:var(--font-med);font-size:12px;letter-spacing:.08em;color:var(--soft);margin-top:6px;max-width:280px}
+.hub::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 60%);z-index:1}
+/* HubES editorial feature */
+.hub-feat{max-width:860px}
+.hub-hero{position:relative;width:100vw;margin-left:calc(50% - 50vw);margin-top:clamp(34px,5vw,60px);aspect-ratio:21/9;overflow:hidden;background:#0d0d0d}
+@media(max-width:760px){.hub-hero{aspect-ratio:4/3}}
+.hub-hero img{width:100%;height:100%;object-fit:cover}
+.hub-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5),transparent 48%);z-index:1}
+.hub-hero figcaption{position:absolute;left:var(--pad);bottom:18px;z-index:2;font-family:var(--font-med);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+.hub-edit{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,58px);align-items:center;margin-top:clamp(44px,6.5vw,86px)}
+@media(max-width:820px){.hub-edit{grid-template-columns:1fr;gap:22px}.hub-edit.rev .he-txt{order:-1}}
+.hub-edit .he-img{position:relative;overflow:hidden;background:#0d0d0d;aspect-ratio:4/5}
+.hub-edit .he-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.hub-edit .he-img:hover img{transform:scale(1.05)}
+.hub-edit h3{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(24px,3vw,42px);line-height:.98;letter-spacing:-.01em}
+.hub-edit p{margin-top:16px;font-size:15px;line-height:1.7;color:var(--soft)}
+.hub-quote{margin:clamp(54px,8vw,110px) auto;max-width:980px;text-align:center;font-family:var(--font-display);text-transform:uppercase;font-size:clamp(28px,4.6vw,64px);line-height:1;letter-spacing:-.02em}
+.hub-quote .pink{color:var(--pink)}
+.hub-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+@media(max-width:640px){.hub-strip{grid-template-columns:repeat(2,1fr)}}
+.hub-strip figure{margin:0;position:relative;overflow:hidden;aspect-ratio:1;background:#0d0d0d}
+.hub-strip img{width:100%;height:100%;object-fit:cover;filter:grayscale(.2);transition:transform .5s ease,filter .4s ease}
+.hub-strip figure:hover img{transform:scale(1.05);filter:none}
+.hub-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,5vw,64px);margin-top:46px}
+@media(max-width:760px){.hub-cols{grid-template-columns:1fr;gap:30px}}
+.hub-cols h3{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(20px,2.4vw,32px);line-height:1.0;letter-spacing:-.01em}
+.hub-cols p{margin-top:14px;font-size:15px;line-height:1.65;color:var(--soft)}
+.hub-offices{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:clamp(40px,6vh,64px)}
+@media(max-width:900px){.hub-offices{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.hub-offices{grid-template-columns:1fr}}
+.hoff{position:relative;aspect-ratio:4/5;overflow:hidden;background:#0d0d0d;display:flex;align-items:flex-end}
+.hoff img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.3) brightness(.62);transition:transform .5s,filter .4s}
+.hoff:hover img{filter:grayscale(0) brightness(.8);transform:scale(1.05)}
+.hoff::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.66),transparent 55%);z-index:1}
+.hoff .hoc{position:relative;z-index:2;padding:18px}
+.hoff .city{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(17px,1.7vw,23px);line-height:1}
+.hoff .ctry{font-family:var(--font-med);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-top:5px}
+
+/* ===== VALUES horizontal ===== */
+.val-sec{padding-top:clamp(80px,12vh,140px);padding-bottom:clamp(80px,12vh,140px);border-top:1px solid var(--line);overflow:hidden}
+.val-hint{display:block;margin-top:18px;font-family:var(--font-med);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.val-track{margin-top:26px;display:flex;gap:60px;overflow-x:auto;padding-bottom:6px;cursor:grab;scrollbar-width:none;-ms-overflow-style:none}
+.val-track.drag{cursor:grabbing}
+.val-track::-webkit-scrollbar{display:none;width:0;height:0}
+.val-bar{position:relative;width:100%;margin-top:18px}
+.val-marks{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:18px;z-index:3;pointer-events:none}
+.val-mark{position:absolute;top:50%;transform:translate(-50%,-50%);width:1px;height:13px;background:rgba(255,255,255,.22);pointer-events:auto;cursor:pointer}
+[data-theme="light"] .val-mark{background:rgba(0,0,0,.22)}
+.val-mark.on{background:var(--pink);height:18px;width:2px}
+.val-slider{-webkit-appearance:none;appearance:none;display:block;width:100%;height:4px;background:var(--line);border-radius:999px;cursor:pointer;position:relative;z-index:1}
+.val-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;background:var(--pink);border:3px solid var(--bg);box-shadow:0 0 0 1px var(--pink);cursor:grab}
+.val-slider::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--pink);border:3px solid var(--bg);box-shadow:0 0 0 1px var(--pink);cursor:grab}
+.val-slider:active::-webkit-slider-thumb{cursor:grabbing}
+.val-track::-webkit-scrollbar{height:6px}.val-track::-webkit-scrollbar-thumb{background:var(--line)}
+.vitem{scroll-snap-align:center;flex:0 0 auto;display:flex;flex-direction:column}
+.vitem .vt{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(38px,7vw,104px);line-height:.9;letter-spacing:-.02em;color:var(--muted);transition:color .3s;white-space:nowrap}
+.vitem:hover .vt,.vitem.lit .vt{color:var(--text)}
+.vitem:hover .vt .dot,.vitem.lit .vt .dot{color:var(--pink)}
+.vitem .vx{max-width:520px;margin-top:18px;font-size:15px;line-height:1.6;color:var(--soft);opacity:0;transform:translateY(10px);transition:opacity .35s,transform .35s}
+.vitem:hover .vx,.vitem.lit .vx{opacity:1;transform:none}
+
+/* ===== THE ELEPHANT SKIN WAY ===== */
+.way-head{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(24px,5vw,72px);align-items:end;margin-bottom:clamp(34px,5vw,58px)}
+@media(max-width:860px){.way-head{grid-template-columns:1fr;gap:20px;align-items:start}}
+.way-sub{font-size:15px;line-height:1.72;color:var(--soft);max-width:460px}
+.way-sub .q{color:var(--pink);font-family:var(--font-med)}
+.way{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:center;margin-top:10px}
+@media(max-width:860px){.way{grid-template-columns:1fr}}
+.way-img{position:relative;overflow:hidden;aspect-ratio:4/3}
+.way-img img{position:absolute;left:0;top:-12%;width:100%;height:124%;object-fit:cover;object-position:52% 78%;display:block;will-change:transform}
+@media(max-width:860px){.way-img{aspect-ratio:16/10}}
+.way-wall{align-self:center;text-align:justify;text-justify:inter-word}
+.way-wall span{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(15px,1.75vw,27px);line-height:1.4;color:var(--text);transition:color .2s ease;cursor:default;display:inline}
+.way-wall span.it{font-family:Georgia,'Times New Roman',serif;font-style:italic;text-transform:none}
+.way-wall span:hover{color:var(--pink)}
+
+/* ===== CAREERS ===== */
+.careers{background:#070707;color:#f3f1ea;text-align:center;padding:clamp(90px,16vh,200px) var(--pad)}
+.careers h2{font-family:var(--font-display);text-transform:uppercase;font-size:clamp(32px,5.4vw,76px);line-height:.96;letter-spacing:-.02em;max-width:16ch;margin:0 auto}
+.careers .rotw{color:var(--pink);display:inline-block;transition:opacity .26s ease,transform .26s ease}
+.careers .rotw.swap{opacity:0;transform:translateY(12px)}
+.careers .cs{margin-top:22px;font-size:clamp(15px,1.8vw,20px);color:#cfcbc0}
+.careers .cta{display:inline-flex;margin-top:34px;padding:16px 34px;background:var(--pink);color:#fff;font-family:var(--font-med);font-size:12px;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;transition:transform .2s}
+.careers .cta:hover{transform:translateY(-2px)}
+
+/* footer */
+.site-foot{background:#070707;color:#f3f1ea;border-top:1px solid rgba(255,255,255,.1);padding:clamp(54px,7vw,84px) 0 34px}
+.sf-eyebrow{font-family:var(--font-med);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--pink)}
+.sf-hi{font-family:var(--font-display);font-size:clamp(26px,4vw,52px);text-transform:uppercase;line-height:.98;letter-spacing:-.02em;margin-top:10px}
+.sf-hi #footHi{display:inline-block;transition:opacity .22s ease,transform .22s ease}
+.sf-hi #footHi.swap{opacity:0;transform:translateY(8px)}
+.sf-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn-foot{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-family:var(--font-med);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;transition:transform .2s,background .2s,color .2s,border-color .2s;border:1.5px solid transparent}
+.btn-foot.primary{background:var(--pink);color:#fff;border-color:var(--pink)}
+.btn-foot.primary:hover{transform:translateY(-2px)}
+.btn-foot.ghost{border-color:rgba(255,255,255,.25);color:#f3f1ea}
+.btn-foot.ghost:hover{border-color:var(--pink);color:var(--pink)}
+.sf-social{display:flex;gap:9px;margin-left:auto}
+.sf-social a{width:36px;height:36px;border:1.5px solid rgba(255,255,255,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-med);font-size:11px;color:#f3f1ea;transition:.2s}
+.sf-social a:hover{background:var(--pink);border-color:var(--pink);color:#fff}
+.sf-bottom{margin-top:38px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;font-size:11px;color:#6a665d;letter-spacing:.05em}
+.sf-bottom .sf-off{color:#8a867d}
+@media(max-width:720px){.sf-social{margin-left:0}.sf-bottom{flex-direction:column;align-items:flex-start;gap:8px}.sf-bottom .sf-off{order:-1}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.basecampstudio.pk/"}, {"@type": "ListItem", "position": 2, "name": "The Herd", "item": "https://www.basecampstudio.pk/theelephants"}]}</script>
+</head>
+<body>
+
+<div class="bar" id="bar">
+  <a class="lg" href="index.html"><img src="basecamp-logo.png" alt="BaseCamp Studio"></a>
+  <div class="bar-right">
+    <div class="themetog" id="themeTog"><button data-theme="light" title="Light">☀</button><button data-theme="dark" class="on" title="Dark">🌙</button></div>
+    <button class="menu-btn" id="menuBtn">Menu</button>
+  </div>
+</div>
+
+<div class="menu-overlay" id="menu">
+  <button class="menu-close" id="menuClose" aria-label="Close">&times;</button>
+  <a href="index.html"><img class="menu-logo" src="basecamp-icon.png" alt="BaseCamp Studio"></a>
+  <nav class="menu-nav">
+    <div><a href="index.html#top">Home</a></div>
+    <div><a href="hello">Hello</a></div>
+    <div><a href="approach">Framework<sup style="font-size:.34em;vertical-align:top;position:relative;top:.12em">&reg;</sup></a></div>
+    <div><a href="whatwedo">What We Do</a></div>
+    <div><a href="projects">Projects</a></div>
+    <div><a href="theelephants">The Elephants</a></div>
+    <div><a href="careers">Careers</a></div>
+    <div><a href="faq">FAQ</a></div>
+    <div><a href="index.html#contact">Contact</a></div>
+  </nav>
+  <div class="menu-foot">
+    <div class="slogan">Use without moderation.</div>
+    <p>The operating system behind modern real estate development. Explore. Hover. Scroll. Click. Discover what it means to move like an Elephant.</p>
+    <div class="menu-social">
+      <a href="https://www.instagram.com/basecampstudio/" title="Instagram">IG</a>
+      <a href="https://www.linkedin.com/company/elephant-skin/" title="LinkedIn">in</a>
+      <a href="https://www.youtube.com/@basecampstudio" title="YouTube">YT</a>
+    </div>
+  </div>
+</div>
+
+<!-- 01 HERO, THE HERD -->
+<section class="herd" id="top">
+  <canvas id="herdCanvas"></canvas>
+  <div class="herd-names" id="herdNames"></div>
+  <div class="herd-core" id="herdCore">
+    <div class="hc-title">The<br>Herd</div>
+    <div class="hc-power">Click to gather the herd</div>
+  </div>
+  <div class="herd-cta" id="herdCta">
+    <div class="hcta-q">The world is full of dogs.<br><em>Be an elephant.</em></div>
+    <a class="hcta-btn" href="#careers">View open positions →</a>
+  </div>
+  <div class="herd-hint">One herd · one culture · hover a name, click to open a profile</div>
+</section>
+
+<!-- 03 DIRECTORY -->
+<section class="sec wrap" id="directory">
+  <span class="snum reveal">The directory</span>
+  <h2 class="big reveal">Find anyone<br>in the herd.</h2>
+  <div class="dir-tools reveal">
+    <label class="dir-search"><span style="color:var(--muted)">⌕</span><input id="dirSearch" type="text" placeholder="Search by name or position…"></label>
+  </div>
+  <div class="dir-chips reveal" id="dirChips"></div>
+  <div class="dir-table reveal" id="dirTable"></div>
+  <div class="dir-more-wrap reveal" id="dirMore"></div>
+</section>
+
+<!-- 04 LIFE -->
+<section class="sec wrap" id="life">
+  <div class="life-head reveal">
+    <div><span class="snum">Life at BaseCamp Studio</span><h2 class="big">Work happens everywhere.<br><span class="pink">Culture happens together.</span></h2></div>
+    <p class="life-sub">When the herd gathers, we know how to make it count. Our doors are open to partners, to friends, and to everyone who lives BaseCamp Studio&rsquo;s day to day, including our industry &ldquo;competitors&rdquo;. We&rsquo;re all in the same boat, pulling each other to do better every single day. Culture isn&rsquo;t a memo. It&rsquo;s born from the inside out.</p>
+  </div>
+  <div class="life-wrap collapsed reveal" id="lifeWrap">
+    <div class="life-grid" id="lifeGrid"></div>
+  </div>
+  <div class="life-more-wrap reveal"><button class="life-more" id="lifeMore">Show more ↓</button></div>
+</section>
+
+<!-- 05 HUBES, editorial feature of the house -->
+<section class="sec wrap" id="hubs">
+  <div class="hub-feat reveal">
+    <span class="snum">HubES · our house</span>
+    <h2 class="big">Welcome<br>to our <span class="pink">house</span>.</h2>
+    <p class="lead">HUBES is our open space, built for ideas that need room, conversations that matter, and the kind of thinking that moves projects forward. It's where the herd gathers, where clients become collaborators, and where strategy takes shape over coffee, or a beer. No buzzwords. No dress codes. Just good energy and even better company.</p>
+  </div>
+  <figure class="hub-hero reveal"><img alt="HUBES" loading="lazy" src="hubespace/1.jpg"><figcaption>HUBES · the house of the Elephants</figcaption></figure>
+  <div class="hub-edit reveal">
+    <figure class="he-img"><img alt="" loading="lazy" src="hubespace/8.jpg"></figure>
+    <div class="he-txt">
+      <h3>Built for connection,<br><span class="pink">not for cubicles</span>.</h3>
+      <p>We work remotely because talent lives everywhere, and no dream, family or friendship should be compromised for great work. HUBES isn't rigid desks and endless meetings; it's a living place, built for the moments that matter. You come because you want to, not because you have to.</p>
+    </div>
+  </div>
+  <div class="hub-edit rev reveal">
+    <div class="he-txt">
+      <h3>We move<br>differently<span class="pink">.</span></h3>
+      <p>On our wall, a herd of elephants moves in the same direction. One doesn't, that pink elephant is us. Not because different is better by default, but because real impact comes from choosing your own direction with clarity and intent. Be an Elephant.</p>
+    </div>
+    <figure class="he-img"><img alt="" loading="lazy" src="hubespace/7.jpg"></figure>
+  </div>
+  <blockquote class="hub-quote reveal">It's not an office.<br>It's <span class="pink">HUBES</span>.</blockquote>
+  <div class="hub-strip reveal">
+    <figure><img alt="" loading="lazy" src="hubespace/17.jpg"></figure>
+    <figure><img alt="" loading="lazy" src="hubespace/12.jpg"></figure>
+    <figure><img alt="" loading="lazy" src="hubespace/2.jpg"></figure>
+    <figure><img alt="" loading="lazy" src="hubespace/15.jpg"></figure>
+  </div>
+</section>
+
+<!-- 06 VALUES -->
+<section class="val-sec wrap" id="values">
+  <span class="snum reveal">Our values, in action</span>
+  <h2 class="big reveal">We have<br>Elephant <span class="pink">Skin</span>.</h2>
+  <span class="val-hint reveal">Drag sideways → hover a value to see it in action</span>
+  <div class="val-track reveal" id="valTrack"></div>
+  <div class="val-bar reveal"><div class="val-marks" id="valMarks"></div><input class="val-slider" id="valSlider" type="range" min="0" max="100" value="0" step="0.1" aria-label="Scroll values"></div>
+</section>
+
+<!-- 07 THE ELEPHANT SKIN WAY -->
+<section class="sec wrap" id="way">
+  <div class="way-head reveal">
+    <div><span class="snum">The BaseCamp Studio way</span><h2 class="big">It started<br>with a <span class="pink">note</span>.</h2></div>
+    <p class="way-sub">Everyone's got a "post-it" to call their own. BaseCamp Studio was born from one, a small itch that just wouldn't quit. Because the best ideas are nothing more than answers to problems worth solving. <span class="q">So, what's your post-it?</span></p>
+  </div>
+  <div class="way reveal">
+    <div class="way-img"><img loading="lazy" decoding="async" src="postit.jpg" alt="The original BaseCamp Studio note"></div>
+    <div class="way-wall" id="wayWall"></div>
+  </div>
+</section>
+
+<!-- 08 CAREERS -->
+<section class="careers" id="careers">
+  <h2>We're always looking for people who <span class="rotw" id="careWord">care</span>.</h2>
+  <div class="cs">We're not building a company. We're building a herd.</div>
+  <a class="cta" href="mailto:hello@basecampstudio.pk">View open positions →</a>
+</section>
+
+<!-- PROFILE DRAWER -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true"><div id="drawerIn"></div></aside>
+<!-- HOVER CARD -->
+<div class="hcard" id="hcard"></div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="sf-eyebrow">Where the herd works</div>
+    <h2 class="sf-hi">Don't be shy. Say <span class="pink" id="footHi">Hi.</span></h2>
+    <div class="sf-actions">
+      <a class="btn-foot primary" href="brief">Send a project brief →</a>
+      <a class="btn-foot ghost" href="mailto:hello@basecampstudio.pk">hello@basecampstudio.pk →</a>
+      <div class="sf-social">
+        <a href="https://www.instagram.com/basecampstudio/" title="Instagram">IG</a>
+        <a href="https://www.linkedin.com/company/elephant-skin/" title="LinkedIn">in</a>
+        <a href="https://www.youtube.com/@basecampstudio" title="YouTube">YT</a>
+      </div>
+    </div>
+    <style>.sf-legal{margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;gap:11px 26px;align-items:baseline}.sf-legal .sf-legal-h{font-family:var(--font-med);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--pink);width:100%;margin-bottom:4px}.sf-legal a{font-size:13px;color:#9a968d;letter-spacing:.02em;transition:color .2s}.sf-legal a:hover{color:var(--pink)}</style>
+    <nav class="sf-legal">
+      <span class="sf-legal-h">Legal</span>
+      <a href="legal/terms-of-use">Terms of Use</a>
+      <a href="legal/privacy-policy">Privacy Policy</a>
+      <a href="legal/cookie-policy">Cookie Policy</a>
+      <a href="legal/intellectual-property">Intellectual Property</a>
+      <a href="legal/client-confidentiality">Client Confidentiality</a>
+      <a href="legal/ai-policy">AI Policy</a>
+      <a href="legal/accessibility">Accessibility</a>
+      <a href="legal/security">Security</a>
+      <a href="legal/contact">Contact</a>
+      <a href="legal">Legal &amp; Trust Center</a>
+    </nav>
+    <div class="sf-bottom">
+      <span>© BaseCamp Studio 2026</span>
+      <span class="sf-off">Miami · West Palm Beach · Chicago · New York · Vancouver · Lisbon · São Paulo · Curitiba · Dubai · Ho Chi Minh</span>
+      <span>Use without moderation.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const menu=document.getElementById('menu');
+document.getElementById('menuBtn').addEventListener('click',()=>menu.classList.add('open'));
+document.getElementById('menuClose').addEventListener('click',()=>menu.classList.remove('open'));
+addEventListener('keydown',e=>{if(e.key==='Escape')menu.classList.remove('open');});
+addEventListener('scroll',()=>document.getElementById('bar').classList.toggle('scrolled',scrollY>30),{passive:true});
+(function(){function apply(t){document.documentElement.setAttribute('data-theme',t);document.querySelectorAll('#themeTog button').forEach(b=>b.classList.toggle('on',b.dataset.theme===t));}
+  var h=new Date().getHours();var theme=localStorage.getItem('es_theme')||((h>=8&&h<17)?'light':'dark');apply(theme);
+  document.querySelectorAll('#themeTog button').forEach(b=>b.addEventListener('click',()=>{theme=b.dataset.theme;localStorage.setItem('es_theme',theme);apply(theme);}));})();
+const revIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revIO.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>revIO.observe(el));
+
+function initials(n){return n.split(/\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();}
+function av(img,name,cls){return '<div class="'+cls+'">'+(img?'<img loading="lazy" decoding="async" alt="" src="people/'+img+'.png?v=17" onerror="this.remove()">':'')+'<span class="ini">'+initials(name)+'</span></div>';}
+/* shared floating hover card */
+const hcard=document.getElementById('hcard');
+function showCard(e){hcard.innerHTML='<div class="hc-av">'+(e[3]?'<img loading="lazy" decoding="async" alt="" src="people/'+e[3]+'.png?v=17" onerror="this.remove()">':'')+'<span class="ini">'+initials(e[0])+'</span></div><div class="hc-tx"><div class="hc-n">'+e[0]+'</div><div class="hc-p">'+e[1]+'</div></div>';hcard.classList.add('show');}
+function hideCard(){hcard.classList.remove('show');}
+addEventListener('mousemove',ev=>{if(!hcard.classList.contains('show'))return;const w=hcard.offsetWidth||280;let x=ev.clientX+18,y=ev.clientY+18;if(x+w>innerWidth-8)x=ev.clientX-w-18;if(y+96>innerHeight)y=Math.max(10,innerHeight-100);hcard.style.left=x+'px';hcard.style.top=y+'px';},{passive:true});
+
+/* ---------- employees ---------- */
+/* [name, position, team, img, leader, oneLiner, bio, years] */
+const T={lead:'Leadership',strategy:'Strategy',creative:'Creative',production:'Production',cgi:'CGI',marketing:'Marketing',ops:'Operations',tech:'Data & Technology'};
+const EMP=[
+ ['Henrique Driessen','Founder & CEO','lead','henrique-driessen',1,'Building BaseCamp Studio since 2017.','Founder of BaseCamp Studio, with a career dedicated to real estate development and creative strategy. Focused on building go-to-market systems that align strategy, narrative and execution to support long-term value.','Since 2017'],
+ ['Giovana Driessen','COO & Co-founder','lead','giovana-driessen',1,'Scaling global operations with clarity.','COO and co-founder of BaseCamp Studio, with a background in architecture and urbanism and over a decade of international experience. Focused on operational excellence, team autonomy and scaling global operations with clarity and discipline.','Since 2017'],
+ ['Thiago Silva','Head of Business Intelligence','lead','thiago-silva',1,'Data, product and intelligence.','Leads business intelligence, product and technology at BaseCamp Studio. Focused on turning data into decisions, scaling teams and strengthening operations through technology, strategy and digital transformation.','Since 2019'],
+ ['Fabio Brunelli','Chief Growth Officer','lead','fabio-brunelli',1,'Turning strategy into measurable growth.','Partner and Chief Growth Officer at BaseCamp Studio, leading global growth and go-to-market strategy. Brings 18+ years across tech, media and real estate, focused on turning strategy and creativity into measurable results.','Since 2022'],
+ ['Irshaad Ahmad','Global Head of Planning & Strategy','lead','irshaad-ahmad',1,'Aligning intelligence with execution.','Real estate marketing professional with nearly two decades of experience in positioning and go-to-market strategy across multiple markets. Focused on disciplined storytelling and long-term value creation.','Since 2023'],
+ ['Alix Silgueiro','Global Creative Director','lead','alix-silgueiro',1,'Creative direction since 2018.','Part of BaseCamp Studio since 2018, leading creative direction, film and narrative development across real estate projects. Focused on translating complex developments into clear visual stories aligned with commercial objectives.','Since 2018'],
+ ['Marianna Magalhães','Managing Director','lead','marianna-magalhaes',1,'Structuring global delivery.','Managing Director at BaseCamp Studio, with a background in architecture and urban studies. Focused on structuring operations, coordinating multidisciplinary teams and ensuring clarity across global delivery.','Since 2021'],
+ ['Filipe Cabral','Head of Films','lead','filipe-cabral',1,'Leading films & visual storytelling.','With extensive experience in the CGI industry, he leads teams and builds efficient workflows for film production. His work spans over 60 film launches and earned five awards in 2023 and 2024.','Since 2020'],
+ ['Kleiton Oliveira','Unreal Lead Artist & Partner','lead','kleiton-oliveira',1,'First team artist; quality & craft.','Part of BaseCamp Studio since the company\'s very first steps, being its first team artist. Today he works with a strong focus on quality, processes and people, combining creativity, technical expertise and collaboration.','Since 2018'],
+ ['Elton Janz','Global Sales Director','lead','elton-janz',1,'Driving growth across markets.','Global Sales Manager at BaseCamp Studio, with over 15 years of experience driving growth across international markets. Focused on expanding global presence and structuring effective sales strategies.','Since 2023'],
+ ['Lee Rodriguez','Business Development Director','strategy','lee-rodriguez',0,'Scaling GTM in the United States.','Brings 12 years of experience in media and advertising, having worked with companies such as Forbes Media, Pandora and WideOrbit, plus the luxury real estate sector. At BaseCamp Studio he focuses on scaling the GTM strategy in the United States and expanding strategic partnerships.',''],
+ ['Bruna Kohn','Account Manager','strategy','bruna-kohn',0,'','Industrial Designer with an MBA in Marketing, and experience in project management, client relations and team leadership, with a deep background in CGI. Driven by the integration of technology, design and content to deliver tailored, meaningful solutions.',''],
+ ['Ana Herber','Account Manager','strategy','ana-herber',0,'','A Project and Account Manager with an architectural background and agency experience, working with global clients across industries. She bridges clients and teams, leading CGI, content, web, film, photography and 360° campaigns from concept to delivery.',''],
+ ['Cinthia Rioli','Creative Director','creative','cinthia-rioli',0,'','Creative Director at BaseCamp Studio with over 20 years of experience in design. Leads visual direction across branding and creative systems, bringing depth, rigor and purpose to every detail, from concept to execution.',''],
+ ['Cosme Geandro','PO & Lead Artist','creative','cosme-geandro',0,'','With over 10 years of experience in architectural visualization, Cosme joined BaseCamp Studio in 2022 and now serves as Senior Artist and Project Owner. He leads Team D and acts as a quality gatekeeper, ensuring the studio\'s highest standards.',''],
+ ['Rabi Novithy','PO & Lead Artist','creative','rabi-novithy',0,'','Senior Artist and Team Leader, leading creative teams with a hands-on approach, overseeing projects and backlogs, guiding technical and artistic direction, and ensuring every delivery meets BaseCamp Studio\'s creative and quality standards.',''],
+ ['Hugo Gama','Film Director','creative','hugo-gama',0,'','Working as a scene director since 2014, Hugo leads the creative vision of BaseCamp Studio\'s films. He holds certifications in Cinematography and Film Production from the London Film Academy and the International Academy of Cinema.',''],
+ ['Isabel Palacio','Film Director','creative','isabel-palacio',0,'','She transforms 3D scenes into stories with rhythm, emotion and purpose, cutting and assembling each element into a clear, impactful narrative. For her, editing goes beyond technique; it is storytelling with scissors.',''],
+ ['Cainã Melo','Director of Unreal','creative','caina-melo',0,'','Leading the Unreal department, he transforms ArchViz into immersive experiences while shaping teams, workflows and emerging technologies. His focus is on connecting people and innovation to deliver authentic, compelling visual stories.',''],
+ ['Amanda Siqueira Braga','Illustrator','creative','',0,'','My main role is to create all custom illustrations for the company\'s projects. I work primarily across the branding and film teams, adding a distinctive wow factor to campaigns, and bring our scripts to life by shaping them into storyboards.',''],
+ ['Filippe Luy','Graphic Designer','creative','',0,'','After learning from remarkable mentors, countless hours of dedication and many sleepless nights, I am proud of the artist and professional I have become. Even so, I continue to pursue the maximum potential that both technology and I can deliver.',''],
+ ['Julia Nogueira Guedes','Graphic Designer','creative','julia-nogueira-guedes',0,'','',''],
+ ['Klebson Oliveira','Motion Designer','creative','klebson-lourenco-de-oliveira',0,'','A Motion Designer at BaseCamp Studio for over 5 years, he works with great attention to detail and a strong sense of commitment to every delivery. For him, every challenge has a solution, even when the path still needs to be discovered.',''],
+ ['Rodrigo Quina Alves','Graphic Designer','creative','',0,'','',''],
+ ['Amanda Borges','Project Manager, Film','production','amanda-borges',0,'','Architect with 8 years of experience in project development and management, now working as a Project Manager in film production focused on real estate. Experienced in client relations, team leadership and schedule coordination.',''],
+ ['Isabela Pimentel','Project Manager, Stills','production','isabela-pimentel',0,'','Architect with over 10 years of experience in project development and management and an MBA in International Business Management from Rome Business School. Focused on real estate projects, graphic representation, client relations and production coordination.',''],
+ ['Natalia Di Renzo','Project Manager, Stills','production','natalia-di-renzo',0,'','An architect with 10 years of experience who transitioned into project management at BaseCamp Studio. With a background in fast-paced retail projects, she leads teams, manages shifting priorities and drives successful project delivery.',''],
+ ['Livia Hakuna','Project Manager, Stills','production','livia-hakuna',0,'','A Project Manager responsible for overseeing projects and coordinating deliverables such as still images, floor plans and live tours. Outgoing and approachable, she values open conversation as the foundation for keeping everything aligned.',''],
+ ['Leandro Martins','Floorplan & Modelling Coordinator','production','leandro-martins',0,'','',''],
+ ['Antonio Boer','Project Manager, Unreal','production','antonio-boer',0,'','A designer with deep experience in archviz, he has worked at leading studios as a Senior Artist, PO and now Project Manager. Based in Lajeado, he brings calm, technical clarity to complex projects, balancing deadlines with a passion for gaming and digital art.',''],
+ ['Caio Rodrigues','3D Artist','cgi','caio-rodrigues',0,'','Joined BaseCamp Studio in 2022 as a Senior 3D Artist, bringing more than 8 years of experience in architectural visualization and photorealistic rendering. He combines technical precision with creativity and focuses on optimizing workflows.',''],
+ ['Gabriel Rodrigues','3D Artist','cgi','gabriel-rodrigues-de-souza',0,'','With seven years of experience in the CGI industry, Gabriel is a Senior 3D Artist at BaseCamp Studio. He has worked on major projects such as Slate (Beedie), Quinta das Amoras and PARC, and placed third in one of the most competitive editions of the D2 Challenge.',''],
+ ['Fábio Monteiro','Product Owner','cgi','fabio-monteiro-pinto-da-silva',0,'','A 3D artist in the archviz film industry for over 20 years, constantly seeking to stay updated with new tools. Currently a Film Product Owner, he focuses on delivering visually compelling work while mentoring new artists beginning their journey.',''],
+ ['Filipe Lopes','3D Artist','cgi','filipe-lopes-pereira',0,'','A 3D Architectural Visualization Artist with over 12 years of experience and a background in architecture. His work focuses on high-end stills and cinematic animations, with particular attention to lighting, materials, composition and atmosphere.',''],
+ ['Sofia Bessa','3D Artist','cgi','sofia-bessa-tavares',0,'','She joined BaseCamp Studio in 2022 as a Junior Artist. With over seven years of experience in architecture, from design to visualization, she brings a multidisciplinary perspective and a strong passion for photography, architecture and cinema.',''],
+ ['Thais Parra','3D Artist','cgi','thais-krilow-parra',0,'','Graduated in Architecture and Urbanism, with three years of experience in archviz. Part of the BaseCamp Studio team since 2022 as a 3D Artist II, with strong skills in 3D modeling, texturing and scene composition.',''],
+ ['Vinicius Gonzaga','3D Artist','cgi','vinicius-nunes-gonzaga',0,'','Joined BaseCamp Studio in 2022 as a Junior 3D Artist and currently works as an Intermediate I Artist. With a degree in Architecture, he transitioned from the geoprocessing field to focus fully on archviz.',''],
+ ['Victor Maia','3D Artist','cgi','victor-maia-bastos',0,'','Architect and urban planner based in Montes Claros, Minas Gerais. His interest in ArchViz emerged early in his academic journey; he works with 3ds Max, Corona and Photoshop and is expanding into Unreal Engine and interactive experiences.',''],
+ ['Bruno Gonçalves','3D Artist','cgi','',0,'','Bruno joined BaseCamp Studio in 2024 as a 3D Film Artist. An Architect and Urban Planner, he has been studying 3D for over 10 years and dedicated two of them exclusively to film production.',''],
+ ['Carolina Cataldo','3D Artist','cgi','',0,'','Architect and Urban Planner with over seven years of experience in archviz. She joined BaseCamp Studio in 2021 and was recently promoted to Senior Artist, becoming the first female Senior Artist at the studio. She especially enjoys vignettes and highly detailed compositions.',''],
+ ['David Guerchon','3D Artist','cgi','',0,'','Part of Elephant\'s production team, David sees creation as his daily fuel. Naturally curious, he is always seeking new perspectives and learning experiences, believing that observing, experimenting and exchanging ideas are the best ways to grow.',''],
+ ['Fellype Alexandre','3D Artist','cgi','',0,'','Fellype joined BaseCamp Studio in 2022 as a Trainee 3D Artist and currently works as a Middleweight 3D Artist, involved in texturing, modeling, lighting, post-production and scene finalization. He is constantly driven to deliver his best.',''],
+ ['Gabriel Bittencourt','3D Artist','cgi','',0,'','Works in image creation, translating ideas into concepts with clarity and sensitivity. He enjoys working closely with projects, valuing process, aesthetics and intention in every detail, with the goal of continuous learning.',''],
+ ['Max Oliveira','3D Artist','cgi','',0,'','With extensive experience in 3D stills and animation, Max works as a Senior Film 3D Artist, driven by a passion for transforming ideas into impactful visual realities, creating immersive environments, dynamic animations and visual effects.',''],
+ ['Natan Argente','3D Artist','cgi','',0,'','An architect and urban planner working in the rendering industry since 2022. He specializes in still images, combining technical expertise, an analytical eye and strong influences from cinema and photography to deliver clear, well-directed, impactful visuals.',''],
+ ['Nicolau Bastos','3D Artist','cgi','',0,'','With over 10 years of experience in architectural visualization, Nicolau is an Intermediate I Artist at BaseCamp Studio, where he joined in October 2024. He works across modeling, texturing, lighting and scene finalization with precision and visual impact.',''],
+ ['Thiago Mathez','3D Artist','cgi','',0,'','Graduated in Civil Engineering and a former English teacher, he fell in love with Archviz and the 3D world. Working in the field since 2022, he joined BaseCamp Studio in 2024 as a Junior Film 3D Artist, always aiming to learn more and deliver his best.',''],
+ ['Victor Matheus','3D Artist','cgi','',0,'','Victor joined BaseCamp Studio bringing four years of experience in archviz. Throughout his career he has specialized in image finalization, consistently delivering high-quality visuals that accurately convey the essence of each project.',''],
+ ['Victoria Meneses','Film Editor','cgi','',0,'','Part of the film team at BaseCamp Studio, working as an editor where she transforms projects and concepts into powerful visual narratives. With creativity and dedication, she translates ideas through engaging storytelling, communicating with clarity and impact.',''],
+ ['Diego Grimm','3D Artist','cgi','',0,'','A professional with seven years of experience in archviz, creating visualizations that combine quality, collaboration and attention to detail. He works closely with the team to understand each project in depth and deliver consistent results.',''],
+ ['Arielle Abreu','3D Modeler','cgi','arielle-santos-de-abreu',0,'','Holds a degree in Architecture and Urbanism from Universidade Santa Cecília in Santos, São Paulo. She has been working in the archviz field for eight years, with a strong focus on 3D modeling.',''],
+ ['Danilo Magnavita','3D Asset Modeler','cgi','danilo-queiroz-magnavita',0,'','A civil engineer with 20 years of experience working in 3D modeling, specializing in asset development for archviz. At BaseCamp Studio he is constantly seeking to refine the techniques required to achieve the highest level of performance and quality.',''],
+ ['João Carlos','3D Modeler','cgi','joao-carlos-dos-santos',0,'','Specializes in 3D modeling for architecture, with a strong focus on technical precision and realism. His goal is to transform architectural concepts into detailed, impactful visual representations that meet the specific needs of each project.',''],
+ ['Luiz Cardoso','3D Modeler','cgi','',0,'','',''],
+ ['Nayara Prado','3D Modeler','cgi','nayara-ferreira-prado',0,'','From São Paulo and based in Paraná, with a degree in Architecture and Urbanism and five years of experience in archviz. She works in the 3D modeling department, passionate about transforming the blank canvas of 3ds Max into environments, developments and furniture.',''],
+ ['Saulo Morais','3D Modeler','cgi','saulo-soares-de-morais',0,'','Architect and Urban Planner and 3D Artist, with a strong interest in creative processes and technology.',''],
+ ['Giovana Achiamé','3D Floorplan Artist','cgi','giovana-goncalves-achiame',0,'','An architect and urban planner who specialized in archviz in 2020. She creates visual images and, in particular, humanized floor plans, working across modeling, landscaping, interior decoration, photomontage and post-production to represent each project clearly.',''],
+ ['Ingrid Martins','3D Floorplan Artist','cgi','ingrid-agra-stamberk-martins',0,'','',''],
+ ['João Pedro Moura','3D Floorplan Artist','cgi','',0,'','An architect with four years of experience and a strong passion for 3D graphic representation of architectural projects.',''],
+ ['Thatiana Costa','3D Floorplan Artist','cgi','thatiana-correa-mourao-da-costa',0,'','Part of the BaseCamp Studio team since 2021, now a Middleweight Floor Plans 3D Artist. With a degree in Interior Design and over 10 years of experience, she specializes in humanized floor plans, blending technical precision with aesthetic appeal.',''],
+ ['Roberta Munhoz','Communications Manager','marketing','roberta-munhoz-da-rocha-lemos',0,'','Public Relations professional with 16 years of experience in strategic communication, digital marketing and project management. Leads internal and institutional communication at BaseCamp Studio, supporting teams across global markets.',''],
+ ['Agatha Rebelato','Director of Finance','ops','agatha-rebelato',0,'','Law graduate with experience as an attorney and in financial-institution contracts. Part of BaseCamp Studio since 2022, working across finance, operations and contractual execution.',''],
+ ['Jackeline de Souza','Financial Analyst','ops','',0,'','Part of the finance team, Jackeline sees numbers as a form of communication. With a keen eye for detail and a practical approach, she turns financial processes into clear, reliable flows, bringing organization and collaboration to everyday work.',''],
+ ['Sid Oliveira','IT Manager','tech','sid-oliveira',0,'','Over 15 years of experience in the ArchViz industry, with five years at BaseCamp Studio. Focused on aligning software acquisition and technical solutions with the company\'s organizational strategy.',''],
+ ['Evanildo Cambras','IT Support','tech','evanildo-de-souza-cambras',0,'','A Level 2 Technical Support at BaseCamp Studio for over three years. He provides remote support to the team, ensuring the efficient operation of systems, equipment and tools, and helping solve day-to-day issues.',''],
+ ['Matheus Medeiros','FrontEnd Developer','tech','',0,'','Front-End Developer with experience in React and TypeScript, focused on creating efficient, functional and user-friendly interfaces. He builds optimized solutions that combine design and performance to enhance the user experience.','']
+];
+
+/* ---------- 01 HERO, name constellation around a particle globe ---------- */
+(function(){
+  const stage=document.getElementById('top'),host=document.getElementById('herdNames'),cv=document.getElementById('herdCanvas'),core=document.getElementById('herdCore');
+  if(!stage||!cv)return;const ctx=cv.getContext('2d');
+  const cnt=document.getElementById('herdCount');if(cnt)cnt.textContent=EMP.length;
+  const PINK=[255,90,46],CYAN=[45,205,224];
+  const mix=k=>[Math.round(PINK[0]+(CYAN[0]-PINK[0])*k),Math.round(PINK[1]+(CYAN[1]-PINK[1])*k),Math.round(PINK[2]+(CYAN[2]-PINK[2])*k)];
+  const rgba=(c,a)=>'rgba('+c[0]+','+c[1]+','+c[2]+','+a+')';
+  const SPH=(function(){const n=140,pts=[],ga=Math.PI*(3-Math.sqrt(5));for(let i=0;i<n;i++){const y=1-(i/(n-1))*2,r=Math.sqrt(Math.max(0,1-y*y)),th=ga*i;pts.push([Math.cos(th)*r,y,Math.sin(th)*r]);}
+    const seen=new Set(),E=[];pts.forEach((p,i)=>{const d=pts.map((q,j)=>[j,(p[0]-q[0])**2+(p[1]-q[1])**2+(p[2]-q[2])**2]).filter(a=>a[0]!==i).sort((a,b)=>a[1]-b[1]);for(let k=0;k<3;k++){const j=d[k][0],key=Math.min(i,j)+'-'+Math.max(i,j);if(!seen.has(key)){seen.add(key);E.push([Math.min(i,j),Math.max(i,j)]);}}});return{pts,E};})();
+  function scat(){let x,y,tr=0;do{x=0.04+Math.random()*0.92;y=0.07+Math.random()*0.86;tr++;}while(tr<40 && ((x-0.5)*(x-0.5)/0.020 + (y-0.5)*(y-0.5)/0.055) < 1);return[x,y];}
+  const items=EMP.map((e,i)=>{const el=document.createElement('div');el.className='hdot'+(e[4]?' ld':'');el.dataset.i=i;
+    el.innerHTML=(e[3]?'<img loading="lazy" decoding="async" alt="" src="people/'+e[3]+'.png?v=17" onerror="this.remove()">':'')+'<span class="ini">'+initials(e[0])+'</span>';
+    el.style.animationDelay=(Math.random()*2.8).toFixed(2)+'s';host.appendChild(el);
+    const s=scat();
+    return {el,ld:e[4],sx:s[0],sy:s[1],wph:Math.random()*6.28,wsp:0.0004+Math.random()*0.0009,wam:6+Math.random()*12};});
+  const leaders=items.filter(it=>it.ld), others=items.filter(it=>!it.ld);
+  leaders.forEach((it,k)=>{it.ring=0;it.ang=k/leaders.length*6.283;});
+  const per=Math.ceil(others.length/3);
+  others.forEach((it,k)=>{const r=Math.floor(k/per);it.ring=1+r;it.ang=(k%per)/per*6.283+r*0.5;});
+  let W,H,cx,cy,dpr,sphR,RR=[],raf,running=false,t=0,rot=0,power=0,on=false;
+  function size(){const r=cv.getBoundingClientRect();dpr=Math.min(devicePixelRatio||1,2);W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);cx=W/2;cy=H/2;const m=Math.min(W,H);sphR=m*0.075;const mr=m/2-50;RR=[Math.max(m*0.205,mr*0.50),mr*0.68,mr*0.84,mr];
+    items.forEach(it=>{if(it.px===undefined){it.px=it.sx*W;it.py=it.sy*H;const a=Math.random()*6.283,sp=0.14+Math.random()*0.28;it.vx=Math.cos(a)*sp;it.vy=Math.sin(a)*sp;}else{it.px=Math.min(Math.max(it.px,30),W-30);it.py=Math.min(Math.max(it.py,30),H-30);}});}
+  const ease=p=>p*p*(3-2*p);
+  core.addEventListener('click',()=>{on=!on;stage.classList.toggle('on',on);});
+  function frame(){if(!running)return;t++;power+=((on?1:0)-power)*0.045;const P=ease(power);rot+=0.0006;ctx.clearRect(0,0,W,H);
+    if(P>0.03){ctx.strokeStyle=rgba([140,140,140],0.05*P);ctx.lineWidth=1;RR.forEach(R=>{ctx.beginPath();ctx.arc(cx,cy,R,0,6.283);ctx.stroke();});}
+    if(P<0.985){const mgn=34,exR=Math.min(W,H)*0.22;items.forEach(it=>{it.px+=it.vx;it.py+=it.vy;
+      if(it.px<mgn){it.px=mgn;it.vx=Math.abs(it.vx);}if(it.px>W-mgn){it.px=W-mgn;it.vx=-Math.abs(it.vx);}
+      if(it.py<mgn){it.py=mgn;it.vy=Math.abs(it.vy);}if(it.py>H-mgn){it.py=H-mgn;it.vy=-Math.abs(it.vy);}
+      const dx=it.px-cx,dy=it.py-cy,d=Math.hypot(dx,dy)||1;if(d<exR){const nx=dx/d,ny=dy/d;it.px=cx+nx*exR;it.py=cy+ny*exR;const dp=it.vx*nx+it.vy*ny;it.vx-=2*dp*nx;it.vy-=2*dp*ny;}});}
+    items.forEach(it=>{const R=RR[it.ring],a=it.ang+rot*(it.ring%2?-1:1);
+      const ox=cx+Math.cos(a)*R,oy=cy+Math.sin(a)*R;
+      it.el.style.left=(it.px+(ox-it.px)*P)+'px';it.el.style.top=(it.py+(oy-it.py)*P)+'px';it.el.style.transform='translate(-50%,-50%)';});
+    const br=0.12+0.88*P;
+    const gl=ctx.createRadialGradient(cx,cy,0,cx,cy,sphR*2.6);gl.addColorStop(0,'rgba(255,90,46,'+(0.18*P)+')');gl.addColorStop(1,'rgba(255,90,46,0)');ctx.fillStyle=gl;ctx.beginPath();ctx.arc(cx,cy,sphR*2.6,0,6.283);ctx.fill();
+    const cR=Math.cos(rot*2),sR=Math.sin(rot*2),tl=0.45,ct=Math.cos(tl),st=Math.sin(tl);
+    const Pp=SPH.pts.map(p=>{let x=p[0]*cR+p[2]*sR,z=-p[0]*sR+p[2]*cR,yy=p[1];const y2=yy*ct-z*st,z2=yy*st+z*ct;const pe=1.7/(1.7-z2);return{x:cx+x*sphR*pe,y:cy-y2*sphR*pe,z:z2};});
+    SPH.E.forEach(([i,j])=>{const a=Pp[i],b=Pp[j],k=((a.z+b.z)/2+1)/2;const col=br>0.5?mix(1-k):[150,150,150];ctx.strokeStyle=rgba(col,(0.05+0.16*k)*(0.4+0.6*br));ctx.lineWidth=0.6;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();});
+    Pp.forEach(p=>{const k=(p.z+1)/2;const col=br>0.5?mix(1-k):[150,150,150];ctx.globalAlpha=(0.2+0.6*k)*(0.4+0.6*br);ctx.fillStyle=rgba(col,1);ctx.beginPath();ctx.arc(p.x,p.y,0.7+1.3*k,0,6.283);ctx.fill();});ctx.globalAlpha=1;
+    raf=requestAnimationFrame(frame);}
+  function start(){if(running)return;running=true;size();raf=requestAnimationFrame(frame);}
+  function stop(){running=false;cancelAnimationFrame(raf);}
+  new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?start():stop()),{threshold:.01}).observe(cv);
+  addEventListener('resize',size);size();
+  host.addEventListener('mouseover',ev=>{const el=ev.target.closest('.hdot');if(el)showCard(EMP[+el.dataset.i]);});
+  host.addEventListener('mouseout',ev=>{if(ev.target.closest('.hdot'))hideCard();});
+  host.addEventListener('click',ev=>{const el=ev.target.closest('.hdot');if(el)openDrawer(+el.dataset.i);});
+})();
+
+/* ---------- PROFILE DRAWER / Elephant Card ---------- */
+const scrim=document.getElementById('scrim'),drawer=document.getElementById('drawer'),drawerIn=document.getElementById('drawerIn');
+/* explicit Current Focus for leaders; per-team fallback for the rest (static, V1) */
+const FOCUS={'Henrique Driessen':'Building Elephant Europe.','Giovana Driessen':'Scaling global operations with clarity.','Thiago Silva':'Growing Bees and the product platform.','Fabio Brunelli':'Driving global go-to-market growth.','Irshaad Ahmad':'Aligning strategy across new markets.','Alix Silgueiro':'Leading creative direction and film.','Marianna Magalhães':'Structuring global delivery.','Filipe Cabral':'Scaling film production worldwide.','Kleiton Oliveira':'Pushing Unreal craft and quality.','Elton Janz':'Expanding global sales.','Lee Rodriguez':'Scaling GTM in the United States.'};
+const FOCUS_TEAM={lead:'Leading the herd forward.',strategy:'Connecting clients and strategy.',creative:'Shaping brand and visual stories.',production:'Keeping global delivery on track.',cgi:'Crafting photoreal worlds for live projects.',marketing:'Telling the BaseCamp Studio story.',ops:'Keeping the operation strong.',tech:'Building the systems behind the herd.'};
+/* real "Why we wake up" quotes (from the internal project) — section hides when a person hasn't submitted one */
+const QUOTES={
+ "Hugo Gama":"IF is the middle word in lIFe, so what if?",
+ "Lee Rodriguez":"Everybody has a plan until they get punched in the face.",
+ "Henrique Driessen":"Not every genius becomes a genius. But many hardworking people do.",
+ "Elton Janz":"The best work is the one that keeps working when you're not in the room.",
+ "Victor Moraes":"Talent starts. Hard work wins.",
+ "Rabi Novithy":"Foco no foco!",
+ "Thiago Silva":"I keep asking “why?” until things make sense.",
+ "Filippe Moreira":"Every second counts.",
+ "Sid Oliveira":"A vitória é nossa.",
+ "Marianna Magalhães":"Mais sorte que juízo.",
+ "Irshaad Ahmad":"Respect is earned. Honesty is appreciated. Trust is gained. Loyalty is returned.",
+ "Giovana Driessen":"No final dá tudo certo. Se ainda não deu, é porque não acabou.",
+ "Saulo Morais":"A vida leva, a vida traz!",
+ "Nicolau Rauen":"Nada é impossível: só coisas que ainda não descobri como fazer.",
+ "Fábio Monteiro":"Sempre em movimento está o futuro.",
+ "Cosme Geandro":"Não se sabote! Você é capaz de fazer coisas incríveis!",
+ "Amanda Silva":"Permaneça curioso.",
+ "Nayara Prado":"O futuro não chega pronto. A gente modela ele aos poucos.",
+ "Bruno Fabiano":"É preciso devolver ao mundo, em forma de arte, aquilo que ele nos presenteou em forma de inspiração.",
+ "Julia Nogueira Guedes":"Energy speaks louder than words.",
+ "João Santos":"Esforço que modela, dedicação que transforma.",
+ "Victoria Nathyele":"A sensibilidade sempre será o maior dos encantos.",
+ "Roberta Lemos":"Better imperfectly done than perfectly imagined.",
+ "Thais Parra":"You only have right now, but lucky for you it's always right now.",
+ "Fellype Alexandre":"As maiores evoluções costumam nascer dos maiores desafios.",
+ "Cainã Melo":"Acordo pelo café, fico pelo caos.",
+ "Antonio Boer":"Já que a vida não tem Ctrl+Z, bora fazer cada dia valer a pena."
+};
+/* per-person card data (stable, seeded by index) — demo values until Peanut goes live */
+function cardData(e,i){let s=(i+1)*97+13;const r=()=>{s=(s*1103515245+12345)&0x7fffffff;return s/0x7fffffff;};
+  const ym=(e[7]||'').match(/(\d{4})/),year=ym?+ym[1]:0;
+  let years=year?2026-year:1+Math.floor(r()*4);if(years<1)years=1;
+  const founding=year&&year<=2018,lead=e[4];
+  const projects=Math.round((lead?150:25)+r()*(lead?160:175));
+  const markets=2+Math.floor(r()*9);
+  const launches=Math.max(3,Math.round(projects/(4+Math.floor(r()*4))));
+  const clubs=[[500,'500 Projects Legend'],[300,'300 Projects'],[250,'250 Projects'],[200,'200 Projects'],[150,'150 Projects Club'],[100,'100 Projects Club'],[50,'50 Projects']];
+  const club=(clubs.find(c=>projects>=c[0])||[])[1];
+  const exp={lead:'CHEF Certified',strategy:'CHEF Certified',creative:'Creative Lead',production:'Delivery Pro',cgi:'CGI Specialist',marketing:'Brand Voice',ops:'Operations Pro',tech:'Tech Certified'}[e[2]]||'CHEF Certified';
+  const marks=[];
+  if(founding)marks.push(['Founding Herd','LEGACY']);
+  marks.push([years+' Year'+(years>1?'s':''),'EXPERIENCE']);
+  if(club)marks.push([club,'PROJECTS']);
+  marks.push([markets+' Countries','GLOBAL']);
+  marks.push([exp,'EXPERTISE']);
+  return {years,projects,markets,launches,marks:marks.slice(0,5)};}
+function openDrawer(i){const e=EMP[i];
+  const quote=(QUOTES[e[0]]||'').trim(),cardno='CARD #'+String(i+1).padStart(3,'0');
+  const about=e[6]||(e[1]+' on the '+(T[e[2]]||'team')+' team at BaseCamp Studio, part of a global herd that turns strategy, craft and care into real estate people want to own.');
+  let k=0;const A=()=>'style="animation-delay:'+((k+=0.05)+0.05).toFixed(2)+'s"';
+  let h='<button class="dr-x" id="drX" aria-label="Close">&times;</button>';
+  h+='<div class="ec2-hero">';
+  h+=e[3]?'<img loading="lazy" decoding="async" class="ec2-photo" alt="" src="people/'+e[3]+'.png?v=17" onerror="this.remove();var g=this.parentNode.querySelector(\'.ec2-ghost\');if(g)g.style.display=\'block\'">':'';
+  h+='<span class="ec2-ghost"'+(e[3]?' style="display:none"':'')+'>'+initials(e[0]).charAt(0)+'</span>';
+  h+='<div class="ec2-top"><div class="ec2-brand"><img src="elephant-head.svg" alt="">BaseCamp Studio · Herd Pass</div><span class="ec2-cardno">'+cardno+'</span></div>';
+  h+='<div class="ec2-id"><div class="ec2-name">'+e[0]+'</div><div class="ec2-role">'+e[1]+'</div></div>';
+  h+='</div><div class="ec2-body"><div class="ec2-content">';
+  if(quote)h+='<div class="ec2-anim" '+A()+'><div class="ec2-k">Why I wake up</div><div class="ec2-quote"><blockquote>“'+quote.replace(/^["“]+|["”]+$/g,'')+'”</blockquote></div></div>';
+  if(about)h+='<div class="ec2-sec ec2-anim" '+A()+'><div class="ec2-k">About</div><div class="ec2-about">'+about+'</div></div>';
+  h+='</div>';
+  h+='<button class="ec2-btn pri ec2-anim" '+A()+' id="ecShare">Share card</button>';
+  h+='<a class="ec2-ln ec2-anim" '+A()+' href="https://www.linkedin.com/company/elephant-skin/" target="_blank" rel="noopener">View LinkedIn ↗</a>';
+  h+='</div>';
+  drawerIn.innerHTML=h;drawerIn.scrollTop=0;
+  document.getElementById('drX').addEventListener('click',closeDrawer);
+  const sh=document.getElementById('ecShare');
+  sh.addEventListener('click',()=>shareStory(e,cardno,quote,sh));
+  scrim.classList.add('open');drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');
+}
+/* ===== Share Card → 1080×1920 Instagram-Story image ===== */
+function wrapLines(ctx,text,maxW){const words=(text||'').split(' '),lines=[];let ln='';
+  for(const w of words){const test=ln?ln+' '+w:w;if(ctx.measureText(test).width>maxW&&ln){lines.push(ln);ln=w;}else ln=test;}
+  if(ln)lines.push(ln);return lines;}
+function shareStory(e,cardno,quote,btn){
+  const W=1080,H=1920,cv=document.createElement('canvas');cv.width=W;cv.height=H;const ctx=cv.getContext('2d');
+  const _ne=document.querySelector('.ec2-name'),_re=document.querySelector('.ec2-role');
+  const DISP=(_ne&&getComputedStyle(_ne).fontFamily)||'"Etna",sans-serif';
+  const MED=(_re&&getComputedStyle(_re).fontFamily)||'"Aaux Pro Medium",sans-serif';
+  const draw=img=>{
+    // background gradient
+    let g=ctx.createLinearGradient(0,0,W*0.5,H);g.addColorStop(0,'#6e1339');g.addColorStop(.45,'#2a0f1c');g.addColorStop(1,'#080507');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    const photoH=1240;
+    if(img){const s=Math.max(W/img.width,photoH/img.height),iw=img.width*s,ih=img.height*s;ctx.drawImage(img,(W-iw)/2,0,iw,ih);}
+    else{ctx.save();ctx.font='900 760px '+DISP;ctx.fillStyle='rgba(255,255,255,.06)';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText((e[0]||'')[0]||'E',W/2,photoH*0.5);ctx.restore();}
+    // scrim
+    let sc=ctx.createLinearGradient(0,photoH-560,0,photoH);sc.addColorStop(0,'rgba(8,5,7,0)');sc.addColorStop(1,'#080507');ctx.fillStyle=sc;ctx.fillRect(0,photoH-560,W,560);
+    ctx.fillStyle='#080507';ctx.fillRect(0,photoH,W,H-photoH);
+    // header
+    ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillStyle='rgba(255,255,255,.92)';ctx.font='600 26px '+MED;ctx.letterSpacing='3px';
+    ctx.fillText('ELEPHANT SKIN · HERD PASS',64,80);
+    ctx.textAlign='right';ctx.fillText(cardno,W-64,80);ctx.letterSpacing='0px';ctx.textAlign='left';
+    // name
+    let y=photoH-150;ctx.fillStyle='#fff';ctx.font='400 108px '+DISP;
+    const nm=(e[0]||'').toUpperCase(),nLines=wrapLines(ctx,nm,W-128);
+    nLines.forEach((l,k)=>ctx.fillText(l,64,y+k*104));
+    y+=(nLines.length-1)*104+64;
+    ctx.fillStyle='rgba(255,255,255,.85)';ctx.font='500 38px '+MED;ctx.fillText(e[1]||'',64,y);
+    // quote
+    y+=110;
+    if(quote){ctx.fillStyle='#FF5A2E';ctx.fillRect(64,y-44,5,0);
+      ctx.font='italic 46px Georgia, serif';ctx.fillStyle='#f3f1ea';
+      const qLines=wrapLines(ctx,'“'+quote.replace(/^["“]+|["”]+$/g,'')+'”',W-180);
+      const qy0=y;qLines.forEach((l,k)=>ctx.fillText(l,96,y+k*62));
+      const qh=qLines.length*62;ctx.fillStyle='#FF5A2E';ctx.fillRect(64,qy0-40,5,qh-6);
+      y+=qh;}
+    // footer
+    ctx.fillStyle='rgba(255,255,255,.55)';ctx.font='600 26px '+MED;ctx.letterSpacing='3px';
+    ctx.fillText('THE HERD',64,H-90);ctx.textAlign='right';ctx.fillStyle='#FF5A2E';ctx.fillText('ELEPHANT-SKIN.COM',W-64,H-90);ctx.letterSpacing='0px';ctx.textAlign='left';
+    finish();
+  };
+  const finish=()=>{
+    const slug=(e[0]||'card').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    try{
+      cv.toBlob(async blob=>{
+        if(!blob){fallback();return;}
+        const file=new File([blob],'elephant-skin-'+slug+'.png',{type:'image/png'});
+        if(navigator.canShare&&navigator.canShare({files:[file]})){
+          try{await navigator.share({files:[file],title:e[0]+' · BaseCamp Studio'});btn.textContent='Share card';return;}catch(x){}
+        }
+        const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=file.name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500);
+        btn.textContent='Image saved ✓';setTimeout(()=>btn.textContent='Share card',1800);
+      },'image/png');
+    }catch(x){fallback();}
+  };
+  const fallback=()=>{btn.textContent='Open the live site to share';setTimeout(()=>btn.textContent='Share card',2200);};
+  btn.textContent='Generating…';
+  const run=()=>{ if(e[3]){const img=new Image();img.crossOrigin='anonymous';img.onload=()=>draw(img);img.onerror=()=>draw(null);img.src='people/'+e[3]+'.png?v=17';} else draw(null); };
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(run);else run();
+}
+function closeDrawer(){scrim.classList.remove('open');drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');}
+scrim.addEventListener('click',closeDrawer);
+drawer.addEventListener('click',e=>{if(e.target===drawer)closeDrawer();});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
+
+/* ---------- 03 DIRECTORY ---------- */
+const dirTable=document.getElementById('dirTable'),dirSearch=document.getElementById('dirSearch'),dirChips=document.getElementById('dirChips');
+const FILTERS=['all'].concat(Object.keys(T));
+dirChips.innerHTML=FILTERS.map((k,i)=>`<button class="dchip${i===0?' on':''}" data-f="${k}">${k==='all'?'All':T[k]}</button>`).join('');
+const dirMore=document.getElementById('dirMore');const STEP=10;
+let curF='all',curQ='',dirExpanded=false;
+const dirRank={};(function(){const ord=EMP.map((_,i)=>i);for(let i=ord.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=ord[i];ord[i]=ord[j];ord[j]=t;}ord.forEach((idx,pos)=>{dirRank[idx]=pos;});})();
+function renderDir(){
+  const q=curQ.toLowerCase();
+  const rows=EMP.map((e,i)=>[e,i]).filter(([e])=>(curF==='all'||e[2]===curF)&&(!q||e[0].toLowerCase().includes(q)||e[1].toLowerCase().includes(q))).sort((a,b)=>dirRank[a[1]]-dirRank[b[1]]);
+  const shown=dirExpanded?rows:rows.slice(0,STEP);
+  dirTable.innerHTML=rows.length?shown.map(([e,i])=>`<div class="dir-row" data-i="${i}"><div class="rn">${e[0]}</div><div class="rp">${e[1]}</div></div>`).join(''):'<div class="dir-empty">No one found. Try another search.</div>';
+  dirTable.querySelectorAll('.dir-row').forEach(r=>{const e=EMP[+r.dataset.i];r.addEventListener('click',()=>openDrawer(+r.dataset.i));r.addEventListener('mouseenter',()=>showCard(e));r.addEventListener('mouseleave',hideCard);});
+  if(rows.length>STEP){dirMore.innerHTML='<button class="dir-more" id="dirMoreBtn">'+(dirExpanded?'Show less ↑':'Show all →')+'</button>';document.getElementById('dirMoreBtn').addEventListener('click',()=>{dirExpanded=!dirExpanded;renderDir();if(dirExpanded===false)document.getElementById('directory').scrollIntoView({behavior:'smooth'});});}
+  else dirMore.innerHTML='';
+}
+dirSearch.addEventListener('input',e=>{curQ=e.target.value;dirExpanded=false;renderDir();});
+dirChips.querySelectorAll('.dchip').forEach(c=>c.addEventListener('click',()=>{dirChips.querySelectorAll('.dchip').forEach(x=>x.classList.remove('on'));c.classList.add('on');curF=c.dataset.f;dirExpanded=false;renderDir();}));
+renderDir();
+
+/* ---------- 04 LIFE (placeholder-aware gallery) ---------- */
+(function(){
+  const g=document.getElementById('lifeGrid');const TOTAL=28;
+  /* bands that each fill a full 6-col row → even spacing, closed last row, mixed shapes */
+  function buildSpans(n){const A=[[2,2],[2,2],[2,2]],Bb=[[3,2],[3,2]],Cc=[[2,3],[2,3],[2,3]];let rem=n,two=0;while(rem%3!==0){two++;rem-=2;if(rem<0){rem=n;two=0;break;}}const three=Math.floor(rem/3);const ord=[];let bi=0;for(let i=0;i<three;i++){ord.push(i%2?Cc:A);if(bi<two&&i%3===1){ord.push(Bb);bi++;}}while(bi<two){ord.push(Bb);bi++;}const s=[];ord.forEach(b=>b.forEach(x=>s.push(x)));while(s.length<n)s.push([2,2]);return s.slice(0,n);}
+  const spans=buildSpans(TOTAL);
+  function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]];}return a;}
+  /* per-photo focal point (face detection) so crops keep the people */
+  const FOCUS={1:"52% 67%",2:"50% 38%",3:"62% 59%",4:"63% 36%",5:"67% 48%",6:"59% 42%",7:"31% 54%",8:"57% 47%",9:"47% 49%",10:"27% 41%",11:"54% 45%",12:"61% 38%",13:"49% 44%",14:"41% 67%",15:"32% 78%",16:"72% 42%",17:"45% 37%",18:"25% 59%",19:"50% 38%",20:"50% 38%",21:"57% 47%",22:"44% 64%",23:"41% 39%",24:"21% 20%",25:"49% 44%",26:"57% 17%",27:"31% 52%",28:"56% 61%"};
+  const order=shuffle(Array.from({length:TOTAL},(_,i)=>i+1));
+  const tiles=spans.map((sp,k)=>{const fig=document.createElement('figure');fig.style.gridColumn='span '+sp[0];fig.style.gridRow='span '+sp[1];
+    const img=new Image();img.loading='lazy';img.alt='';img.src='life/'+order[k]+'.jpg';img.style.objectPosition=FOCUS[order[k]]||'50% 40%';fig.appendChild(img);g.appendChild(fig);return {fig,img,cur:order[k]};});
+  setInterval(()=>{
+    if(document.hidden||tiles.length<2)return;
+    let a=Math.random()*tiles.length|0,b=Math.random()*tiles.length|0;if(a===b)b=(b+1)%tiles.length;
+    const ta=tiles[a],tb=tiles[b];ta.fig.classList.add('swapping');tb.fig.classList.add('swapping');
+    setTimeout(()=>{const tmp=ta.cur;ta.cur=tb.cur;tb.cur=tmp;ta.img.src='life/'+ta.cur+'.jpg';ta.img.style.objectPosition=FOCUS[ta.cur]||'50% 40%';tb.img.src='life/'+tb.cur+'.jpg';tb.img.style.objectPosition=FOCUS[tb.cur]||'50% 40%';requestAnimationFrame(()=>{ta.fig.classList.remove('swapping');tb.fig.classList.remove('swapping');});},560);
+  },2400);
+})();
+
+
+/* ---------- 06 VALUES ---------- */
+(function(){
+  const V=[
+   ['We take ownership.','When something is ours, we own it end to end, the wins, the misses and the fix. Shit happens; we own it, fix it, move forward.'],
+   ['We solve before we ask.','We arrive with a point of view and a proposed solution, not just a problem. Initiative over hand-raising.'],
+   ['We care about the details.','The 1% that nobody asked for is often the reason a project feels premium. We sweat it.'],
+   ['We challenge the obvious.','Strategy creates differentiation. We question the default and look for the angle nobody else sees.'],
+   ['We move fast.','Momentum compounds. We ship, learn and iterate instead of polishing in the dark.'],
+   ['We build together.','One herd, many disciplines. The best work happens when strategy, creative and tech move as one.'],
+   ['We have BaseCamp Studio.','Thick skin, long memory, big heart. The world is full of dogs, be an elephant.']
+  ];
+  const vt=document.getElementById('valTrack');
+  vt.innerHTML=V.map(([t,x],i)=>`<div class="vitem${i===0?' lit':''}"><div class="vt">${t.replace('.','<span class="dot">.</span>')}</div><div class="vx">${x}</div></div>`).join('');
+  /* drag to scroll */
+  let down=false,sx=0,sl=0,moved=0;
+  vt.addEventListener('mousedown',e=>{down=true;moved=0;sx=e.pageX;sl=vt.scrollLeft;vt.classList.add('drag');});
+  addEventListener('mouseup',()=>{down=false;vt.classList.remove('drag');});
+  addEventListener('mousemove',e=>{if(!down)return;const d=e.pageX-sx;moved+=Math.abs(d);vt.scrollLeft=sl-d;});
+  vt.addEventListener('wheel',e=>{if(Math.abs(e.deltaX)<Math.abs(e.deltaY)){vt.scrollLeft+=e.deltaY;e.preventDefault();}},{passive:false});
+  /* slider + markers */
+  const sld=document.getElementById('valSlider'),marks=document.getElementById('valMarks');
+  const maxScroll=()=>vt.scrollWidth-vt.clientWidth;
+  function buildMarks(){const m=maxScroll();if(m<=0){marks.innerHTML='';return;}
+    marks.innerHTML=[...vt.children].map(it=>{const pct=Math.min(100,Math.max(0,it.offsetLeft/m*100));return '<i class="val-mark" data-x="'+it.offsetLeft+'" style="left:'+pct+'%"></i>';}).join('');
+    marks.querySelectorAll('.val-mark').forEach(mk=>mk.addEventListener('click',()=>vt.scrollTo({left:+mk.dataset.x,behavior:'smooth'})));}
+  let slDrag=false;
+  sld.addEventListener('pointerdown',()=>slDrag=true);
+  addEventListener('pointerup',()=>slDrag=false);
+  function sync(){const m=maxScroll();if(!slDrag)sld.value=m>0?vt.scrollLeft/m*100:0;
+    const center=vt.scrollLeft+vt.clientWidth/2;let best=0,bd=1e9;const items=[...vt.children];
+    items.forEach((it,i)=>{const c=it.offsetLeft+it.offsetWidth/2,d=Math.abs(c-center);if(d<bd){bd=d;best=i;}});
+    items.forEach((it,i)=>it.classList.toggle('lit',i===best));
+    [...marks.children].forEach((mk,i)=>mk.classList.toggle('on',i===best));}
+  sld.addEventListener('input',()=>{vt.scrollLeft=maxScroll()*(sld.value/100);});
+  vt.addEventListener('scroll',sync,{passive:true});
+  addEventListener('resize',()=>{buildMarks();sync();});
+  setTimeout(()=>{buildMarks();sync();},120);
+})();
+
+/* ---------- 07 The BaseCamp Studio Way · word wall ---------- */
+(function(){
+  const w=document.getElementById('wayWall');if(!w)return;
+  const WORDS=["The world is full of dogs.","Be an elephant.","Thick skin.","Long memory.","Resilience","Ownership","Curiosity","Growth","Go big or go home.","Own it. Fix it. Move forward.","Brave","Bold","Honest","Strategic","Creative","Restless","Fearless","Wild","Focused","Playful","Sharp","Warm","Fast","Real.","Unfiltered","Collaborative","Magnetic","Energetic","Passionate","Global","Inventive","Visionary","Authentic","Makers","Builders","Dreamers","Storytellers","Listeners","Leaders","Don't grow up.","Practice what you preach.","Make yourself proud.","We move differently.","Inside out.","No buzzwords. No dress codes.","Care about the details.","Challenge the obvious.","We build demand systems.","Strategy creates differentiation.","Demand creates performance.","Spirited","Smart","Welcoming","Curious","Friendly","Flexible","Inspired","Be your best version.","Even if it's ugly sometimes.","Use without moderation."];
+  w.innerHTML=WORDS.map((t,i)=>`<span class="${i%3===1?'it':''}">${t}</span>`).join(' ');
+})();
+
+/* ---------- Life gallery show more ---------- */
+(function(){const w=document.getElementById('lifeWrap'),b=document.getElementById('lifeMore');if(!w||!b)return;
+  b.addEventListener('click',()=>{const c=w.classList.toggle('collapsed');b.textContent=c?'Show more ↓':'Show less ↑';if(c)document.getElementById('life').scrollIntoView({behavior:'smooth'});});})();
+
+/* ---------- post-it parallax ---------- */
+(function(){
+  const img=document.querySelector('#way .way-img img');if(!img)return;const wrap=img.parentElement;
+  let raf=0;
+  function px(){raf=0;const r=wrap.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;
+    const prog=((r.top+r.height/2)/innerHeight-0.5);img.style.transform='translateY('+(prog*-18)+'%)';}
+  addEventListener('scroll',()=>{if(!raf)raf=requestAnimationFrame(px);},{passive:true});
+  addEventListener('resize',px);px();
+})();
+
+/* careers rotating word */
+(function(){const el=document.getElementById('careWord');if(!el)return;
+  const W=['care','build','dare','create','give a damn'];let i=0;
+  setInterval(()=>{el.classList.add('swap');setTimeout(()=>{i=(i+1)%W.length;el.textContent=W[i];el.classList.remove('swap');},260);},2200);})();
+
+/* footer rotating Hi */
+(function(){const el=document.getElementById('footHi');if(!el)return;const w=['Hi.','Olá.','Hola.','Ciao.','Bonjour.','Hallo.','你好','안녕','مرحبا','Xin chào.'];let i=0;setInterval(()=>{el.classList.add('swap');setTimeout(()=>{i=(i+1)%w.length;el.textContent=w[i];el.classList.remove('swap');},200);},1700);})();
+</script>
+<script src="tour.js" defer></script>
+</body>
+
+<!-- Mirrored from www.basecampstudio.pk/theelephants by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:41 GMT -->
+</html>

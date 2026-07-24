@@ -1,0 +1,16 @@
+/* BaseCamp Studio brand fonts (extracted from brand assets) */
+@font-face{
+  font-family:'Etna';
+  src:url('Etna.otf') format('opentype');
+  font-weight:700;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'Aaux Pro Light';
+  src:url('AauxProLight.ttf') format('truetype');
+  font-weight:300;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:'Aaux Pro Medium';
+  src:url('AauxProMedium.ttf') format('truetype');
+  font-weight:600;font-style:normal;font-display:swap;
+}
