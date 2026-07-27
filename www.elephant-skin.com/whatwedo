@@ -277,7 +277,7 @@ h2.big{font-family:var(--font-display);font-size:clamp(34px,6vw,88px);text-trans
     <div class="uni-legend"><span><i class="lg-in"></i>Inputs</span><span><i class="lg-sv"></i>Services</span><span><i class="lg-ou"></i>Outputs</span></div>
     <div class="uni-cap" id="uniCap"></div>
   </div>
-  <div class="uni-final" id="uniFinal"><div class="q">Every story needs a basecamp.<br><em>For the journey ahead.</em></div><a class="cta" href="brief">Start your brief →</a></div>
+  <div class="uni-final" id="uniFinal"><div class="q">Every story needs a basecamp.<br><em>For Success</em></div><a class="cta" href="brief">Start your brief →</a></div>
   <div class="uni-mobile" id="uniMobile"></div>
 </div>
 <div class="mc-tip" id="mcTip"></div>
@@ -396,7 +396,7 @@ addEventListener('resize',()=>document.querySelectorAll('#pillars .pill.open').f
     <div class="um-row"><div class="um-h">Services, tap to switch on/off</div><div id="umSvc">${SERVICES.map((s,i)=>`<button class="um-svc" data-i="${i}"><span class="sd"></span>${s.n} · ${s.name}</button>`).join('')}</div></div>
     <div class="um-arrow">↓ OUTPUTS ↓</div>
     <div class="um-row"><div class="um-chips" id="umOut">${OUTPUTS.map(d=>`<span class="um-chip">${d[0]}</span>`).join('')}</div></div>
-    <div class="um-final" id="umFinal"><div class="q">Every story needs a basecamp.<br><em>For the journey ahead.</em></div><a class="cta" href="brief">Start your brief →</a></div>`;
+    <div class="um-final" id="umFinal"><div class="q">Every story needs a basecamp.<br><em>For Success.</em></div><a class="cta" href="brief">Start your brief →</a></div>`;
   um.querySelectorAll('.um-svc').forEach(b=>b.addEventListener('click',()=>toggle(+b.dataset.i)));
   um.querySelector('#umChef').addEventListener('click',toggleChef);
   function toggleChef(){stopPlay();chefOn=!chefOn;applyState();}

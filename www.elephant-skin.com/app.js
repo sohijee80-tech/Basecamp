@@ -283,7 +283,7 @@ const isMobile=()=>window.innerWidth<=760;
 /* ---------- hero rotating pink word ---------- */
 (function(){
   const el=document.getElementById('rotWord');if(!el)return;
-  const words=['Basecamp','Crew','Vision','Story','Edge'];
+  const words=['BaseCamp','Crew','Vision','Path','AI Edge'];
   let i=Math.max(0,words.indexOf(el.textContent.trim()));
   setInterval(()=>{
     el.classList.add('swap');
@@ -294,7 +294,7 @@ const isMobile=()=>window.innerWidth<=760;
 /* ---------- contact "Say Hi" rotating language (1.5x) ---------- */
 (function(){
   const el=document.getElementById('sayHi');if(!el)return;
-  const words=['Hi.','Olá.','Hola.','Ciao.','Bonjour.','Hallo.','你好','안녕','مرحبا','Xin chào.'];
+  const words=['Hi.','Olá.','Hola.','Ciao.','Bonjour.','Hallo.','你好','안녕','السلام علیکم','مرحبا','Xin chào.'];
   let i=0;
   setInterval(()=>{
     el.classList.add('swap');
