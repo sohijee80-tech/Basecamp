@@ -748,7 +748,7 @@ function ParticleField(canvas,opts){
   const c=document.getElementById('heroCanvas');if(!c)return;
   const intro=document.getElementById('intro');
   const field=ParticleField(c,{
-    count:495, extra:705, start:'float', intro:!!intro, // 495 globe + 705 that fill the home (1200 total)
+    count:495, extra:705, start:'service', intro:!!intro, // 495 globe + 705 that fill the home (1200 total)
     orbit:true, interactive:true, avoidSelector:'.hero-copy', avoidBottomSelector:'.hero .filters', avoidMore:['.hero .hint'], // clusters orbit around the headline & scroll hint; particles react to the cursor in free flow
     modes:{
       float:{},

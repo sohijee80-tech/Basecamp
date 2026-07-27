@@ -465,7 +465,7 @@
       gap: 14px
     }
 
-    .menu-social a {
+    .menu-social img {
       width: 36px;
       height: 36px;
       border: 1.5px solid rgba(10, 10, 10, .55);
@@ -479,10 +479,10 @@
       transition: .2s
     }
 
-    .menu-social a:hover {
+    /* .menu-social img:hover {
       background: #0a0a0a;
       color: var(--pink)
-    }
+    } */
 
     @media(max-width:600px) {
       .menu-overlay {
@@ -4002,8 +4002,8 @@
   </header>
 
   <div class="menu-overlay" id="menu">
-    <button class="menu-close" onclick="closeMenu()" aria-label="Close">&times;</button>
-    <a href="index.html"><img class="menu-logo" src="basecamp-icon.png" alt="BaseCamp Studio"></a>
+    <button style="color: white;" class="menu-close" onclick="closeMenu()" aria-label="Close">&times;</button>
+    <a style="background-color: black;border-radius:15px;padding:15px" href="index.html"><img class="menu-logo" src="basecamp-icon.png" alt="BaseCamp Studio"></a>
     <nav class="menu-nav">
       <div><a href="#top" onclick="closeMenu()">Home</a></div>
       <div><a href="#featured" onclick="closeMenu()">THE KIT<sup
@@ -4017,8 +4017,10 @@
       <div class="slogan">Everything in THE KIT, nothing outsourced.</div>
       <p>A Camp for brands that don't have room for error. Explore. Hover. Scroll. Click.</p>
       <div class="menu-social">
-        <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
-        <a href="https://wa.me/+924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a>
+        <a href="mailto:hello@basecampstudio.pk" title="Email"> <img src="/email.png" height="20" width="20" href="https://wa.me/+924211100022" title="Gmail" target="_blank" rel="noopener" /></a>
+        <a href="https://wa.me/+924211100022" title="Email"> <img src="/whatsapp.png" height="20" width="20" href="https://wa.me/+924211100022" title="WhatsApp" target="_blank" rel="noopener" /></a>
+      <!-- <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
+        <a href="https://wa.me/+924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a> -->
       </div>
     </div>
   </div>
@@ -4041,9 +4043,9 @@
     </div>
     <div class="filters">
       <!-- <span>Organize 500+ projects by</span> -->
-      <button class="active" data-mode="float">Free flow</button>
+      <!-- <button class="active" data-mode="float">Free flow</button>
       <button data-mode="service">Service</button>
-      <button data-mode="year">Year</button>
+      <button data-mode="year">Year</button> -->
     </div>
     <div class="hint">scroll to explore ↓</div>
   </section>
@@ -4126,7 +4128,7 @@
         <span class="eyebrow reveal">02 — What's in the pack.</span>
         <h2 style="font-size: clamp(54px, 9vw, 128px);" class="chef-title reveal">THE KIT<span
             style="color: var(--pink); -webkit-text-fill-color: var(--pink); font-size: .26em; vertical-align: top; line-height: 1; position: relative; top: .12em; margin-left: .06em;"
-            class="pink"> ®</span>.</h2>
+            class="pink"></span>.</h2>
       </div>
       <p class="pstrip-sub reveal">Five disciplines, one crew. Everything below is shot, cut, or rendered in house,
         nothing here gets couriered to a stranger.</p>
@@ -4417,11 +4419,12 @@
                 <label>Discipline</label>
                 <select name="discipline" required>
                   <option value="">Select one</option>
-                  <option>Design</option>
-                  <option>Development</option>
-                  <option>Marketing</option>
-                  <option>Branding</option>
-                  <option>Photography</option>
+                  <option>Production</option>
+                  <option>Post Production</option>
+                  <option>AI Production</option>
+                  <option>3D Animation</option>
+                  <option>2D Animation</option>
+                  <option>Motion Graphics and VFX</option>
                 </select>
               </div>
 

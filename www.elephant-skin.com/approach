@@ -334,7 +334,7 @@ h2.big{font-family:var(--font-display);font-size:clamp(34px,6vw,88px);text-trans
   <span class="snum reveal">03 — The Operating System</span>
   <div class="chef-top">
     <div class="chef-os-head">
-      <h2 class="chef-title reveal">THE KIT<span class="reg">®</span>.</h2>
+      <h2 class="chef-title reveal">THE KIT<span class="reg"></span>.</h2>
       <p class="chef-lead reveal">Everything a shoot needs, nothing outsourced.</p>
       <p class="lead reveal">THE KIT<span class="reg2">®</span> isn't a list of deliverables, it's the operating system behind every project. Six connected steps, spelling T-H-E-K-I-T: <b>Brief</b>, <b>Concept</b>, <b>Production</b>, <b>Post-Production</b>, <b>Animation &amp; AI</b>, <b>Delivery</b>, that turn a brief into a launch-ready piece.</p>
       <div class="chef-meta reveal">500+ projects · 15+ years · Since 2011</div>
