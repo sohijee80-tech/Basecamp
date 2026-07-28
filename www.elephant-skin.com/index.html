@@ -4528,12 +4528,86 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   <script src="app.js"></script>
   <script src="cookies.js" defer></script>
   <script src="tour.js" defer></script>
+  <div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <button class="video-close">&times;</button>
+
+    <video id="modalVideo" controls autoplay playsinline>
+      <source src="" type="video/mp4">
+    </video>
+  </div>
+</div>
 </body>
 
 <!-- Mirrored from www.basecampstudio.pk/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Jul 2026 12:52:30 GMT -->
 
 </html>
 <style>
+
+  .video-modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.82);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  opacity:0;
+  visibility:hidden;
+  transition:.35s ease;
+  z-index:99999;
+}
+
+.video-modal.show{
+  opacity:1;
+  visibility:visible;
+}
+
+.video-modal-content{
+  position:relative;
+  width:min(92vw,1100px);
+  aspect-ratio:16/9;
+  border-radius:22px;
+  overflow:hidden;
+  background:#111;
+  box-shadow:0 30px 80px rgba(0,0,0,.55);
+  transform:scale(.92);
+  transition:.35s ease;
+}
+
+.video-modal.show .video-modal-content{
+  transform:scale(1);
+}
+
+#modalVideo{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  background:#000;
+}
+
+.video-close{
+  position:absolute;
+  top:18px;
+  right:18px;
+  width:48px;
+  height:48px;
+  border:none;
+  border-radius:50%;
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  font-size:28px;
+  cursor:pointer;
+  backdrop-filter:blur(12px);
+  transition:.25s;
+  z-index:2;
+}
+
+.video-close:hover{
+  background:#fff;
+  color:#111;
+  transform:rotate(90deg);
+}
   .modal {
     position: fixed;
     inset: 0;
@@ -4716,4 +4790,60 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
       closeModal();
     }
   });
+</script>
+
+<script>
+history.scrollRestoration = "manual";
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
+</script>
+
+<script>
+const modall = document.getElementById("videoModal");
+const modalVideo = document.getElementById("modalVideo");
+const closeBtn = document.querySelector(".video-close");
+
+document.querySelectorAll(".chef-el").forEach(card => {
+
+    card.style.cursor = "pointer";
+
+    card.addEventListener("click", () => {
+
+        const src = card.querySelector("video").src;
+
+        modalVideo.src = src;
+        modall.classList.add("show");
+
+        modalVideo.load();
+        modalVideo.play();
+
+    });
+
+});
+
+function closeVideo(){
+
+    modall.classList.remove("show");
+
+    modalVideo.pause();
+    modalVideo.currentTime = 0;
+    modalVideo.src = "";
+
+}
+
+closeBtn.addEventListener("click", closeVideo);
+
+modal.addEventListener("click", e=>{
+    if(e.target === modal){
+        closeVideo();
+    }
+});
+
+document.addEventListener("keydown",e=>{
+    if(e.key==="Escape"){
+        closeVideo();
+    }
+});
 </script>
