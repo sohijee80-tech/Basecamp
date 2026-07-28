@@ -542,11 +542,12 @@
       align-items: center
     }
 
-    #heroCanvas {
+    .hero .hero-video {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
+      object-fit: cover;
       z-index: 1
     }
 
@@ -4027,7 +4028,7 @@
 
   <!-- HERO -->
   <section class="hero snap" id="top">
-    <canvas id="heroCanvas"></canvas>
+    <video class="hero-video" autoplay muted loop playsinline src="Chair%20Animation.mp4"></video>
     <div class="veil"></div>
     <div class="wrap">
       <div class="hero-copy">

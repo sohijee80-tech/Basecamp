@@ -743,68 +743,9 @@ function ParticleField(canvas,opts){
   return {start,stop,setMode,getMode:()=>mode,modes,launch,getPhase:()=>phase};
 }
 
-/* ---------- HERO field ---------- */
+/* ---------- HERO ---------- */
 (function(){
-  const c=document.getElementById('heroCanvas');if(!c)return;
-  const intro=document.getElementById('intro');
-  const field=ParticleField(c,{
-    count:495, extra:705, start:'service', intro:!!intro, // 495 globe + 705 that fill the home (1200 total)
-    orbit:true, interactive:true, avoidSelector:'.hero-copy', avoidBottomSelector:'.hero .filters', avoidMore:['.hero .hint'], // clusters orbit around the headline & scroll hint; particles react to the cursor in free flow
-    modes:{
-      float:{},
-      service:{groups:['Production','Post','AI','3D','2D','Motion','VFX'],weights:[160,140,60,90,80,70,50]},
-      year:{groups:["'19","'20","'21","'22","'23","'24","'25","'26"],weights:[24,33,34,51,59,63,64,58]}
-    }
-  });
-  field.start();
-  // intro: same particles do globe -> explode -> floating field
-  if(intro){
-    let launched=false;
-    const go=()=>{
-      if(launched)return;launched=true;
-      try{sessionStorage.setItem('es_intro_seen','1');}catch(e){}
-      field.launch();                         // globe explodes (same particles)
-      intro.classList.add('gone');            // fade the intro text
-      window.scrollTo(0,0);                   // reset to top BEFORE unlocking, so it never yanks back later
-      document.body.classList.remove('intro-lock','intro-active'); // reveal chrome + content
-      setTimeout(()=>{intro.style.display='none';},1000);
-      // the page was locked to 100vh during init — recompute scroll-driven layouts
-      setTimeout(()=>dispatchEvent(new Event('resize')),120);
-      setTimeout(()=>dispatchEvent(new Event('resize')),700);
-    };
-    intro.addEventListener('click',go);
-    intro.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
-    // the intro plays once per session — returning to the home (logo/Home link) lands straight on content.
-    let _seen=false;try{_seen=sessionStorage.getItem('es_intro_seen')==='1';}catch(e){}
-    if(_seen){
-      launched=true;
-      field.launch();
-      intro.classList.add('gone'); intro.style.display='none';
-      document.body.classList.remove('intro-lock','intro-active');
-      const tgt=(location.hash&&location.hash.length>1&&location.hash!=='#top')?location.hash:null;
-      setTimeout(()=>{dispatchEvent(new Event('resize'));if(tgt){const el=document.querySelector(tgt);if(el)el.scrollIntoView();}},80);
-    }
-    // arriving from another page at a real section anchor: skip the cover globe and land on the content.
-    // "#top" (the menu's Home link) and empty hashes still play the intro (first visit only).
-    else if(location.hash && location.hash.length>1 && location.hash!=='#top'){
-      launched=true;
-      field.launch();
-      intro.classList.add('gone'); intro.style.display='none';
-      document.body.classList.remove('intro-lock','intro-active');
-      const tgt=location.hash;
-      setTimeout(()=>{dispatchEvent(new Event('resize'));const el=document.querySelector(tgt);if(el)el.scrollIntoView();},80);
-    }
-  }else{
-    document.body.classList.remove('intro-lock','intro-active');
-  }
-  document.querySelectorAll('.hero .filters button').forEach(b=>{
-    b.addEventListener('click',()=>{
-      if(b.dataset.mode==='reel') return; // demo reel opens the video modal, not a cluster mode
-      document.querySelectorAll('.hero .filters button:not(.reel-btn)').forEach(x=>x.classList.remove('active'));
-      b.classList.add('active');
-      field.setMode(b.dataset.mode);
-    });
-  });
+  document.body.classList.remove('intro-lock','intro-active');
 })();
 
 /* ---------- GLOBAL REACH field ---------- */
