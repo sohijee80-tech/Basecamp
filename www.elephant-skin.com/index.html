@@ -4235,7 +4235,7 @@
 
           <div class="el-core" style="position: relative; z-index: 2;">
             <div class="el-name">GFC Fans</div>
-            <div class="el-tag">Frame perfect detailing, advance wardrobe correction that truly elevates the product experience.</div>
+            <!-- <div class="el-tag">Frame perfect detailing, advance wardrobe correction that truly elevates the product experience.</div> -->
           </div>
         </article>
 
@@ -4251,7 +4251,7 @@
 
           <div class="el-core" style="position: relative; z-index: 2;">
             <div class="el-name">Molty Foam</div>
-            <div class="el-tag">AI assisted production workflows to create a modern and high impact brand experience. </div>
+            <!-- <div class="el-tag">AI assisted production workflows to create a modern and high impact brand experience. </div> -->
           </div>
         </article>
 
@@ -4267,7 +4267,7 @@
 
           <div class="el-core" style="position: relative; z-index: 2;">
             <div class="el-name">Dawn foods</div>
-            <div class="el-tag">A seamless blend of creativity and precision, crafted to elevate one of Pakistan's most loved brands. </div>
+            <!-- <div class="el-tag">A seamless blend of creativity and precision, crafted to elevate one of Pakistan's most loved brands. </div> -->
           </div>
         </article>
 
@@ -4283,7 +4283,7 @@
 
           <div class="el-core" style="position: relative; z-index: 2;">
             <div class="el-name">Nestlé</div>
-            <div class="el-tag">Creative storytelling, vibrant animations and impactful visuals bringing Nestle's vision to life. </div>
+            <!-- <div class="el-tag">Creative storytelling, vibrant animations and impactful visuals bringing Nestle's vision to life. </div> -->
           </div>
         </article>
        
@@ -4299,7 +4299,7 @@
 
           <div class="el-core" style="position: relative; z-index: 2;">
             <div class="el-name">Borjan</div>
-            <div class="el-tag">Unveiling the essence of luxury in Borjan perfumes for their aromatic journey.</div>
+            <!-- <div class="el-tag">Unveiling the essence of luxury in Borjan perfumes for their aromatic journey.</div> -->
           </div>
         </article>
 
@@ -4315,7 +4315,7 @@
 
           <div class="el-core" style="position: relative; z-index: 2;">
             <div class="el-name">OG Cola</div>
-            <div class="el-tag">Hyperrealistic AI visual experience designed to celebrate flavour, faith and festivity.</div>
+            <!-- <div class="el-tag">Hyperrealistic AI visual experience designed to celebrate flavour, faith and festivity.</div> -->
           </div>
         </article>
       </div>
@@ -4376,6 +4376,31 @@
       <div class="clients-track" id="clientsTrack"></div>
     </div>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+emailjs.init("YOUR_PUBLIC_KEY");
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        name: this.name.value,
+        email: this.email.value,
+        discipline: this.discipline.value,
+        brief: this.brief.value,
+        to_email: "hello@basecampstudio.pk"
+    })
+    .then(function () {
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset();
+    })
+    .catch(function (error) {
+        console.error(error);
+        alert("Failed to send message.");
+    });
+});
+</script>
   <script>
     (function () {
      const logos = [
@@ -4466,7 +4491,7 @@
             </form>
           </div>
         </div>
-        <a href="mailto:hello@basecampstudio.pk?subject=Project%20Enquiry" class="btn btn-ghost">hello@basecampstudio.pk
+        <a href="mailto:hello@basecampstudio.pk" class="btn btn-ghost">hello@basecampstudio.pk
           →</a>
         <a href="https://wa.me/+924211100022" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp us →</a>
       </div>
