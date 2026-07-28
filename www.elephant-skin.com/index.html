@@ -539,23 +539,45 @@
       position: relative;
       overflow: hidden;
       display: flex;
-      align-items: center
+      align-items: center;
+      background: var(--ink)
     }
 
     .hero .hero-video {
       position: absolute;
-      inset: 0;
-      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 45%;
+      width: 55%;
       height: 100%;
       object-fit: cover;
-      z-index: 1
+      z-index: 1;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 18%);
+      mask-image: linear-gradient(to right, transparent 0%, #000 18%)
     }
 
     .hero .veil {
       position: absolute;
       inset: 0;
       z-index: 2;
-      background: radial-gradient(70% 70% at 50% 55%, rgba(7, 7, 7, 0) 0%, rgba(7, 7, 7, .55) 80%)
+      background:
+        linear-gradient(90deg, rgba(7, 7, 7, .96) 0%, rgba(7, 7, 7, .8) 38%, rgba(7, 7, 7, .25) 55%, rgba(7, 7, 7, 0) 68%),
+        radial-gradient(70% 70% at 60% 55%, rgba(7, 7, 7, 0) 0%, rgba(7, 7, 7, .45) 80%)
+    }
+
+    @media(max-width:760px) {
+      .hero .hero-video {
+        left: 0;
+        width: 100%;
+        -webkit-mask-image: none;
+        mask-image: none
+      }
+
+      .hero .veil {
+        background:
+          linear-gradient(180deg, rgba(7, 7, 7, .55) 0%, rgba(7, 7, 7, .55) 45%, rgba(7, 7, 7, .9) 100%)
+      }
     }
 
     .hero .wrap {
