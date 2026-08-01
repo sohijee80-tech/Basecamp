@@ -399,9 +399,7 @@
     }
 
     .menu-close {
-      position: absolute;
-      top: 46px;
-      right: 52px;
+  
       width: 46px;
       height: 46px;
       font-size: 38px;
@@ -4026,8 +4024,10 @@
   </header>
 
   <div class="menu-overlay" id="menu">
-    <button style="color: white;" class="menu-close" onclick="closeMenu()" aria-label="Close">&times;</button>
-    <a style="background-color: black;border-radius:15px;padding:15px" href="index.html"><img class="menu-logo" src="basecamp-icon.png" alt="BaseCamp Studio"></a>
+    <div style=" background-color: black;border-radius:15px; display:flex;align-items:center;justify-content:space-between;padding:0 20px">
+      <a style=" display: flex; padding:15px" href="index.html"><img class="menu-logo" src="basecamp-icon.png" alt="BaseCamp Studio"></a>
+      <button style="color: white;" class="menu-close" onclick="closeMenu()" aria-label="Close">&times;</button>
+    </div>
     <nav class="menu-nav">
       <div><a href="#top" onclick="closeMenu()">Home</a></div>
       <div><a href="#featured" onclick="closeMenu()">THE KIT<sup
