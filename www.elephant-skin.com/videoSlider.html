@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Kit — BaseCamp Studio</title>
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+      :root {
+        --pink: #FF5A2E;
+        --ink: #070707;
+        --muted: #8d8d8d;
+        --font-display: 'Etna', 'Arial Black', Arial, sans-serif;
+        --font-body: 'Aaux Pro Light', 'Helvetica Neue', Arial, sans-serif;
+        --font-med: 'Aaux Pro Medium', 'Helvetica Neue', Arial, sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: var(--ink);
+        font-family: var(--font-body);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .kit-grid-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(7, 7, 7, .94);
+        backdrop-filter: blur(14px);
+        z-index: 99998;
+        opacity: 0;
+        visibility: hidden;
+        transition: .35s ease;
+        overflow-y: auto;
+        padding: 90px 24px 60px;
+      }
+
+      .kit-grid-overlay.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .kit-grid-panel {
+        width: min(1200px, 100%);
+        margin: 0 auto;
+      }
+
+      .kit-grid-close {
+        position: fixed;
+        top: 24px;
+        right: 24px;
+        width: 48px;
+        height: 48px;
+        border: none;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .1);
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+        backdrop-filter: blur(12px);
+        transition: .25s;
+        z-index: 2;
+      }
+
+      .kit-grid-close:hover {
+        background: #fff;
+        color: #111;
+        transform: rotate(90deg);
+      }
+
+      .kit-grid-eyebrow {
+        display: block;
+        font-family: var(--font-med);
+        font-size: 12px;
+        letter-spacing: .2em;
+        color: var(--pink);
+        text-transform: uppercase;
+      }
+
+      #kitGridTitle {
+        font-family: var(--font-display);
+        font-size: clamp(28px, 4vw, 52px);
+        color: #fff;
+        margin-top: 8px;
+        text-transform: uppercase;
+      }
+
+      .kit-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 36px;
+      }
+
+      @media(max-width:900px) {
+        .kit-grid {
+          grid-template-columns: repeat(2, 1fr)
+        }
+      }
+
+      @media(max-width:560px) {
+        .kit-grid {
+          grid-template-columns: 1fr
+        }
+      }
+
+      .kit-thumb {
+        position: relative;
+        aspect-ratio: 16/10;
+        border-radius: 14px;
+        overflow: hidden;
+        cursor: pointer;
+        background: #111;
+        border: 1px solid rgba(255, 255, 255, .08);
+        transition: border-color .3s;
+      }
+
+      .kit-thumb:hover {
+        border-color: rgba(255, 90, 46, .5);
+      }
+
+      .kit-thumb video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+      }
+
+      .kit-thumb-play {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .kit-thumb-play span {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .45);
+        backdrop-filter: blur(6px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .25s;
+      }
+
+      .kit-thumb-play span::after {
+        content: "";
+        border-style: solid;
+        border-width: 9px 0 9px 15px;
+        border-color: transparent transparent transparent #fff;
+        margin-left: 3px;
+      }
+
+      .kit-thumb:hover .kit-thumb-play span {
+        background: var(--pink);
+        transform: scale(1.08);
+      }
+
+      .kit-thumb-name {
+        position: absolute;
+        left: 14px;
+        bottom: 12px;
+        color: #fff;
+        font-family: var(--font-med);
+        font-size: 14px;
+        letter-spacing: .02em;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, .6);
+      }
+
+      .kit-grid-empty {
+        color: var(--muted);
+        padding: 40px 0;
+      }
+
+      .video-modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, .82);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: .35s ease;
+        z-index: 99999;
+      }
+
+      .video-modal.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .video-modal-content {
+        position: relative;
+        width: min(92vw, 1100px);
+        aspect-ratio: 16/9;
+        border-radius: 22px;
+        overflow: hidden;
+        background: #111;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, .55);
+        transform: scale(.92);
+        transition: .35s ease;
+      }
+
+      .video-modal.show .video-modal-content {
+        transform: scale(1);
+      }
+
+      #modalVideo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: #000;
+      }
+
+      .video-close {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        width: 48px;
+        height: 48px;
+        border: none;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .12);
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+        backdrop-filter: blur(12px);
+        transition: .25s;
+        z-index: 2;
+      }
+
+      .video-close:hover {
+        background: #fff;
+        color: #111;
+        transform: rotate(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kitGridOverlay" class="kit-grid-overlay">
+      <div class="kit-grid-panel">
+        <button class="kit-grid-close" onclick="closeKitGrid()">&times;</button>
+        <div class="kit-grid-head">
+          <span class="kit-grid-eyebrow">THE KIT</span>
+          <h3 id="kitGridTitle"></h3>
+        </div>
+        <div class="kit-grid" id="kitGridBody"></div>
+      </div>
+    </div>
+
+    <div id="videoModal" class="video-modal">
+      <div class="video-modal-content">
+        <button class="video-close">&times;</button>
+        <video id="modalVideo" controls autoplay playsinline>
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <script>
+      // ---- THE KIT category grid --------------------------------------------
+      // PLACEHOLDER MAPPING: `cat` must match one of the FEAT keys on index.html
+      // ('production' | 'post' | 'ai' | '3d' | '2d' | 'motion').
+      const PROJECTS = [
+        { cat: 'production', name: 'Master Sanitary 22222ssssss2',        src: '/Production/masterSenitery.mp4' },
+        { cat: 'production', name: 'TVC Production',        src: '/Production/TVC.mp4' },
+        { cat: 'production', name: 'Tehreesh',        src: '/Production/Tehreesh.mp4' },
+        { cat: 'production', name: 'Nido',        src: '/Production/Nido.mp4' },
+        { cat: 'production', name: 'Nido2',        src: '/Production/Nido2.mp4' },
+        { cat: 'production', name: 'Borjan',        src: '/Production/Borjan.mp4' },
+        { cat: 'production', name: 'Jazz',        src: '/Production/Jazz.mp4' },
+        { cat: 'production', name: 'Nigeban',        src: '/Production/Nigeban.mp4' },
+        { cat: 'production', name: 'Pakfan',        src: '/Production/Pakfan.mp4' },
+        { cat: 'production', name: 'Master Sanitary',        src: '/Production/MasterSanitary.mp4' },
+        { cat: 'production', name: 'Master Cola',        src: '/Production/masterdrink.mp4' },
+        { cat: 'production', name: 'Master Tiles',        src: '/Production/masterTiles.mp4' },
+        { cat: 'production', name: 'Canolive',        src: '/Production/CANOLIVE.mp4' },
+        { cat: 'production', name: 'Golden Pearl',        src: '/Production/Goldenpearl.mp4' },
+        { cat: 'production', name: 'Golden Pump',        src: '/Production/pump.mp4' },
+        { cat: 'production', name: 'Master Pipes and Fittings',        src: '/Production/MasterPipes.mp4' },
+        { cat: 'production', name: 'Master Molty Foam',        src: '/Production/MasterMolty.mp4' },
+        { cat: 'post', name: 'Areej',        src: '/PostProduction/Areej.mp4' },
+        { cat: 'post', name: 'GFC',        src: '/PostProduction/GFC.mp4' },
+        { cat: 'post', name: 'Belini',        src: '/PostProduction/Belini.mp4' },
+        { cat: 'post', name: 'Nido',        src: '/PostProduction/Nido.mp4' },
+        { cat: 'post', name: 'Cerelac',        src: '/PostProduction/Cerelac.mov' },
+        { cat: 'post', name: 'Mountain Dew',        src: '/PostProduction/Dew.mp4' },
+        { cat: 'post', name: 'Domino',        src: '/PostProduction/Domino.mp4' },
+        { cat: 'post', name: 'Doughstory',        src: '/PostProduction/Doughstory.mp4' },
+        { cat: 'post', name: 'Due Cream',        src: '/PostProduction/DueCream.mp4' },
+        { cat: 'post', name: 'Everyday',        src: '/PostProduction/EveryDay.mp4' },
+        { cat: 'post', name: 'Cerelac1',        src: '/PostProduction/Cerelac1.mp4' },
+        { cat: 'post', name: 'Jazz',        src: '/PostProduction/Jazz.mp4' },
+        { cat: 'post', name: 'Milo',        src: '/PostProduction/Milo.mp4' },
+        { cat: 'post', name: 'Milo2',        src: '/PostProduction/Milo2.mp4' },
+        { cat: 'post', name: 'Nangrow',        src: '/PostProduction/Nangrow.mp4' },
+        { cat: 'post', name: 'Cerelac2',        src: '/PostProduction/Cerelac02.mp4' },
+        { cat: 'post', name: 'Nangrow2',        src: '/PostProduction/nangrow2.mp4' },
+        { cat: 'post', name: 'Nangrow3',        src: '/PostProduction/Nangrow3.mp4' },
+        { cat: 'post', name: 'NBP',        src: '/PostProduction/NBP.mp4' },
+        { cat: 'post', name: 'Cerelac3',        src: '/PostProduction/Cerelac3.mp4' },
+        { cat: 'post', name: 'Total',        src: '/PostProduction/Total.mp4' },
+        { cat: 'ai',          name: 'Gfc',      src: '/AIProductions/Gfc.mp4' },
+        { cat: 'ai',          name: 'Urdu Poem',      src: '/AIProductions/Dolphin.mp4' },
+        { cat: 'ai',          name: 'Master',      src: '/AIProductions/Molty.mp4' },
+        { cat: 'ai',          name: 'OG Cola',      src: '/AIProductions/OGCola.mp4' },
+        { cat: 'ai',          name: 'Urdu Poem 2',      src: '/AIProductions/Poem.mp4' },
+        { cat: 'ai',          name: 'OG Thriller',      src: '/clientVideos/OGthriller.mp4' },
+        { cat: 'ai',          name: 'Urdu Poem 3',      src: '/AIProductions/Poem2.mp4' },
+        { cat: 'ai',          name: 'Parley',      src: '/clientVideos/Parley.mp4' },
+        { cat: '3d',          name: 'Belvin',          src: '/clientVideos/Belvin.mp4' },
+        { cat: '3d',          name: 'Blast',          src: '/clientVideos/Blast.mp4' },
+        { cat: '3d',          name: 'Energizer',          src: '/clientVideos/Energizer.mp4' },
+        { cat: '3d',          name: 'Durafoam',          src: '/clientVideos/Durafoam.mp4' },
+        { cat: '3d',          name: 'Happy Nappy',          src: '/clientVideos/HapiNapi.mp4' },
+        { cat: '3d',          name: 'Urdu Poem',          src: '/clientVideos/highquality.mp4' },
+        { cat: '3d',          name: 'Service Tyres',          src: '/clientVideos/Service.mp4' },
+        { cat: '3d',          name: 'Regal City',          src: '/clientVideos/REGALCITY.mp4' },
+        { cat: '3d',          name: 'Baby Master',          src: '/3dProduction/BabyMaster.mp4' },
+        { cat: '3d',          name: 'Citizen',          src: '/3dProduction/Citizen.mp4' },
+        { cat: '3d',          name: 'Citizen 2',          src: '/3dProduction/Citizen2.mp4' },
+        { cat: '3d',          name: 'GFC',          src: '/3dProduction/GFC.mp4' },
+        { cat: '3d',          name: 'GFC 2',          src: '/3dProduction/GFC1.mp4' },
+        { cat: '3d',          name: 'Jojo',          src: '/3dProduction/jojo.mp4' },
+        { cat: '3d',          name: 'Jojo 2',          src: '/3dProduction/jojo2.mp4' },
+        { cat: '3d',          name: 'Kurkure',          src: '/3dProduction/Kurkure.mp4' },
+        { cat: '3d',          name: 'Master Pipes',          src: '/3dProduction/MasterPipes.mp4' },
+        { cat: '3d',          name: 'Mater UVC',          src: '/3dProduction/MaterUVC.mp4' },
+        { cat: '3d',          name: 'Milo',          src: '/3dProduction/Milo.mp4' },
+        { cat: '3d',          name: 'Nangrow',          src: '/3dProduction/Nangrow.mp4' },
+        { cat: '3d',          name: 'Nangrow 2',          src: '/3dProduction/Nangrow1.mp4' },
+        { cat: '3d',          name: 'OG Cola',          src: '/3dProduction/OGCola.mp4' },
+        { cat: '3d',          name: 'OG Orange',          src: '/3dProduction/OGOrange.mp4' },
+        { cat: '3d',          name: 'Pakfan',          src: '/3dProduction/Pakfan.mp4' },
+        { cat: '3d',          name: 'Sting',          src: '/3dProduction/Sting.mp4' },
+        { cat: '3d',          name: 'Service Tyres',          src: '/3dProduction/Service.mp4' },
+        { cat: '2d',          name: 'Milo',          src: '/2d/Milo.mp4' },
+        { cat: '2d',          name: 'Jojo',          src: '/2d/Jojo.mp4' },
+        { cat: '2d',          name: 'Nido',          src: '/2d/Nido.mp4' },
+        { cat: '2d',          name: 'Service Shoes',          src: '/2d/Service.mp4' },
+        { cat: 'motion',      name: 'Be By Molty',         src: '/motion/BeMolty.mp4' },
+        { cat: '3d',          name: 'Urdu Poem',         src: '/clientVideos/3d.mp4' },
+        { cat: 'motion',      name: 'Citizen',           src: '/motion/Citizen.mp4' },
+        { cat: '3d',          name: 'OG Cola (Alt)',   src: '/clientVideos/OGCola.mp4' },
+        { cat: 'motion',      name: 'Master Foam',          src: '/motion/MasterFoam.mp4' },
+        { cat: '3d',          name: 'Zencolar',        src: '/clientVideos/zencolar.mp4' }
+      ];
+
+      const kitGridOverlay = document.getElementById('kitGridOverlay');
+      const kitGridBody = document.getElementById('kitGridBody');
+      const kitGridTitle = document.getElementById('kitGridTitle');
+      const modall = document.getElementById('videoModal');
+      const modalVideo = document.getElementById('modalVideo');
+      const closeBtn = document.querySelector('.video-close');
+
+      function openVideoModal(src) {
+        modalVideo.src = src;
+        modall.classList.add('show');
+        modalVideo.load();
+        modalVideo.play();
+      }
+
+      function closeVideo() {
+        modall.classList.remove('show');
+        modalVideo.pause();
+        modalVideo.currentTime = 0;
+        modalVideo.src = '';
+      }
+
+      closeBtn.addEventListener('click', closeVideo);
+
+      modall.addEventListener('click', e => {
+        if (e.target === modall) closeVideo();
+      });
+
+      function renderKitGrid(cat, label) {
+        kitGridTitle.textContent = label;
+
+        const items = PROJECTS.filter(p => p.cat === cat);
+
+        if (!items.length) {
+          kitGridBody.innerHTML = '<div class="kit-grid-empty">Case studies for this category are coming soon.</div>';
+          return;
+        }
+
+        // "#t=0.5" seeks the video to a still frame as a poster, no extra image assets needed.
+        kitGridBody.innerHTML = items.map(p => (
+          '<div class="kit-thumb" data-src="' + p.src + '">'
+          + '<video muted playsinline preload="metadata" src="' + p.src + '#t=0.5"></video>'
+          + '<div class="kit-thumb-play"><span></span></div>'
+          + '<div class="kit-thumb-name">' + p.name + '</div>'
+          + '</div>'
+        )).join('');
+
+        kitGridBody.querySelectorAll('.kit-thumb').forEach(el => {
+          el.addEventListener('click', () => openVideoModal(el.getAttribute('data-src')));
+        });
+      }
+
+      function openKitGrid(cat, label) {
+        renderKitGrid(cat, label);
+        kitGridOverlay.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeKitGrid() {
+        window.location.href = 'index.html';
+      }
+
+      kitGridOverlay.addEventListener('click', e => {
+        if (e.target === kitGridOverlay) closeKitGrid();
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          if (modall.classList.contains('show')) {
+            closeVideo();
+          } else {
+            closeKitGrid();
+          }
+        }
+      });
+
+      function getQueryParam(name) {
+        return new URLSearchParams(window.location.search).get(name);
+      }
+
+      openKitGrid(getQueryParam('cat') || '', getQueryParam('label') || '');
+    </script>
+  </body>
+</html>

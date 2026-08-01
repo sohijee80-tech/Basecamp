@@ -4190,7 +4190,9 @@
 
       row.querySelectorAll('.pcard').forEach(function (card) {
         card.addEventListener('click', function () {
-          openKitGrid(card.getAttribute('data-cat'), card.getAttribute('data-label'));
+          var cat = card.getAttribute('data-cat');
+          var label = card.getAttribute('data-label');
+          window.location.href = 'videoSlider.html?cat=' + encodeURIComponent(cat) + '&label=' + encodeURIComponent(label);
         });
       });
     })();
@@ -4941,6 +4943,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const modal = document.getElementById("contactModal");
 
   function openModal() {
+    
     modal.classList.add("active");
     document.body.style.overflow = "hidden";
   }
@@ -5098,8 +5101,6 @@ const PROJECTS = [
     { cat: '3d',          name: 'Pakfan',          src: '/3dProduction/Pakfan.mp4' },
     { cat: '3d',          name: 'Sting',          src: '/3dProduction/Sting.mp4' },
     { cat: '3d',          name: 'Service Tyres',          src: '/3dProduction/Service.mp4' },
-    { cat: '3d',          name: 'Zencolar',          src: '/3dProduction/zencolar.mp4' },
-    { cat: '3d',          name: 'Urdu Poem 2',          src: '/3dProduction/3d.mp4' },
     { cat: '2d',          name: 'Milo',          src: '/2d/Milo.mp4' },
     { cat: '2d',          name: 'Jojo',          src: '/2d/Jojo.mp4' },
     { cat: '2d',          name: 'Nido',          src: '/2d/Nido.mp4' },
