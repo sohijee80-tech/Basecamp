@@ -4536,6 +4536,34 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="app.js"></script>
+  <script>
+    /* ---------- pack cards, staggered scroll reveal ---------- */
+    (function () {
+      if (!window.gsap || !window.ScrollTrigger) return;
+      var cards = gsap.utils.toArray('#pstripRow .pcard');
+      if (!cards.length) return;
+      gsap.registerPlugin(ScrollTrigger);
+
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduceMotion) return;
+
+      gsap.set(cards, { autoAlpha: 0, y: 70, scale: .94 });
+
+      gsap.to(cards, {
+        autoAlpha: 1,
+        y: 0,
+        scale: 1,
+        duration: .85,
+        ease: 'power3.out',
+        stagger: .9,
+        scrollTrigger: {
+          trigger: '#featured',
+          start: 'top 75%',
+          once: true
+        }
+      });
+    })();
+  </script>
   <script src="cookies.js" defer></script>
   <script src="tour.js" defer></script>
   <div id="videoModal" class="video-modal">
