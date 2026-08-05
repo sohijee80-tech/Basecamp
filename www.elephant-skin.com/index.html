@@ -411,7 +411,7 @@
     }
 
     .menu-logo {
-      height: 26px;
+      height: 29px;
       width: auto;
       align-self: flex-start;
       margin-bottom: 10px
@@ -1299,6 +1299,10 @@
 
     .ldc-big span {
       color: var(--pink)
+    }
+
+    .ldc-big .ldc-num {
+      color: inherit
     }
 
     .ldc-cap {
@@ -4025,7 +4029,7 @@
 
   <div class="menu-overlay" id="menu">
     <div style=" background-color: black;border-radius:15px; display:flex;align-items:center;justify-content:space-between;padding:0 20px">
-      <a style=" display: flex; padding:15px" href="index.html"><img class="menu-logo" src="basecamp-icon.png" alt="BaseCamp Studio"></a>
+      <a style=" display: flex; padding:15px ;padding-top:22px " href="index.html"><img class="menu-logo" src="basecamp-icon.png" alt="BaseCamp Studio"></a>
       <button style="color: white;" class="menu-close" onclick="closeMenu()" aria-label="Close">&times;</button>
     </div>
     <nav class="menu-nav">
@@ -4056,8 +4060,8 @@
     <div class="wrap">
       <div class="hero-copy">
         <div class="eyebrow reveal" style="margin-bottom:22px">BaseCamp Studio · Gulberg III, Lahore</div>
-        <h1 class="reveal">Every Story needs a<br><span class="pink" id="rotWord">BaseCamp</span><br>for Success.</h1>
-        <p class="lead reveal">One crew, one location, one line of accountability from first shot to final render.
+        <h1 style="font-size: 75px;" class="reveal">Every Story needs a<br><span class="pink" id="rotWord">BaseCamp</span><br>for Success.</h1>
+        <p style="font-size: 19px;" class="lead reveal">One crew, one location, one line of accountability from first shot to final render.
           Production, post production, AI filmmaking, 3D and 2D animation, all under the same tent.</p>
         <div class="actions reveal">
           <a href="#chef" class="btn btn-primary">View Our Work →</a>
@@ -4078,9 +4082,9 @@
   <section class="sec approach light snap" id="approach">
     <div class="wrap">
       <span class="eyebrow reveal">01 — The Approach</span>
-      <h2 style="font-size: 55px;"" class=" reveal">BaseCamp keeps the whole<br><span class="pink"> ascent under one
+      <h2 style="font-size: 45px;" class=" reveal">BaseCamp keeps the whole<br><span class="pink"> ascent under one
           tent.</span></h2>
-      <p class="intro reveal">Most productions in this market get split across five vendors, a shooting crew here, an
+      <p style="font-size: 17px;" class="intro reveal">Most productions in this market get split across five vendors, a shooting crew here, an
         editor there, a render farm somewhere else. Every handoff loses a day, and a little bit of the story's altitude.
         </br>
         One studio. One team. Every frame. From raw footage to final render, your project never leaves the tent.</p>
@@ -4149,9 +4153,9 @@
     <div class="pstrip-head">
       <div>
         <span class="eyebrow reveal">02 — What's in the pack.</span>
-        <h2 style="font-size: clamp(54px, 9vw, 128px);" class="chef-title reveal">THE KIT<span
+        <h2 style=" display: flex; font-size: 65px;" class="chef-title reveal">THE KIT<span
             style="color: var(--pink); -webkit-text-fill-color: var(--pink); font-size: .26em; vertical-align: top; line-height: 1; position: relative; top: .12em; margin-left: .06em;"
-            class="pink"></span>.</h2>
+            class="pink"></span> <span style="color: var(--pink);" >.</span></h2>
       </div>
       <!-- <p class="pstrip-sub reveal">Five disciplines, one crew. Everything below is shot, cut, or rendered in house,
         nothing here gets couriered to a stranger.</p> -->
@@ -4178,7 +4182,7 @@
         "OGCola.mp4",
         "Befoam.mp4",
         "Belvin.mp4",
-        "Everyday2.mp4"
+        "Everyday.mp4"
       ]
       var row = document.getElementById('pstripRow'); if (!row) return;
       row.innerHTML = FEAT.map(function (p, i) {
@@ -4223,8 +4227,8 @@
       <div class="chef-top">
         <div class="chef-os-head">
           <span class="eyebrow reveal">03 — Peaks Summited</span>
-          <h2 style="font-size: 55px;"" class=" reveal">Recent<span class="pink"> Ascents. </span></h2>
-          <p class="chef-lead reveal">A sample of routes we've completed for clients across telecom, finance, real
+          <h2 style="font-size: 65px;" class=" reveal">Recent<span class="pink"> Ascents. </span></h2>
+          <p style="font-size: 15px;" class="chef-lead reveal">A sample of routes we've completed for clients across telecom, finance, real
             estate, food and retail.</p>
           <!-- <p class="intro reveal">THE KIT isn't a list of deliverables, it's the operating system behind every project.
             Six connected steps that turn a brief into a finished, launch-ready piece — without a single handoff outside
@@ -4233,8 +4237,9 @@
         </div>
       </div>
       <div class="chef-els">
+        
         <article class="chef-el reveal" tabindex="0" style="position: relative; overflow: hidden;border:none">
-          <video source src="/clientVideos/gfcvideo.mp4" type="video/mp4" class="chef-bg" autoplay muted loop
+          <video source src="/clientVideos/Nangrow1.mp4#t=5" type="video/mp4" class="chef-bg" autoplay start="8" muted loop
             playsinline style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
           </video>
 
@@ -4244,10 +4249,11 @@
           </div>
 
           <div class="el-core" style="position: relative; z-index: 2;">
-            <div class="el-name">GFC Fans</div>
-            <!-- <div class="el-tag">Frame perfect detailing, advance wardrobe correction that truly elevates the product experience.</div> -->
+            <div class="el-name">Nestlé</div>
+            <!-- <div class="el-tag">Creative storytelling, vibrant animations and impactful visuals bringing Nestle's vision to life. </div> -->
           </div>
         </article>
+        
 
            <article class="chef-el reveal" tabindex="0" style="position: relative; overflow: hidden;border:none">
           <video source src="/clientVideos/master.mp4" type="video/mp4" class="chef-bg" autoplay muted loop
@@ -4280,9 +4286,8 @@
             <!-- <div class="el-tag">A seamless blend of creativity and precision, crafted to elevate one of Pakistan's most loved brands. </div> -->
           </div>
         </article>
-
-        <article class="chef-el reveal" tabindex="0" style="position: relative; overflow: hidden;border:none">
-          <video source src="/clientVideos/Nangrow.mp4" type="video/mp4" class="chef-bg" autoplay muted loop
+<article class="chef-el reveal" tabindex="0" style="position: relative; overflow: hidden;border:none">
+          <video source src="/clientVideos/gfcvideo.mp4" type="video/mp4" class="chef-bg" autoplay muted loop
             playsinline style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
           </video>
 
@@ -4292,8 +4297,8 @@
           </div>
 
           <div class="el-core" style="position: relative; z-index: 2;">
-            <div class="el-name">Nestlé</div>
-            <!-- <div class="el-tag">Creative storytelling, vibrant animations and impactful visuals bringing Nestle's vision to life. </div> -->
+            <div class="el-name">GFC Fans</div>
+            <!-- <div class="el-tag">Frame perfect detailing, advance wardrobe correction that truly elevates the product experience.</div> -->
           </div>
         </article>
        
@@ -4329,7 +4334,6 @@
           </div>
         </article>
       </div>
-      <a href="approach" class="chef-more reveal">Explore the full framework →</a>
     </div>
   </section>
 
@@ -4337,33 +4341,33 @@
   <section class="ld" id="numbers">
     <div class="ld-head">
       <span class="eyebrow reveal">04 — Living data</span>
-      <h2 class="reveal">The studio, <span class="pink">by the numbers.</span></h2>
+      <h2 style="font-size: 65px;" class="reveal">The studio, <span class="pink">by the numbers.</span></h2>
       <!-- <p class="ld-sub reveal">Not a pitch deck — the track record behind every project we take on.</p> -->
     </div>
     <div class="ld-grid">
       <!-- 01 Projects -->
       <article class="ldc c-sales reveal">
         <div class="ldc-top"><span class="ldc-k">01</span></div>
-        <div class="ldc-big">8</div>
+        <div class="ldc-big"><span class="ldc-num" data-target="12">0</span></div>
         <div class="ldc-cap">Years on the mountain</div>
       </article>
       <!-- 02 Clients -->
       <article class="ldc c-proj reveal">
         <div class="ldc-top"><span class="ldc-k">02</span></div>
-        <div class="ldc-big">140<span>+</span></div>
+        <div class="ldc-big"><span class="ldc-num" data-target="600">0</span><span>+</span></div>
         <div class="ldc-cap">Projects delivered</div>
       </article>
       <!-- 03 Years -->
       <article class="ldc c-spec reveal">
         <div class="ldc-top"><span class="ldc-k">03</span></div>
-        <div class="ldc-big">5</div>
+        <div class="ldc-big"><span class="ldc-num" data-target="9">0</span></div>
         <div class="ldc-cap">Disciplines, all in-house</div>
       </article>
       <!-- 04 Retention -->
       <article class="ldc c-ctry reveal">
         <div class="ldc-top"><span class="ldc-k">04</span></div>
-        <div class="ldc-big">72<span>hr</span></div>
-        <div class="ldc-cap">Average first-cut turnaround</div>
+        <div class="ldc-big"><span class="ldc-num" data-target="100">0</span><span>%</span></div>
+        <div class="ldc-cap">Trust</div>
       </article>
       <!-- CTA — get in touch -->
       <a class="ldc c-off c-cta reveal" href="#contact">
@@ -4447,14 +4451,50 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
       track.innerHTML = html;
     })();
 
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    const counter = entry.target;
+    const target = Number(counter.dataset.target);
+    const suffix = counter.querySelector("span")?.outerHTML || "";
+
+    const duration = 1800;
+    const start = performance.now();
+
+    function update(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+
+      counter.innerHTML = `${Math.round(target * eased)}${suffix}`;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      }
+    }
+
+    requestAnimationFrame(update);
+
+    obs.unobserve(counter);
+  });
+}, {
+  threshold: 0.5
+});
+
+document.querySelectorAll(".ldc-big").forEach(counter => {
+  observer.observe(counter);
+});
+
   </script>
+
+
 
 
   <!-- CONTACT -->
   <section class="contact snap contact-light" id="contact">
     <div class="wrap">
       <span class="eyebrow reveal">05 — Get In Touch</span>
-      <h2 class="reveal">Don't be shy.<br>Say <span class="pink" id="sayHi">Hi.</span></h2>
+      <h2 style="font-size: 85px;" class="reveal">Don't be shy.<br>Say <span class="pink" id="sayHi">Hi.</span></h2>
       <p class="sub reveal">Tell us about the brief — we'll tell you what it takes to make it real.</p>
       <div class="contact-btns reveal">
         <a onclick={openModal()} class="btn btn-primary">Send a project brief →</a>
@@ -4512,21 +4552,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   <footer>
     <div class="wrap">
-      <nav class="home-legal"
-        style="width:100%;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:baseline;padding-bottom:20px;margin-bottom:4px;border-bottom:1px solid var(--line)">
-        <span
-          style="font-family:var(--font-med);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--pink);width:100%;margin-bottom:2px">Legal</span>
-        <a href="legal">Legal &amp; Trust Center</a>
-        <a href="legal/terms-of-use">Terms of Use</a>
-        <a href="legal/privacy-policy">Privacy Policy</a>
-        <a href="legal/cookie-policy">Cookie Policy</a>
-        <a href="legal/intellectual-property">Intellectual Property</a>
-        <a href="legal/client-confidentiality">Client Confidentiality</a>
-        <a href="legal/ai-policy">AI Policy</a>
-        <a href="legal/accessibility">Accessibility</a>
-        <a href="legal/security">Security</a>
-        <a href="legal/contact">Contact</a>
-      </nav>
       <span>BaseCamp Studio · Everything in THE KIT, nothing outsourced · 2026</span>
       <span><a href="mailto:hello@basecampstudio.pk">Email</a> · <a href="https://wa.me/924211100022" target="_blank"
           rel="noopener">WhatsApp</a></span>
@@ -4553,9 +4578,9 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
         autoAlpha: 1,
         y: 0,
         scale: 1,
-        duration: .85,
+        duration: .40,
         ease: 'power3.out',
-        stagger: .9,
+        stagger: .10,
         scrollTrigger: {
           trigger: '#featured',
           start: 'top 75%',

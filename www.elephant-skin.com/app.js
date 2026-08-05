@@ -466,6 +466,25 @@ addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40);},{pa
 const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4*60)+'ms';io.observe(el);});
 
+/* ---------- stat counters ---------- */
+(function(){
+  const nums=document.querySelectorAll('.ldc-num');if(!nums.length)return;
+  function animateCount(el){
+    const target=parseFloat(el.dataset.target)||0;
+    const duration=1400;
+    const start=performance.now();
+    function tick(now){
+      const p=Math.min((now-start)/duration,1);
+      const eased=1-Math.pow(1-p,3);
+      el.textContent=Math.round(target*eased);
+      if(p<1)requestAnimationFrame(tick);else el.textContent=target;
+    }
+    requestAnimationFrame(tick);
+  }
+  const cio=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){animateCount(e.target);cio.unobserve(e.target);}}),{threshold:.4});
+  nums.forEach(el=>cio.observe(el));
+})();
+
 /* ---------- live counter ---------- */
 (function(){
   const el=document.getElementById("liveCount");if(!el)return;
