@@ -1140,7 +1140,7 @@
       font-size: clamp(28px, 3.6vw, 46px);
       letter-spacing: .01em;
       text-transform: uppercase;
-      max-width: 420px;
+      max-width: 720px;
       line-height: 1.02;
       margin-bottom: 16px
     }
@@ -1229,7 +1229,8 @@
       border-radius: 999px;
       padding: 10px 20px;
       box-shadow: 0 6px 16px rgba(255, 90, 46, .22);
-      transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+      cursor: pointer
     }
 
     .out-tag:hover {
@@ -4120,7 +4121,7 @@
       <div class="slogan">Everything in THE KIT, nothing outsourced.</div>
       <p>A Camp for brands that don't have room for error. Explore. Hover. Scroll. Click.</p>
       <div class="menu-social">
-        <a href="mailto:hello@thebasecampstudio.com" title="Email"> <img src="/email.png" height="20" width="20" href="https://wa.me/+924211100022" title="Gmail" target="_blank" rel="noopener" /></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@thebasecampstudio.com" title="Email" target="_blank" rel="noopener"> <img src="/email.png" height="20" width="20" title="Gmail" /></a>
         <a href="https://wa.me/+923008441367" title="Email"> <img src="/whatsapp.png" height="20" width="20" href="https://wa.me/+923008441367" title="WhatsApp" target="_blank" rel="noopener" /></a>
       <!-- <a href="mailto:hello@basecampstudio.pk" title="Email">@</a>
         <a href="https://wa.me/+924211100022" title="WhatsApp" target="_blank" rel="noopener">WA</a> -->
@@ -4183,26 +4184,156 @@
         </div>
       </div>
       <div style="display: flex;flex-wrap: wrap;flex-direction: column;" class="out-bar">
-        <h3 class="reveal">The <span class="pink">Payoff.</span></h3>
+        <h3 class="reveal">Digital Advertising & <span style="color: #FF5A2E"> Campaign Management</span></h3>
         <p class="out-desc">
-          Helping brands plan, create and deliver high-impact advertising campaigns across digital and social platforms.
+          
+We help brands develop and execute digital advertising campaigns that connect creative content with measurable business objectives. Our services include advertising strategy, campaign planning, creative development, audience targeting, campaign management, optimization and performance reporting.
         </p>
         <div class="out-row">
           <div class="out-tags">
-            <span class="out-tag">Digital Advertising Campaigns</span>
-            <span class="out-tag ">Social Media Advertising</span>
-            <span class="out-tag">Paid Media & Campaign Management</span>
-            <span class="out-tag ">Performance Marketing</span>
-            <span class="out-tag">Campaign Strategy</span>
-            <span class="out-tag ">Creative Strategy & Development</span>
-            <span class="out-tag">Video Advertising & Digital Reels</span>
-            <span class="out-tag">Brand Content & Commercial Production</span>
+            <span class="out-tag" onclick="openTagModal(this)" data-desc="Full-funnel campaigns planned, produced, and placed — built to move an audience from first view to action.">Digital Advertising Campaigns</span>
+            <span class="out-tag " onclick="openTagModal(this)" data-desc="Scroll-stopping creative and placements tuned for every feed, from Reels and Stories to TikTok.">Social Media Advertising</span>
+            <span class="out-tag" onclick="openTagModal(this)" data-desc="Budgets managed, bids optimized, and every dollar tracked back to a result — not just a click.">Paid Media & Campaign Management</span>
+            <span class="out-tag " onclick="openTagModal(this)" data-desc="Creative and media working together, measured against real business outcomes, not vanity metrics.">Performance Marketing</span>
+            <span class="out-tag" onclick="openTagModal(this)" data-desc="The plan before the production — audience, message, and channel mapped out before a single asset is made.">Campaign Strategy</span>
+            <span class="out-tag " onclick="openTagModal(this)" data-desc="Big ideas grounded in brand truth, developed into concepts an audience actually stops for.">Creative Strategy & Development</span>
+            <span class="out-tag" onclick="openTagModal(this)" data-desc="Short-form, high-impact video built natively for the feed — designed to perform in the first three seconds.">Video Advertising & Digital Reels</span>
+            <span class="out-tag" onclick="openTagModal(this)" data-desc="Polished, on-brand production — commercials and brand films shot to outlast a single campaign.">Brand Content & Commercial Production</span>
           </div>
           <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.4/dist/dotlottie-wc.js" type="module"></script>
           <dotlottie-wc class="out-arrow" src="https://lottie.host/6a7b23f5-2e07-4c9e-882a-77a80064cadf/nUPcKqMxE1.lottie" style="width: 110px;height: 110px" autoplay loop></dotlottie-wc>
         </div>
       </div>
     </div>
+
+    <div id="tagModal" class="tag-modal">
+      <div class="tag-modal-content">
+        <button class="tag-modal-close" onclick="closeTagModal()" aria-label="Close">&times;</button>
+        <h4 style="color: #FF5A2E;" id="tagModalTitle"></h4>
+        <p id="tagModalDesc"></p>
+      </div>
+    </div>
+
+    <style>
+      .tag-modal {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        z-index: 9999;
+        background: rgba(10, 8, 6, .45);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px)
+      }
+
+      .tag-modal.active {
+        display: flex
+      }
+
+      .tag-modal-content {
+        position: relative;
+        width: min(100%, 440px);
+        padding: 40px 36px;
+        border-radius: 24px;
+        text-align: left;
+        background: rgba(255, 255, 255, .12);
+        border: 1px solid rgba(255, 255, 255, .35);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, .28), inset 0 1px 0 rgba(255, 255, 255, .4);
+        backdrop-filter: blur(22px) saturate(160%);
+        -webkit-backdrop-filter: blur(22px) saturate(160%);
+        animation: tagModalIn .3s ease
+      }
+
+      @keyframes tagModalIn {
+        from {
+          opacity: 0;
+          transform: translateY(16px) scale(.97)
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1)
+        }
+      }
+
+      .tag-modal-eyebrow {
+        display: inline-block;
+        font-family: var(--font-med);
+        font-size: 11px;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        color: var(--pink);
+        margin-bottom: 14px
+      }
+
+      .tag-modal-content h4 {
+        font-family: var(--font-display);
+        font-size: clamp(22px, 3vw, 28px);
+        line-height: 1.15;
+        color: #fff;
+        margin: 0 0 14px;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, .3)
+      }
+
+      .tag-modal-content p {
+        font-family: var(--font-body);
+        font-size: 15.5px;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, .88);
+        margin: 0
+      }
+
+      .tag-modal-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: none;
+        background: rgba(255, 255, 255, .18);
+        color: #fff;
+        font-size: 22px;
+        line-height: 1;
+        cursor: pointer;
+        transition: transform .25s ease, background .25s ease
+      }
+
+      .tag-modal-close:hover {
+        background: var(--pink);
+        transform: rotate(90deg)
+      }
+    </style>
+
+    <script>
+      (function () {
+        var tagModal = document.getElementById("tagModal");
+        var tagModalTitle = document.getElementById("tagModalTitle");
+        var tagModalDesc = document.getElementById("tagModalDesc");
+
+        window.openTagModal = function (el) {
+          tagModalTitle.textContent = el.textContent.trim();
+          tagModalDesc.textContent = el.getAttribute("data-desc") || "";
+          tagModal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        };
+
+        window.closeTagModal = function () {
+          tagModal.classList.remove("active");
+          document.body.style.overflow = "";
+        };
+
+        tagModal.addEventListener("click", function (e) {
+          if (e.target === tagModal) closeTagModal();
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") closeTagModal();
+        });
+      })();
+    </script>
   </section>
 
   <!-- WORD WALL -->
@@ -4237,7 +4368,7 @@
     <div class="pstrip-head">
       <div>
         <span class="eyebrow reveal">02 — What's in the pack.</span>
-        <h2 style=" display: flex; font-size: 65px;" class="chef-title reveal">THE KIT<span
+        <h2 style=" display: flex; font-size: 65px;" class="chef-title reveal">THE Advertising KIT<span
             style="color: var(--pink); -webkit-text-fill-color: var(--pink); font-size: .26em; vertical-align: top; line-height: 1; position: relative; top: .12em; margin-left: .06em;"
             class="pink"></span> <span style="color: var(--pink);" >.</span></h2>
       </div>
@@ -4256,7 +4387,8 @@
         ['2d', '2D Animation', 'Motion graphics, explainer films and hand-drawn, frame-by-frame work for brands who want a human touch.', 'linear-gradient(135deg,#2c2828,#191512)'],
         ['motion', 'Motion Graphics', 'Titles, Data Viz &amp; Compositing · Case study coming soon', 'linear-gradient(135deg,#231F20,#1c1613)'],
         ['animation', 'Animatics', 'Titles, Data Viz &amp; Compositing · Case study coming soon', 'linear-gradient(135deg,#231F20,#1c1613)'],
-        ['reels', 'Digital Reels', 'Titles, Data Viz &amp; Compositing · Case study coming soon', 'linear-gradient(135deg,#231F20,#1c1613)']
+        ['reels', 'Social Media Reels', 'Titles, Data Viz &amp; Compositing · Case study coming soon', 'linear-gradient(135deg,#231F20,#1c1613)'],
+        ['explainer', 'Explainer Videos', 'Titles, Data Viz &amp; Compositing · Case study coming soon', 'linear-gradient(135deg,#231F20,#1c1613)'],
       ];
 
       
@@ -4269,6 +4401,7 @@
         "Befoam.mp4",
         "Everyday.mp4",
         "reels.mp4",
+        "CyberTeq.mp4",
       ]
       var row = document.getElementById('pstripRow'); if (!row) return;
       row.innerHTML = FEAT.map(function (p, i) {
@@ -4613,6 +4746,8 @@ document.querySelectorAll(".ldc-big").forEach(counter => {
                   <option>Youtube Video Edit</option>
                   <option>Animated Reels</option>
                   <option>Video Editing</option>
+                  <option>Social Media Reels</option>
+                  <option>Explainer Videos</option>
                 </select>
               </div>
 
@@ -4627,7 +4762,7 @@ document.querySelectorAll(".ldc-big").forEach(counter => {
             </form>
           </div>
         </div>
-        <a href="mailto:hello@thebasecampstudio.com" class="btn btn-ghost">hello@thebasecampstudio.com
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@thebasecampstudio.com" target="_blank" rel="noopener" class="btn btn-ghost">hello@thebasecampstudio.com
           →</a>
         <a href="https://wa.me/+923008441367" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp us →</a>
       </div>
@@ -4639,7 +4774,7 @@ document.querySelectorAll(".ldc-big").forEach(counter => {
   <footer>
     <div class="wrap">
       <span>BaseCamp Studio · Everything in THE KIT, nothing outsourced · 2026</span>
-      <span><a href="mailto:hello@thebasecampstudio.com">Email</a> · <a href="https://wa.me/+923008441367" target="_blank"
+      <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@thebasecampstudio.com" target="_blank" rel="noopener">Email</a> · <a href="https://wa.me/+923008441367" target="_blank"
           rel="noopener">WhatsApp</a></span>
     </div>
   </footer>
